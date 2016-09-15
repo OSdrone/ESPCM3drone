@@ -1,0 +1,43 @@
+Removed Pin From Net: NetName=PWM1 Pin=R?-2
+Removed Pin From Net: NetName=PWM2 Pin=R?-2
+Removed Pin From Net: NetName=PWM3 Pin=R?-2
+Removed Pin From Net: NetName=PWM4 Pin=R?-2
+Removed Pin From Net: NetName=PWM5 Pin=R?-2
+Removed Pin From Net: NetName=PWM6 Pin=R?-2
+Removed Pin From Net: NetName=PWM7 Pin=R?-2
+Added Member To Class: ClassName=Esquematico Member=Component C? Cap
+Added Member To Class: ClassName=Esquematico Member=Component C? Cap
+Added Member To Class: ClassName=Esquematico Member=Component C? Cap
+Added Member To Class: ClassName=Potencia Member=Component C? Cap
+Added Member To Class: ClassName=Potencia Member=Component C? Cap
+Added Member To Class: ClassName=Potencia Member=Component P? MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P? MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P? MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P? MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P? MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P? MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P? MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component Q? MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q? MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q? MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q? MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q? MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q? MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q? MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Potencia Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component U? MPU-6050
+Added Member To Class: ClassName=Esquematico Member=Component U? STM32F103C8T6

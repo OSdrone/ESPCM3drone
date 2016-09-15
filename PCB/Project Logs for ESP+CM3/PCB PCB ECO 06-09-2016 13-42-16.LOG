@@ -1,0 +1,118 @@
+Removed Member From Class: ClassName=Potencia Member=C?
+Removed Member From Class: ClassName=Potencia Member=U?
+Change Component Designator: OldDesignator=C? NewDesignator=C1
+Change Component Designator: OldDesignator=C? NewDesignator=C2
+Change Component Designator: OldDesignator=C? NewDesignator=C3
+Change Component Designator: OldDesignator=C? NewDesignator=C4
+Change Component Designator: OldDesignator=C? NewDesignator=C5
+Change Component Designator: OldDesignator=C? NewDesignator=C6
+Change Component Designator: OldDesignator=C? NewDesignator=C7
+Change Component Designator: OldDesignator=IC? NewDesignator=IC1
+Change Component Designator: OldDesignator=L? NewDesignator=L1
+Change Component Designator: OldDesignator=P? NewDesignator=P1
+Change Component Designator: OldDesignator=P? NewDesignator=P2
+Change Component Designator: OldDesignator=P? NewDesignator=P3
+Change Component Designator: OldDesignator=P? NewDesignator=P4
+Change Component Designator: OldDesignator=P? NewDesignator=P5
+Change Component Designator: OldDesignator=P? NewDesignator=P6
+Change Component Designator: OldDesignator=P? NewDesignator=P7
+Change Component Designator: OldDesignator=P? NewDesignator=P8
+Change Component Designator: OldDesignator=Q? NewDesignator=Q1
+Change Component Designator: OldDesignator=Q? NewDesignator=Q2
+Change Component Designator: OldDesignator=Q? NewDesignator=Q3
+Change Component Designator: OldDesignator=Q? NewDesignator=Q4
+Change Component Designator: OldDesignator=Q? NewDesignator=Q5
+Change Component Designator: OldDesignator=Q? NewDesignator=Q6
+Change Component Designator: OldDesignator=Q? NewDesignator=Q7
+Change Component Designator: OldDesignator=Q? NewDesignator=Q8
+Change Component Designator: OldDesignator=R? NewDesignator=R1
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=R? NewDesignator=R4
+Change Component Designator: OldDesignator=R? NewDesignator=R5
+Change Component Designator: OldDesignator=R? NewDesignator=R6
+Change Component Designator: OldDesignator=R? NewDesignator=R7
+Change Component Designator: OldDesignator=R? NewDesignator=R8
+Change Component Designator: OldDesignator=R? NewDesignator=R9
+Change Component Designator: OldDesignator=R? NewDesignator=R10
+Change Component Designator: OldDesignator=R? NewDesignator=R11
+Change Component Designator: OldDesignator=R? NewDesignator=R12
+Change Component Designator: OldDesignator=R? NewDesignator=R13
+Change Component Designator: OldDesignator=R? NewDesignator=R14
+Change Component Designator: OldDesignator=R? NewDesignator=R15
+Change Component Designator: OldDesignator=R? NewDesignator=R16
+Change Component Designator: OldDesignator=U? NewDesignator=U1
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Change Component Designator: OldDesignator=U? NewDesignator=U3
+Change Component Designator: OldDesignator=U? NewDesignator=U4
+Change Component Designator: OldDesignator=USB? NewDesignator=USB1
+Change Net Name : Old Net Name=NetC?_2 New Net Name=NetC3_2
+Change Net Name : Old Net Name=NetC?_2 New Net Name=NetC4_2
+Change Net Name : Old Net Name=NetL?_1 New Net Name=NetL1_1
+Change Net Name : Old Net Name=NetQ?_2 New Net Name=NetQ4_2
+Added Pin To Net: NetName=NetQ1_2 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_2 Pin=R1-1
+Added Pin To Net: NetName=NetQ1_2 Pin=R5-2
+Added Net: Name=NetQ1_2
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_2 Pin=R2-1
+Added Pin To Net: NetName=NetQ2_2 Pin=R6-2
+Added Net: Name=NetQ2_2
+Added Pin To Net: NetName=NetQ3_2 Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_2 Pin=R3-1
+Added Pin To Net: NetName=NetQ3_2 Pin=R7-2
+Added Net: Name=NetQ3_2
+Added Pin To Net: NetName=NetQ5_2 Pin=Q5-1
+Added Pin To Net: NetName=NetQ5_2 Pin=R9-1
+Added Pin To Net: NetName=NetQ5_2 Pin=R13-2
+Added Net: Name=NetQ5_2
+Added Pin To Net: NetName=NetQ6_2 Pin=Q6-1
+Added Pin To Net: NetName=NetQ6_2 Pin=R10-1
+Added Pin To Net: NetName=NetQ6_2 Pin=R14-2
+Added Net: Name=NetQ6_2
+Added Pin To Net: NetName=NetQ7_2 Pin=Q7-1
+Added Pin To Net: NetName=NetQ7_2 Pin=R11-1
+Added Pin To Net: NetName=NetQ7_2 Pin=R15-2
+Added Net: Name=NetQ7_2
+Added Pin To Net: NetName=NetQ8_2 Pin=Q8-1
+Added Pin To Net: NetName=NetQ8_2 Pin=R12-1
+Added Pin To Net: NetName=NetQ8_2 Pin=R16-2
+Added Net: Name=NetQ8_2
+Added Member To Class: ClassName=Esquematico Member=Component C2 Cap
+Added Member To Class: ClassName=Esquematico Member=Component C3 Cap
+Added Member To Class: ClassName=Esquematico Member=Component C4 Cap
+Added Member To Class: ClassName=Potencia Member=Component C5 Cap
+Added Member To Class: ClassName=Potencia Member=Component C6 Cap
+Added Member To Class: ClassName=Potencia Member=Component C7 Cap
+Added Member To Class: ClassName=Potencia Member=Component P1 MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P2 MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P3 MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P5 MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P6 MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P7 MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component P8 MHDR1X2
+Added Member To Class: ClassName=Potencia Member=Component Q1 MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q2 MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q3 MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q5 MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q6 MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q7 MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component Q8 MOSFET-N
+Added Member To Class: ClassName=Potencia Member=Component R1 Res3
+Added Member To Class: ClassName=Potencia Member=Component R2 Res3
+Added Member To Class: ClassName=Potencia Member=Component R3 Res3
+Added Member To Class: ClassName=Potencia Member=Component R4 Res3
+Added Member To Class: ClassName=Potencia Member=Component R5 Res3
+Added Member To Class: ClassName=Potencia Member=Component R6 Res3
+Added Member To Class: ClassName=Potencia Member=Component R7 Res3
+Added Member To Class: ClassName=Potencia Member=Component R9 Res3
+Added Member To Class: ClassName=Potencia Member=Component R10 Res3
+Added Member To Class: ClassName=Potencia Member=Component R11 Res3
+Added Member To Class: ClassName=Potencia Member=Component R12 Res3
+Added Member To Class: ClassName=Potencia Member=Component R13 Res3
+Added Member To Class: ClassName=Potencia Member=Component R14 Res3
+Added Member To Class: ClassName=Potencia Member=Component R15 Res3
+Added Member To Class: ClassName=Potencia Member=Component R16 Res3
+Added Member To Class: ClassName=Esquematico Member=Component U2 BMP280
+Added Member To Class: ClassName=Esquematico Member=Component U3 MPU-6050
+Added Member To Class: ClassName=Potencia Member=Component U4 LM3671MF-3.3/NOPB

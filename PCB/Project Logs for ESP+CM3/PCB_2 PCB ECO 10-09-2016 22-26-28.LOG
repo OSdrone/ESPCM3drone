@@ -1,0 +1,18 @@
+Removed Member From Class: ClassName=Potencia Member=R21
+Removed Member From Class: ClassName=Potencia Member=R22
+Removed Member From Class: ClassName=Potencia Member=R23
+Removed Member From Class: ClassName=Potencia Member=R24
+Removed Member From Class: ClassName=Potencia Member=R25
+Added Component: Designator=Q9(SOT23-3)
+Added Component: Designator=R26(6-0805_N)
+Added Component: Designator=R27(6-0805_N)
+Added Pin To Net: NetName=VCC_USB Pin=Q9-1
+Added Pin To Net: NetName=BOOT_0 Pin=Q9-2
+Added Pin To Net: NetName=VCC Pin=Q9-3
+Added Pin To Net: NetName=VCC_USB Pin=R26-1
+Added Pin To Net: NetName=GND Pin=R26-2
+Added Pin To Net: NetName=BOOT_0 Pin=R27-1
+Added Pin To Net: NetName=GND Pin=R27-2
+Added Member To Class: ClassName=Esquematico Member=Component Q9 SI2306DS
+Added Member To Class: ClassName=Esquematico Member=Component R26 Res3
+Added Member To Class: ClassName=Esquematico Member=Component R27 Res3

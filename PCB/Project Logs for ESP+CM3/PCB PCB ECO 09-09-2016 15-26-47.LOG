@@ -1,0 +1,9 @@
+Removed Member From Class: ClassName=Potencia Member=R?
+Change Component Designator: OldDesignator=R? NewDesignator=R17
+Change Component Designator: OldDesignator=R? NewDesignator=R18
+Change Component Designator: OldDesignator=R? NewDesignator=R19
+Change Component Designator: OldDesignator=R? NewDesignator=R20
+Change Component Designator: OldDesignator=USB NewDesignator=USB1
+Added Member To Class: ClassName=Esquematico Member=Component R17 Res3
+Added Member To Class: ClassName=Esquematico Member=Component R18 Res3
+Added Member To Class: ClassName=Esquematico Member=Component R19 Res3

@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=TX Pin=U1-12
+Removed Pin From Net: NetName=RX Pin=U1-13
+Removed Pin From Net: NetName=PWM0 Pin=U1-16
+Removed Pin From Net: NetName=PWM1 Pin=U1-17
+Removed Pin From Net: NetName=PWM2 Pin=U1-18
+Removed Pin From Net: NetName=PWM3 Pin=U1-19
+Removed Pin From Net: NetName=SCL Pin=U1-21
+Removed Pin From Net: NetName=SDA Pin=U1-22
+Removed Pin From Net: NetName=RST Pin=U1-40
+Removed Pin From Net: NetName=PWM4 Pin=U1-42
+Removed Pin From Net: NetName=PWM5 Pin=U1-43
+Removed Pin From Net: NetName=PWM6 Pin=U1-45
+Removed Pin From Net: NetName=PWM7 Pin=U1-46
+Removed Pin From Net: NetName=GND Pin=U2-5
+Removed Member From Class: ClassName=Potencia Member=R?
+Added Pin To Net: NetName=VCC Pin=U1-9
+Added Pin To Net: NetName=VCC Pin=U2-5
+Change Class Name : Old Net Name=Esquematico New Net Name=Esquematico_2
+Added Member To Class: ClassName=Esquematico_2 Member=Component R? Res3

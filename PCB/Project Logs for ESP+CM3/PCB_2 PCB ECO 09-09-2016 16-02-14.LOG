@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=GND Pin=P?-1
+Removed Pin From Net: NetName=VCC Pin=P?-2
+Removed Member From Class: ClassName=Potencia Member=P?
+Removed Member From Class: ClassName=Potencia Member=R?
+Added Pin To Net: NetName=VCC Pin=P?-1
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3

@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=GND Pin=P?-1
+Removed Pin From Net: NetName=VCC Pin=P?-2
+Removed Pin From Net: NetName=SWCLK Pin=P?-3
+Removed Pin From Net: NetName=SWDIO Pin=P?-4
+Removed Pin From Net: NetName=NRST Pin=P?-5
+Removed Member From Class: ClassName=Potencia Member=P?
+Removed Member From Class: ClassName=Potencia Member=R?
+Change Component DesignItemId : Designator=P? Old DesignItemId=Header 5 New DesignItemId=Header 4
+Change Component Footprint: Designator=P? Old Footprint=MHDR1X5 New Footprint=HDR1X4
+Change Component Comment : Designator=P? Old Comment=Header 5 New Comment=Header 4
+Added Pin To Net: NetName=VCC Pin=P?-1
+Added Pin To Net: NetName=SWCLK Pin=P?-2
+Added Pin To Net: NetName=SWDIO Pin=P?-3
+Added Pin To Net: NetName=GND Pin=P?-4
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3

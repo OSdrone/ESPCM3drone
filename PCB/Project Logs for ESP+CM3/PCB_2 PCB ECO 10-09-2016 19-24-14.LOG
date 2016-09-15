@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=BOOT_ESP Pin=R?-1
+Removed Pin From Net: NetName=VCC Pin=R?-1
+Removed Pin From Net: NetName=BOOT_ESP Pin=R?-2
+Removed Pin From Net: NetName=BOOT_ESP Pin=U1-20
+Removed Member From Class: ClassName=Potencia Member=P?
+Removed Member From Class: ClassName=Potencia Member=R?
+Added Component: Designator=R?(6-0805_N)
+Added Pin To Net: NetName=BOOT_ESP Pin=R?-1
+Added Pin To Net: NetName=VCC Pin=R?-2
+Added Pin To Net: NetName=BOOT_ESP Pin=U1-15
+Added Pin To Net: NetName=BOOT_0 Pin=U1-44
+Added Net: Name=BOOT_0
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=U1-20
+Added Net: Name=NetR?_1
+Added Pin To Net: NetName=VCC_USB Pin=USB1-1
+Added Net: Name=VCC_USB
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3

@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=USB_DM Pin=U?-32
+Added Pin To Net: NetName=USB_DP Pin=U?-33
+Added Member To Class: ClassName=Esquematico Member=Component C? Cap
+Added Member To Class: ClassName=Esquematico Member=Component C? Cap
+Added Member To Class: ClassName=Esquematico Member=Component U? LM3671MF-3.3/NOPB

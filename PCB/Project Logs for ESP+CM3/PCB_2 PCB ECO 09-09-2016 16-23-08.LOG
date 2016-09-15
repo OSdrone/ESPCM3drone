@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NRST Pin=P?-3
+Removed Pin From Net: NetName=SWCLK Pin=P?-4
+Removed Member From Class: ClassName=Potencia Member=P?
+Removed Member From Class: ClassName=Potencia Member=R?
+Added Pin To Net: NetName=SWCLK Pin=P?-3
+Added Pin To Net: NetName=NRST Pin=P?-4
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3

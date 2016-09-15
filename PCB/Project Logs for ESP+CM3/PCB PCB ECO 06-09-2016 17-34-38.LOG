@@ -1,0 +1,7 @@
+Removed Member From Class: ClassName=Potencia Member=R?
+Added Pin To Net: NetName=GND Pin=IC1-15
+Added Pin To Net: NetName=RST Pin=IC1-1
+Added Pin To Net: NetName=RST Pin=R?-1
+Added Pin To Net: NetName=RST Pin=U1-40
+Added Net: Name=RST
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3

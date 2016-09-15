@@ -1,0 +1,19 @@
+Removed Member From Class: ClassName=Potencia Member=P11
+Change Component Footprint: Designator=R17 Old Footprint=C1206 New Footprint=6-0805_N
+Change Component Footprint: Designator=R18 Old Footprint=C1206 New Footprint=6-0805_N
+Added Component: Designator=R28(6-0805_N)
+Added Component: Designator=R29(C1206)
+Added Pin To Net: NetName=GND Pin=IC2-1
+Added Pin To Net: NetName=GND Pin=IC2-3
+Added Pin To Net: NetName=VCC_BAT Pin=IC2-5
+Added Pin To Net: NetName=VCC_USB Pin=IC2-8
+Added Pin To Net: NetName=GND Pin=R28-2
+Added Pin To Net: NetName=VCC_USB Pin=R29-1
+Added Pin To Net: NetName=NetIC2_2 Pin=IC2-2
+Added Pin To Net: NetName=NetIC2_2 Pin=R28-1
+Added Net: Name=NetIC2_2
+Added Pin To Net: NetName=NetIC2_4 Pin=IC2-4
+Added Pin To Net: NetName=NetIC2_4 Pin=R29-2
+Added Net: Name=NetIC2_4
+Added Member To Class: ClassName=Potencia Member=Component R28 Res3
+Added Member To Class: ClassName=Potencia Member=Component R29 Res3

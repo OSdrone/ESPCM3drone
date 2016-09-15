@@ -1,0 +1,18 @@
+Removed Pin From Net: NetName=GPIO0 Pin=P?-5
+Removed Pin From Net: NetName=GPIO1 Pin=P?-6
+Removed Pin From Net: NetName=GPIO2 Pin=P?-7
+Removed Pin From Net: NetName=GPIO3 Pin=P?-8
+Removed Member From Class: ClassName=Potencia Member=P?
+Added Pin To Net: NetName=GPIO1 Pin=P?-3
+Added Pin To Net: NetName=GPIO3 Pin=P?-4
+Added Pin To Net: NetName=GPIO0 Pin=P?-7
+Added Pin To Net: NetName=GPIO2 Pin=P?-8
+Added Pin To Net: NetName=GPIO4 Pin=P?-2
+Added Pin To Net: NetName=GPIO4 Pin=U1-29
+Added Net: Name=GPIO4
+Added Pin To Net: NetName=GPIO5 Pin=P?-6
+Added Pin To Net: NetName=GPIO5 Pin=U1-30
+Added Net: Name=GPIO5
+Added Pin To Net: NetName=GPIO6 Pin=P?-1
+Added Pin To Net: NetName=GPIO6 Pin=U1-31
+Added Net: Name=GPIO6

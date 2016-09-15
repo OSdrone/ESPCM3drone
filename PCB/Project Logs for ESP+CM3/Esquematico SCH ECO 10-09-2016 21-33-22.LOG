@@ -1,0 +1,7 @@
+Remove Pin=P9-2 From Net=SWDIO
+Remove Pin=P9-3 From Net=SWCLK
+Change Component Designator: OldDesignator=R21 NewDesignator=R?
+Change Component Designator: OldDesignator=R22 NewDesignator=R?
+Change Component Designator: OldDesignator=R23 NewDesignator=R?
+Change Component Designator: OldDesignator=R24 NewDesignator=R?
+Change Component Designator: OldDesignator=R25 NewDesignator=R?

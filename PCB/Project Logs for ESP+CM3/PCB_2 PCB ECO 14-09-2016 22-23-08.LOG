@@ -1,0 +1,7 @@
+Removed Member From Class: ClassName=Potencia Member=P?
+Change Component Designator: OldDesignator=IC? NewDesignator=IC2
+Change Component Designator: OldDesignator=P? NewDesignator=P11
+Added Component: Designator=P10(HDR1X2)
+Added Pin To Net: NetName=SCL Pin=P10-1
+Added Pin To Net: NetName=SDA Pin=P10-2
+Added Member To Class: ClassName=Esquematico Member=Component P10 Header 2

@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=NRST Pin=P?-4
+Removed Pin From Net: NetName=SWDIO Pin=P?-5
+Removed Member From Class: ClassName=Potencia Member=P?
+Removed Member From Class: ClassName=Potencia Member=R?
+Change Component Footprint: Designator=C2 Old Footprint=C1206 New Footprint=6-0805_L
+Change Component Footprint: Designator=C3 Old Footprint=C1206 New Footprint=6-0805_L
+Added Pin To Net: NetName=SWDIO Pin=P?-4
+Added Pin To Net: NetName=NRST Pin=P?-5
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3

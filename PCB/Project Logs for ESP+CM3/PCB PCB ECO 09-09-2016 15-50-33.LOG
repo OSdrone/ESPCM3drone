@@ -1,0 +1,44 @@
+Removed Member From Class: ClassName=Potencia Member=R17
+Removed Member From Class: ClassName=Potencia Member=R18
+Removed Member From Class: ClassName=Potencia Member=R19
+Removed Member From Class: ClassName=Potencia Member=R20
+Added Component: Designator=P?(HDR1X5)
+Added Component: Designator=R?(6-0805_N)
+Added Component: Designator=R?(6-0805_N)
+Added Component: Designator=R?(6-0805_N)
+Added Component: Designator=R?(6-0805_N)
+Added Component: Designator=R?(6-0805_N)
+Added Pin To Net: NetName=GND Pin=P?-1
+Added Pin To Net: NetName=VCC Pin=P?-2
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=VCC Pin=R?-1
+Added Pin To Net: NetName=VCC Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Pin To Net: NetName=VCC Pin=R?-2
+Added Pin To Net: NetName=BOOT_ESP Pin=IC1-18
+Added Pin To Net: NetName=BOOT_ESP Pin=R?-1
+Added Pin To Net: NetName=BOOT_ESP Pin=R?-2
+Added Pin To Net: NetName=BOOT_ESP Pin=U1-20
+Added Net: Name=BOOT_ESP
+Added Pin To Net: NetName=NetIC1_16 Pin=IC1-16
+Added Pin To Net: NetName=NetIC1_16 Pin=R?-2
+Added Net: Name=NetIC1_16
+Added Pin To Net: NetName=NetIC1_17 Pin=IC1-17
+Added Pin To Net: NetName=NetIC1_17 Pin=R?-2
+Added Net: Name=NetIC1_17
+Added Pin To Net: NetName=NRST Pin=P?-3
+Added Pin To Net: NetName=NRST Pin=R?-1
+Added Pin To Net: NetName=NRST Pin=U1-7
+Added Net: Name=NRST
+Added Pin To Net: NetName=SWCLK Pin=P?-5
+Added Pin To Net: NetName=SWCLK Pin=U1-37
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=P?-4
+Added Pin To Net: NetName=SWDIO Pin=U1-34
+Added Net: Name=SWDIO
+Added Member To Class: ClassName=Esquematico Member=Component P? Header 5
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3

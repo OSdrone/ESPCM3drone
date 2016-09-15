@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=VCC Pin=P?-1
+Removed Pin From Net: NetName=SWDIO Pin=P?-2
+Removed Pin From Net: NetName=SWCLK Pin=P?-3
+Removed Pin From Net: NetName=GND Pin=P?-4
+Removed Member From Class: ClassName=Esquematico Member=P?
+Removed Member From Class: ClassName=Potencia Member=P?
+Removed Member From Class: ClassName=Potencia Member=R?
+Change Component Designator: OldDesignator=R? NewDesignator=R21
+Change Component Designator: OldDesignator=R? NewDesignator=R22
+Change Component Designator: OldDesignator=R? NewDesignator=R23
+Change Component Designator: OldDesignator=R? NewDesignator=R24
+Change Component Designator: OldDesignator=R? NewDesignator=R25
+Added Component: Designator=P9(HDR1X4)
+Added Pin To Net: NetName=VCC Pin=P9-1
+Added Pin To Net: NetName=SWDIO Pin=P9-2
+Added Pin To Net: NetName=SWCLK Pin=P9-3
+Added Pin To Net: NetName=GND Pin=P9-4
+Change Net Name : Old Net Name=NetR?_1 New Net Name=NetR21_1
+Added Member To Class: ClassName=Esquematico Member=Component P9 Header 4
+Added Member To Class: ClassName=Esquematico Member=Component R21 Res3
+Added Member To Class: ClassName=Esquematico Member=Component R22 Res3
+Added Member To Class: ClassName=Esquematico Member=Component R23 Res3
+Added Member To Class: ClassName=Esquematico Member=Component R25 Res3
+Added Room: Name=Esquematico
+Added Room: Name=Potencia

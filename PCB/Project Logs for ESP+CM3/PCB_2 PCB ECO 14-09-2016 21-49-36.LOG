@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=RST Pin=U1-40
+Added Component: Designator=P?(HDR2X4_CEN)
+Added Pin To Net: NetName=RST Pin=U1-2
+Added Pin To Net: NetName=GPIO0 Pin=P?-5
+Added Pin To Net: NetName=GPIO0 Pin=U1-25
+Added Net: Name=GPIO0
+Added Pin To Net: NetName=GPIO1 Pin=P?-6
+Added Pin To Net: NetName=GPIO1 Pin=U1-26
+Added Net: Name=GPIO1
+Added Pin To Net: NetName=GPIO2 Pin=P?-7
+Added Pin To Net: NetName=GPIO2 Pin=U1-27
+Added Net: Name=GPIO2
+Added Pin To Net: NetName=GPIO3 Pin=P?-8
+Added Pin To Net: NetName=GPIO3 Pin=U1-28
+Added Net: Name=GPIO3
+Added Member To Class: ClassName=Esquematico Member=Component P? Header 4X2A

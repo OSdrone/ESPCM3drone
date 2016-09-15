@@ -1,0 +1,32 @@
+Removed Member From Class: ClassName=Potencia Member=P?
+Removed Member From Class: ClassName=Potencia Member=R?
+Added Component: Designator=Q?(SOT23-3)
+Added Component: Designator=Q?(SOT23-3)
+Added Component: Designator=R?(6-0805_N)
+Added Component: Designator=R?(6-0805_N)
+Added Component: Designator=R?(6-0805_N)
+Added Pin To Net: NetName=GND Pin=Q?-2
+Added Pin To Net: NetName=VCC Pin=Q?-2
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Pin To Net: NetName=BOOT_0 Pin=Q?-3
+Added Pin To Net: NetName=BOOT_0 Pin=R?-1
+Added Pin To Net: NetName=BOOT_0 Pin=U1-44
+Added Net: Name=BOOT_0
+Added Pin To Net: NetName=NetQ?_1 Pin=Q?-1
+Added Pin To Net: NetName=NetQ?_1 Pin=R?-1
+Added Net: Name=NetQ?_1
+Added Pin To Net: NetName=NetQ?_3 Pin=Q?-3
+Added Pin To Net: NetName=NetQ?_3 Pin=R?-2
+Added Net: Name=NetQ?_3
+Added Pin To Net: NetName=VCC_USB Pin=R?-1
+Added Pin To Net: NetName=VCC_USB Pin=USB1-1
+Added Net: Name=VCC_USB
+Added Member To Class: ClassName=Esquematico Member=Component Q? S8055
+Added Member To Class: ClassName=Esquematico Member=Component Q? S8050
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3

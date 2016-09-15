@@ -1,0 +1,27 @@
+Removed Member From Class: ClassName=Potencia Member=C1
+Removed Member From Class: ClassName=Potencia Member=C2
+Removed Member From Class: ClassName=Potencia Member=C3
+Removed Member From Class: ClassName=Potencia Member=C4
+Removed Member From Class: ClassName=Esquematico Member=C5
+Removed Member From Class: ClassName=Esquematico Member=C6
+Removed Member From Class: ClassName=Esquematico Member=C7
+Removed Member From Class: ClassName=Esquematico Member=U4
+Added Component: Designator=R?(6-0805_N)
+Added Component: Designator=R?(6-0805_N)
+Added Pin To Net: NetName=VCC Pin=IC1-8
+Added Pin To Net: NetName=VCC Pin=R?-2
+Added Pin To Net: NetName=VCC Pin=R?-2
+Added Pin To Net: NetName=NetIC1_1 Pin=IC1-1
+Added Pin To Net: NetName=NetIC1_1 Pin=R?-1
+Added Net: Name=NetIC1_1
+Added Pin To Net: NetName=NetIC1_3 Pin=IC1-3
+Added Pin To Net: NetName=NetIC1_3 Pin=R?-1
+Added Net: Name=NetIC1_3
+Added Pin To Net: NetName=RX Pin=IC1-22
+Added Pin To Net: NetName=RX Pin=U1-13
+Added Net: Name=RX
+Added Pin To Net: NetName=TX Pin=IC1-21
+Added Pin To Net: NetName=TX Pin=U1-12
+Added Net: Name=TX
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
+Added Member To Class: ClassName=Esquematico Member=Component R? Res3
