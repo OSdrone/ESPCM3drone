@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=VCC_USB Pin=Q9-1
+Removed Pin From Net: NetName=BOOT_0 Pin=Q9-2
+Removed Pin From Net: NetName=VCC Pin=Q9-3
+Removed Pin From Net: NetName=GND Pin=R26-2
+Change Component DesignItemId : Designator=Q9 Old DesignItemId=SI2306DS New DesignItemId=S8055
+Change Component Comment : Designator=Q1 Old Comment=MOSFET-N New Comment=AO3406
+Change Component Comment : Designator=Q2 Old Comment=MOSFET-N New Comment=AO3406
+Change Component Comment : Designator=Q3 Old Comment=MOSFET-N New Comment=AO3406
+Change Component Comment : Designator=Q4 Old Comment=MOSFET-N New Comment=AO3406
+Change Component Comment : Designator=Q5 Old Comment=MOSFET-N New Comment=AO3406
+Change Component Comment : Designator=Q6 Old Comment=MOSFET-N New Comment=AO3406
+Change Component Comment : Designator=Q7 Old Comment=MOSFET-N New Comment=AO3406
+Change Component Comment : Designator=Q8 Old Comment=MOSFET-N New Comment=AO3406
+Change Component Comment : Designator=Q9 Old Comment=SI2306DS New Comment=S8055
+Change Component Description : Designator=Q9 Old Description= New Description=PNP SMD General Purpose Amplifier
+Added Component: Designator=Q10(SOT23-3)
+Added Component: Designator=R35(6-0805_N)
+Added Pin To Net: NetName=VCC Pin=Q9-2
+Added Pin To Net: NetName=BOOT_0 Pin=Q9-3
+Added Pin To Net: NetName=GND Pin=Q10-2
+Added Pin To Net: NetName=NetQ9_1 Pin=Q9-1
+Added Pin To Net: NetName=NetQ9_1 Pin=R35-1
+Added Net: Name=NetQ9_1
+Added Pin To Net: NetName=NetQ10_1 Pin=Q10-1
+Added Pin To Net: NetName=NetQ10_1 Pin=R26-2
+Added Net: Name=NetQ10_1
+Added Pin To Net: NetName=NetQ10_3 Pin=Q10-3
+Added Pin To Net: NetName=NetQ10_3 Pin=R35-2
+Added Net: Name=NetQ10_3
+Added Member To Class: ClassName=Esquematico Member=Component Q10 S8050
+Added Member To Class: ClassName=Esquematico Member=Component R35 Res3
