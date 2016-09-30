@@ -1,0 +1,6 @@
+Added Component: Designator=R36(6-0805_N)
+Added Pin To Net: NetName=VCC Pin=R36-2
+Added Pin To Net: NetName=NetR36_1 Pin=R36-1
+Added Pin To Net: NetName=NetR36_1 Pin=U1-1
+Added Net: Name=NetR36_1
+Added Member To Class: ClassName=Esquematico Member=Component R36 Res3

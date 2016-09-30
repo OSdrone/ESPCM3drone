@@ -33,27 +33,19 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h"
 #include "cmsis_os.h"
+#include "adc.h"
+#include "i2c.h"
+#include "iwdg.h"
+#include "tim.h"
+#include "usart.h"
 #include "usb_device.h"
+#include "gpio.h"
 
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
-ADC_HandleTypeDef hadc1;
-
-I2C_HandleTypeDef hi2c2;
-
-IWDG_HandleTypeDef hiwdg;
-
-TIM_HandleTypeDef htim3;
-TIM_HandleTypeDef htim4;
-
-UART_HandleTypeDef huart2;
-
-WWDG_HandleTypeDef hwwdg;
-
-osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
@@ -63,18 +55,7 @@ osThreadId defaultTaskHandle;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void Error_Handler(void);
-static void MX_GPIO_Init(void);
-static void MX_ADC1_Init(void);
-static void MX_I2C2_Init(void);
-static void MX_IWDG_Init(void);
-static void MX_TIM3_Init(void);
-static void MX_TIM4_Init(void);
-static void MX_USART2_UART_Init(void);
-static void MX_WWDG_Init(void);
-void StartDefaultTask(void const * argument);
-
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
-                
+void MX_FREERTOS_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
@@ -108,37 +89,13 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM4_Init();
   MX_USART2_UART_Init();
-  MX_WWDG_Init();
 
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
-  /* USER CODE BEGIN RTOS_MUTEX */
-  /* add mutexes, ... */
-  /* USER CODE END RTOS_MUTEX */
-
-  /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
-  /* USER CODE END RTOS_SEMAPHORES */
-
-  /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
-  /* USER CODE END RTOS_TIMERS */
-
-  /* Create the thread(s) */
-  /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
-
-  /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
-
-  /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
-  /* USER CODE END RTOS_QUEUES */
- 
+  /* Call init function for freertos objects (in freertos.c) */
+  MX_FREERTOS_Init();
 
   /* Start scheduler */
   osKernelStart();
@@ -206,278 +163,9 @@ void SystemClock_Config(void)
   HAL_NVIC_SetPriority(SysTick_IRQn, 15, 0);
 }
 
-/* ADC1 init function */
-static void MX_ADC1_Init(void)
-{
-
-  ADC_ChannelConfTypeDef sConfig;
-
-    /**Common config 
-    */
-  hadc1.Instance = ADC1;
-  hadc1.Init.ScanConvMode = ADC_SCAN_DISABLE;
-  hadc1.Init.ContinuousConvMode = DISABLE;
-  hadc1.Init.DiscontinuousConvMode = DISABLE;
-  hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
-  hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 1;
-  if (HAL_ADC_Init(&hadc1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-    /**Configure Regular Channel 
-    */
-  sConfig.Channel = ADC_CHANNEL_4;
-  sConfig.Rank = 1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-}
-
-/* I2C2 init function */
-static void MX_I2C2_Init(void)
-{
-
-  hi2c2.Instance = I2C2;
-  hi2c2.Init.ClockSpeed = 100000;
-  hi2c2.Init.DutyCycle = I2C_DUTYCYCLE_2;
-  hi2c2.Init.OwnAddress1 = 0;
-  hi2c2.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-  hi2c2.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-  hi2c2.Init.OwnAddress2 = 0;
-  hi2c2.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-  hi2c2.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-  if (HAL_I2C_Init(&hi2c2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-}
-
-/* IWDG init function */
-static void MX_IWDG_Init(void)
-{
-
-  hiwdg.Instance = IWDG;
-  hiwdg.Init.Prescaler = IWDG_PRESCALER_4;
-  hiwdg.Init.Reload = 4095;
-  if (HAL_IWDG_Init(&hiwdg) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-}
-
-/* TIM3 init function */
-static void MX_TIM3_Init(void)
-{
-
-  TIM_MasterConfigTypeDef sMasterConfig;
-  TIM_OC_InitTypeDef sConfigOC;
-
-  htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 0;
-  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 0;
-  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  HAL_TIM_MspPostInit(&htim3);
-
-}
-
-/* TIM4 init function */
-static void MX_TIM4_Init(void)
-{
-
-  TIM_MasterConfigTypeDef sMasterConfig;
-  TIM_OC_InitTypeDef sConfigOC;
-
-  htim4.Instance = TIM4;
-  htim4.Init.Prescaler = 0;
-  htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim4.Init.Period = 0;
-  htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
-  if (HAL_TIM_PWM_Init(&htim4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
-  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
-  if (HAL_TIMEx_MasterConfigSynchronization(&htim4, &sMasterConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  sConfigOC.OCMode = TIM_OCMODE_PWM1;
-  sConfigOC.Pulse = 0;
-  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  HAL_TIM_MspPostInit(&htim4);
-
-}
-
-/* USART2 init function */
-static void MX_USART2_UART_Init(void)
-{
-
-  huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
-  huart2.Init.WordLength = UART_WORDLENGTH_8B;
-  huart2.Init.StopBits = UART_STOPBITS_1;
-  huart2.Init.Parity = UART_PARITY_NONE;
-  huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-  if (HAL_UART_Init(&huart2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-}
-
-/* WWDG init function */
-static void MX_WWDG_Init(void)
-{
-
-  hwwdg.Instance = WWDG;
-  hwwdg.Init.Prescaler = WWDG_PRESCALER_1;
-  hwwdg.Init.Window = 64;
-  hwwdg.Init.Counter = 64;
-  if (HAL_WWDG_Init(&hwwdg) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-}
-
-/** Configure pins as 
-        * Analog 
-        * Input 
-        * Output
-        * EVENT_OUT
-        * EXTI
-*/
-static void MX_GPIO_Init(void)
-{
-
-  GPIO_InitTypeDef GPIO_InitStruct;
-
-  /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0|GPIO_PIN_5|GPIO_PIN_8|GPIO_PIN_9 
-                          |GPIO_PIN_10, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : PC13 */
-  GPIO_InitStruct.Pin = GPIO_PIN_13;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PA0 PA5 PA8 PA9 
-                           PA10 */
-  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_5|GPIO_PIN_8|GPIO_PIN_9 
-                          |GPIO_PIN_10;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PB12 PB13 PB14 PB15 */
-  GPIO_InitStruct.Pin = GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-}
-
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
-
-/* StartDefaultTask function */
-void StartDefaultTask(void const * argument)
-{
-  /* init code for USB_DEVICE */
-  MX_USB_DEVICE_Init();
-
-  /* USER CODE BEGIN 5 */
-  /* Infinite loop */
-  for(;;)
-  {
-    osDelay(1);
-  }
-  /* USER CODE END 5 */ 
-}
 
 /**
   * @brief  This function is executed in case of error occurrence.

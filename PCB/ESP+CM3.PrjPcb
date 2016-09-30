@@ -209,7 +209,7 @@ GenerateClassCluster=0
 DocumentUniqueId=MLSYGBFS
 
 [Document11]
-DocumentPath=PCB_2.PcbDoc
+DocumentPath=PCB_Final.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -248,6 +248,10 @@ DItemRevisionGUID=
 
 [GeneratedDocument2]
 DocumentPath=Project Outputs for ESP+CM3\Design Rule Check - PCB_2.html
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for ESP+CM3\Design Rule Check - PCB_Final.html
 DItemRevisionGUID=
 
 [Configuration1]
