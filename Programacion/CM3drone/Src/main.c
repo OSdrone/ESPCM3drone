@@ -38,7 +38,7 @@
 #include "iwdg.h"
 #include "tim.h"
 #include "usart.h"
-#include "usb_device.h"
+//#include "usb_device.h" //TODO USB desactivado
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
@@ -55,7 +55,7 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void Error_Handler(void);
-void MX_FREERTOS_Init(void);
+//void MX_FREERTOS_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
@@ -94,8 +94,17 @@ int main(void)
 
   /* USER CODE END 2 */
 
+  //Creamos las tareas relojes y semaforos
+  //void CONTROL_TASK();
+  void SENSOR_TASK();
+  void AHRS_TASK();
+  void COMUNICACION_TASK();
+  void COORDINADOR_TASK();
+
+
   /* Call init function for freertos objects (in freertos.c) */
-  MX_FREERTOS_Init();
+  //MX_FREERTOS_Init();
+
 
   /* Start scheduler */
   osKernelStart();
@@ -209,5 +218,7 @@ void assert_failed(uint8_t* file, uint32_t line)
 /**
   * @}
 */ 
+
+
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
