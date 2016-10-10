@@ -42,6 +42,26 @@
 
 /* Variables -----------------------------------------------------------------*/
 osThreadId defaultTaskHandle;
+osThreadId CONTROL_TASKHandle;
+osThreadId IMU_TASKHandle;
+osThreadId AHRS_TASKHandle;
+osThreadId COORDINADOR_TASHandle;
+osThreadId COMPASS_TASKHandle;
+osThreadId ALTURA_TASKHandle;
+osTimerId CONTROL_TIMERHandle;
+osTimerId IMU_TIMERHandle;
+osTimerId COORDINADOR_TIMERHandle;
+osTimerId AHRS_TIMERHandle;
+osTimerId COMPASS_TIMERHandle;
+osTimerId ALTURA_TIMERHandle;
+osMutexId I2C_2_MUTEXHandle;
+osMutexId UART_MUTEXHandle;
+osSemaphoreId CONTROL_SMPHRHandle;
+osSemaphoreId IMU_SMPHRHandle;
+osSemaphoreId COMPASS_SMPHRHandle;
+osSemaphoreId ALTURA_SMPHRHandle;
+osSemaphoreId COORDINADOR_SMPHRHandle;
+osSemaphoreId AHRS_SMPHRHandle;
 
 /* USER CODE BEGIN Variables */
 
@@ -49,6 +69,18 @@ osThreadId defaultTaskHandle;
 
 /* Function prototypes -------------------------------------------------------*/
 void StartDefaultTask(void const * argument);
+extern void CONTROL_TASK_FCN(void const * argument);
+extern void IMU_TASK_FCN(void const * argument);
+extern void AHRS_TASK_FCN(void const * argument);
+void COORDINADOR_TASK_FCN(void const * argument);
+void COMPASS_TASK_FCN(void const * argument);
+void ALTURA_TTASK_FCN(void const * argument);
+void CONTROL_TIMER_FCN(void const * argument);
+void IMU_TIMER_FCN(void const * argument);
+void COORDINADOR_TIMER_FCN(void const * argument);
+void AHRS_TIMER_FCN(void const * argument);
+void COMPASS_TIMER_FCN(void const * argument);
+void ALTURA_TIMER_FCN(void const * argument);
 
 extern void MX_USB_DEVICE_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -66,13 +98,72 @@ void MX_FREERTOS_Init(void) {
        
   /* USER CODE END Init */
 
+  /* Create the mutex(es) */
+  /* definition and creation of I2C_2_MUTEX */
+  osMutexDef(I2C_2_MUTEX);
+  I2C_2_MUTEXHandle = osMutexCreate(osMutex(I2C_2_MUTEX));
+
+  /* definition and creation of UART_MUTEX */
+  osMutexDef(UART_MUTEX);
+  UART_MUTEXHandle = osMutexCreate(osMutex(UART_MUTEX));
+
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
   /* USER CODE END RTOS_MUTEX */
 
+  /* Create the semaphores(s) */
+  /* definition and creation of CONTROL_SMPHR */
+  osSemaphoreDef(CONTROL_SMPHR);
+  CONTROL_SMPHRHandle = osSemaphoreCreate(osSemaphore(CONTROL_SMPHR), 1);
+
+  /* definition and creation of IMU_SMPHR */
+  osSemaphoreDef(IMU_SMPHR);
+  IMU_SMPHRHandle = osSemaphoreCreate(osSemaphore(IMU_SMPHR), 1);
+
+  /* definition and creation of COMPASS_SMPHR */
+  osSemaphoreDef(COMPASS_SMPHR);
+  COMPASS_SMPHRHandle = osSemaphoreCreate(osSemaphore(COMPASS_SMPHR), 1);
+
+  /* definition and creation of ALTURA_SMPHR */
+  osSemaphoreDef(ALTURA_SMPHR);
+  ALTURA_SMPHRHandle = osSemaphoreCreate(osSemaphore(ALTURA_SMPHR), 1);
+
+  /* definition and creation of COORDINADOR_SMPHR */
+  osSemaphoreDef(COORDINADOR_SMPHR);
+  COORDINADOR_SMPHRHandle = osSemaphoreCreate(osSemaphore(COORDINADOR_SMPHR), 1);
+
+  /* definition and creation of AHRS_SMPHR */
+  osSemaphoreDef(AHRS_SMPHR);
+  AHRS_SMPHRHandle = osSemaphoreCreate(osSemaphore(AHRS_SMPHR), 1);
+
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
   /* USER CODE END RTOS_SEMAPHORES */
+
+  /* Create the timer(s) */
+  /* definition and creation of CONTROL_TIMER */
+  osTimerDef(CONTROL_TIMER, CONTROL_TIMER_FCN);
+  CONTROL_TIMERHandle = osTimerCreate(osTimer(CONTROL_TIMER), osTimerPeriodic, NULL);
+
+  /* definition and creation of IMU_TIMER */
+  osTimerDef(IMU_TIMER, IMU_TIMER_FCN);
+  IMU_TIMERHandle = osTimerCreate(osTimer(IMU_TIMER), osTimerPeriodic, NULL);
+
+  /* definition and creation of COORDINADOR_TIMER */
+  osTimerDef(COORDINADOR_TIMER, COORDINADOR_TIMER_FCN);
+  COORDINADOR_TIMERHandle = osTimerCreate(osTimer(COORDINADOR_TIMER), osTimerPeriodic, NULL);
+
+  /* definition and creation of AHRS_TIMER */
+  osTimerDef(AHRS_TIMER, AHRS_TIMER_FCN);
+  AHRS_TIMERHandle = osTimerCreate(osTimer(AHRS_TIMER), osTimerPeriodic, NULL);
+
+  /* definition and creation of COMPASS_TIMER */
+  osTimerDef(COMPASS_TIMER, COMPASS_TIMER_FCN);
+  COMPASS_TIMERHandle = osTimerCreate(osTimer(COMPASS_TIMER), osTimerPeriodic, NULL);
+
+  /* definition and creation of ALTURA_TIMER */
+  osTimerDef(ALTURA_TIMER, ALTURA_TIMER_FCN);
+  ALTURA_TIMERHandle = osTimerCreate(osTimer(ALTURA_TIMER), osTimerPeriodic, NULL);
 
   /* USER CODE BEGIN RTOS_TIMERS */
   /* start timers, add new ones, ... */
@@ -82,6 +173,30 @@ void MX_FREERTOS_Init(void) {
   /* definition and creation of defaultTask */
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+
+  /* definition and creation of CONTROL_TASK */
+  osThreadDef(CONTROL_TASK, CONTROL_TASK_FCN, osPriorityAboveNormal, 0, 128);
+  CONTROL_TASKHandle = osThreadCreate(osThread(CONTROL_TASK), NULL);
+
+  /* definition and creation of IMU_TASK */
+  osThreadDef(IMU_TASK, IMU_TASK_FCN, osPriorityRealtime, 0, 128);
+  IMU_TASKHandle = osThreadCreate(osThread(IMU_TASK), NULL);
+
+  /* definition and creation of AHRS_TASK */
+  osThreadDef(AHRS_TASK, AHRS_TASK_FCN, osPriorityHigh, 0, 128);
+  AHRS_TASKHandle = osThreadCreate(osThread(AHRS_TASK), NULL);
+
+  /* definition and creation of COORDINADOR_TAS */
+  osThreadDef(COORDINADOR_TAS, COORDINADOR_TASK_FCN, osPriorityNormal, 0, 128);
+  COORDINADOR_TASHandle = osThreadCreate(osThread(COORDINADOR_TAS), NULL);
+
+  /* definition and creation of COMPASS_TASK */
+  osThreadDef(COMPASS_TASK, COMPASS_TASK_FCN, osPriorityIdle, 0, 128);
+  COMPASS_TASKHandle = osThreadCreate(osThread(COMPASS_TASK), NULL);
+
+  /* definition and creation of ALTURA_TASK */
+  osThreadDef(ALTURA_TASK, ALTURA_TTASK_FCN, osPriorityIdle, 0, 128);
+  ALTURA_TASKHandle = osThreadCreate(osThread(ALTURA_TASK), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -105,6 +220,90 @@ void StartDefaultTask(void const * argument)
     osDelay(1);
   }
   /* USER CODE END StartDefaultTask */
+}
+
+/* COORDINADOR_TASK_FCN function */
+void COORDINADOR_TASK_FCN(void const * argument)
+{
+  /* USER CODE BEGIN COORDINADOR_TASK_FCN */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END COORDINADOR_TASK_FCN */
+}
+
+/* COMPASS_TASK_FCN function */
+void COMPASS_TASK_FCN(void const * argument)
+{
+  /* USER CODE BEGIN COMPASS_TASK_FCN */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END COMPASS_TASK_FCN */
+}
+
+/* ALTURA_TTASK_FCN function */
+void ALTURA_TTASK_FCN(void const * argument)
+{
+  /* USER CODE BEGIN ALTURA_TTASK_FCN */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END ALTURA_TTASK_FCN */
+}
+
+/* CONTROL_TIMER_FCN function */
+void CONTROL_TIMER_FCN(void const * argument)
+{
+  /* USER CODE BEGIN CONTROL_TIMER_FCN */
+  
+  /* USER CODE END CONTROL_TIMER_FCN */
+}
+
+/* IMU_TIMER_FCN function */
+void IMU_TIMER_FCN(void const * argument)
+{
+  /* USER CODE BEGIN IMU_TIMER_FCN */
+  
+  /* USER CODE END IMU_TIMER_FCN */
+}
+
+/* COORDINADOR_TIMER_FCN function */
+void COORDINADOR_TIMER_FCN(void const * argument)
+{
+  /* USER CODE BEGIN COORDINADOR_TIMER_FCN */
+  
+  /* USER CODE END COORDINADOR_TIMER_FCN */
+}
+
+/* AHRS_TIMER_FCN function */
+void AHRS_TIMER_FCN(void const * argument)
+{
+  /* USER CODE BEGIN AHRS_TIMER_FCN */
+  
+  /* USER CODE END AHRS_TIMER_FCN */
+}
+
+/* COMPASS_TIMER_FCN function */
+void COMPASS_TIMER_FCN(void const * argument)
+{
+  /* USER CODE BEGIN COMPASS_TIMER_FCN */
+  
+  /* USER CODE END COMPASS_TIMER_FCN */
+}
+
+/* ALTURA_TIMER_FCN function */
+void ALTURA_TIMER_FCN(void const * argument)
+{
+  /* USER CODE BEGIN ALTURA_TIMER_FCN */
+  
+  /* USER CODE END ALTURA_TIMER_FCN */
 }
 
 /* USER CODE BEGIN Application */

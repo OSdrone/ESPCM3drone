@@ -34,11 +34,13 @@
 #include "stm32f1xx_hal.h"
 #include "cmsis_os.h"
 #include "adc.h"
+#include "crc.h"
+#include "dma.h"
 #include "i2c.h"
 #include "iwdg.h"
 #include "tim.h"
 #include "usart.h"
-//#include "usb_device.h" //TODO USB desactivado
+#include "usb_device.h"
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
@@ -55,7 +57,7 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void Error_Handler(void);
-//void MX_FREERTOS_Init(void);
+void MX_FREERTOS_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
@@ -83,28 +85,21 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_ADC1_Init();
   MX_I2C2_Init();
   MX_IWDG_Init();
   MX_TIM3_Init();
   MX_TIM4_Init();
   MX_USART2_UART_Init();
+  MX_CRC_Init();
 
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
 
-  //Creamos las tareas relojes y semaforos
-  //void CONTROL_TASK();
-  void SENSOR_TASK();
-  void AHRS_TASK();
-  void COMUNICACION_TASK();
-  void COORDINADOR_TASK();
-
-
   /* Call init function for freertos objects (in freertos.c) */
-  //MX_FREERTOS_Init();
-
+  MX_FREERTOS_Init();
 
   /* Start scheduler */
   osKernelStart();
@@ -218,7 +213,5 @@ void assert_failed(uint8_t* file, uint32_t line)
 /**
   * @}
 */ 
-
-
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

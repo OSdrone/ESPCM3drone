@@ -1,7 +1,8 @@
 /**
   ******************************************************************************
-  * File Name          : mxconstants.h
-  * Description        : This file contains the common defines of the application
+  * File Name          : dma.c
+  * Description        : This file provides code for the configuration
+  *                      of all the requested memory to memory DMA transfers.
   ******************************************************************************
   *
   * COPYRIGHT(c) 2016 STMicroelectronics
@@ -30,74 +31,55 @@
   *
   ******************************************************************************
   */
-/* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MXCONSTANT_H
-#define __MXCONSTANT_H
-  /* Includes ------------------------------------------------------------------*/
+/* Includes ------------------------------------------------------------------*/
+#include "dma.h"
 
-/* USER CODE BEGIN Includes */
+/* USER CODE BEGIN 0 */
 
-/* USER CODE END Includes */
+/* USER CODE END 0 */
 
-/* Private define ------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/* Configure DMA                                                              */
+/*----------------------------------------------------------------------------*/
 
-#define RST_Pin GPIO_PIN_13
-#define RST_GPIO_Port GPIOC
-#define STATE_Pin GPIO_PIN_0
-#define STATE_GPIO_Port GPIOA
-#define TX_Pin GPIO_PIN_2
-#define TX_GPIO_Port GPIOA
-#define RX_Pin GPIO_PIN_3
-#define RX_GPIO_Port GPIOA
-#define Sensor_VCC_Pin GPIO_PIN_4
-#define Sensor_VCC_GPIO_Port GPIOA
-#define BOOT_ESP_Pin GPIO_PIN_5
-#define BOOT_ESP_GPIO_Port GPIOA
-#define PWM0_Pin GPIO_PIN_6
-#define PWM0_GPIO_Port GPIOA
-#define PWM1_Pin GPIO_PIN_7
-#define PWM1_GPIO_Port GPIOA
-#define PWM2_Pin GPIO_PIN_0
-#define PWM2_GPIO_Port GPIOB
-#define PWM3_Pin GPIO_PIN_1
-#define PWM3_GPIO_Port GPIOB
-#define SCL_Pin GPIO_PIN_10
-#define SCL_GPIO_Port GPIOB
-#define SDA_Pin GPIO_PIN_11
-#define SDA_GPIO_Port GPIOB
-#define GPIO0_Pin GPIO_PIN_12
-#define GPIO0_GPIO_Port GPIOB
-#define GPIO1_Pin GPIO_PIN_13
-#define GPIO1_GPIO_Port GPIOB
-#define GPIO2_Pin GPIO_PIN_14
-#define GPIO2_GPIO_Port GPIOB
-#define GPIO3_Pin GPIO_PIN_15
-#define GPIO3_GPIO_Port GPIOB
-#define GPIO4_Pin GPIO_PIN_8
-#define GPIO4_GPIO_Port GPIOA
-#define GPIO5_Pin GPIO_PIN_9
-#define GPIO5_GPIO_Port GPIOA
-#define GPIO6_Pin GPIO_PIN_10
-#define GPIO6_GPIO_Port GPIOA
-#define PWM4_Pin GPIO_PIN_6
-#define PWM4_GPIO_Port GPIOB
-#define PWM5_Pin GPIO_PIN_7
-#define PWM5_GPIO_Port GPIOB
-#define PWM6_Pin GPIO_PIN_8
-#define PWM6_GPIO_Port GPIOB
-#define PWM7_Pin GPIO_PIN_9
-#define PWM7_GPIO_Port GPIOB
-/* USER CODE BEGIN Private defines */
+/* USER CODE BEGIN 1 */
 
-/* USER CODE END Private defines */
+/* USER CODE END 1 */
+
+/** 
+  * Enable DMA controller clock
+  */
+void MX_DMA_Init(void) 
+{
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel4_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel4_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel4_IRQn);
+  /* DMA1_Channel5_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel5_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel5_IRQn);
+  /* DMA1_Channel6_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel6_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel6_IRQn);
+  /* DMA1_Channel7_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel7_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel7_IRQn);
+
+}
+
+/* USER CODE BEGIN 2 */
+
+/* USER CODE END 2 */
 
 /**
   * @}
-  */ 
+  */
 
 /**
   * @}
-*/ 
+  */
 
-#endif /* __MXCONSTANT_H */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
