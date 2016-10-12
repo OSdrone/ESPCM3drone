@@ -1,0 +1,14 @@
+/*
+ * ServidoresVariables.c
+ *
+ *  Created on: 12 de oct. de 2016
+ *      Author: Ruben
+ */
+
+#include "ServidoresVariables.h"
+
+SemaphoreHandle_t TER;
+
+void IniciarServidoresVariables(){
+
+}

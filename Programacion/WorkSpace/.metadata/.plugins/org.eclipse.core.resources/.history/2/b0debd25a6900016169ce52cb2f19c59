@@ -1,0 +1,15 @@
+/*
+ * ServidoresVariables.c
+ *
+ *  Created on: 12 de oct. de 2016
+ *      Author: Ruben
+ */
+
+#include "ServidoresVariables.h"
+
+SemaphoreHandle_t MutexVariablesEstado_Q16;
+//StaticSemaphore_t MutexVariablesEstado_Q16_STATIC;
+
+void IniciarServidoresVariables(){
+	MutexVariablesEstado_Q16 = xSemaphoreCreateMutex();
+}

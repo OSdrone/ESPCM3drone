@@ -106,6 +106,7 @@
 #define configUSE_16_BIT_TICKS                   0
 #define configUSE_MUTEXES                        1
 #define configQUEUE_REGISTRY_SIZE                8
+//#define configSUPPORT_STATIC_ALLOCATION			 1
 
 /* Co-routine definitions. */
 #define configUSE_CO_ROUTINES                    0

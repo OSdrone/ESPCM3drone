@@ -1,0 +1,16 @@
+/*
+ * ServidoresVariables.c
+ *
+ *  Created on: 12 de oct. de 2016
+ *      Author: Ruben
+ */
+
+#include "ServidoresVariables.h"
+#include "semphr.h"
+#include "FreeRTOS.h"
+
+SemaphoreHandle_t xSemaphore;
+
+void IniciarServidoresVariables(){
+
+}
