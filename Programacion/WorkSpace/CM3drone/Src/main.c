@@ -44,6 +44,7 @@
 #include "gpio.h"
 
 #include "Funciones/Funciones_RTOS.h"
+#include "Dispositivos/IMU.h"
 
 /* USER CODE BEGIN Includes */
 

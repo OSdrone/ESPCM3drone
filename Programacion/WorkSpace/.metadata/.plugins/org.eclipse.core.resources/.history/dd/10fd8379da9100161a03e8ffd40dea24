@@ -1,0 +1,78 @@
+/*
+ * ServidoresVariables.c
+ *
+ *  Created on: 12 de oct. de 2016
+ *      Author: Ruben
+ */
+
+#include "ServidoresVariables.h"
+
+/*  FILA  */
+static volatile uint8_t IndiceEscrituraIMU = 0; //Indica Posicion a rellenar
+static volatile uint8_t IndiceLecturaIMU = 0; //Debe leerse hasta que sea igual al de Escritura
+
+static volatile Lecturas_IMU_9DOF[NUM_ELEMENTOS_BUFFER_IMU];
+
+/*  MUTEX  */
+osMutexId MutexVariablesEstado;
+osMutexId MutexAHRS;
+
+/*  VARIABLES ALMACENADAS  */
+static q15_t VariablesEstadoAlmacenadas[NUM_VAR_ESTADO];
+static tpAHRS AHRSAlmacenado;
+
+void IniciarServidoresVariables(){
+	MutexVariablesEstado = xSemaphoreCreateMutex();
+	MutexAHRS = xSemaphoreCreateMutex();
+}
+
+void LeerVariablesEstado_Q16(q15_t VariablesEstado[NUM_VAR_ESTADO]){
+
+	xSemaphoreTake(MutexVariablesEstado, portMAX_DELAY);
+	memcpy(VariablesEstado, VariablesEstadoAlmacenadas, sizeof(VariablesEstadoAlmacenadas));
+	xSemaphoreGive(MutexVariablesEstado);
+
+}
+
+void EscribirVariablesEstado_Q16(q15_t VariablesEstado[NUM_VAR_ESTADO]){
+
+	xSemaphoreTake(MutexVariablesEstado, portMAX_DELAY);
+	memcpy(VariablesEstadoAlmacenadas, VariablesEstado, sizeof(VariablesEstadoAlmacenadas));
+	xSemaphoreGive(MutexVariablesEstado);
+}
+
+uint8_t dirPilaLecturasIMU9DOF(){
+	return (&Lecturas_IMU_9DOF[IndiceEscrituraIMU]);
+}
+
+
+uint8_t LeerDatosIMUFIFO(q15_t Velocidad[NUM_EJES_CONTROL][NUM_ELEMENTOS_BUFFER_IMU],
+		 q15_t Aceleracion[NUM_EJES_CONTROL][NUM_ELEMENTOS_BUFFER_IMU],
+		 q15_t Magnetico[NUM_EJES_CONTROL][NUM_ELEMENTOS_BUFFER_IMU]){
+
+	uint8_t DatosLeidos = (IndiceEscrituraIMU - IndiceLecturaIMU);
+	IndiceLecturaIMU += DatosLeidos;
+
+	return (DatosLeidos);
+}
+
+
+void LeerVariableAHRS(tpAHRS* AHRS){
+	xSemaphoreTake(MutexAHRS, portMAX_DELAY);
+	memcpy(AHRS, &AHRSAlmacenado, sizeof(AHRSAlmacenado));
+	xSemaphoreGive(MutexAHRS);
+}
+
+void EscribirVariableAHRS(tpAHRS* AHRS){
+	xSemaphoreTake(MutexAHRS, portMAX_DELAY);
+	memcpy(&AHRSAlmacenado, AHRS, sizeof(AHRSAlmacenado));
+	xSemaphoreGive(MutexAHRS);
+}
+
+void LeerRollPitchYaw(q15_t Roll, q15_t Pitch, q15_t Yaw){
+	xSemaphoreTake(MutexAHRS, portMAX_DELAY);
+	Roll = AHRSAlmacenado.Roll;
+	Pitch = AHRSAlmacenado.Pitch;
+	Yaw = AHRSAlmacenado.Yaw;
+	xSemaphoreGive(MutexAHRS);
+}

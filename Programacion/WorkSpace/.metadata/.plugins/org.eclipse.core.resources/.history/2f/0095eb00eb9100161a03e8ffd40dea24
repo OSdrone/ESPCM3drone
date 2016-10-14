@@ -1,0 +1,101 @@
+/*
+ * ServidoresVariables.c
+ *
+ *  Created on: 12 de oct. de 2016
+ *      Author: Ruben
+ */
+
+#include "ServidoresVariables.h"
+
+/*  FILA  */
+static volatile uint8_t IndiceEscrituraIMU = 0; //Indica Posicion a rellenar
+static volatile uint8_t IndiceLecturaIMU = 0; //Debe leerse hasta que sea igual al de Escritura
+
+static tpLecturas_9DOF_IMU Lecturas_IMU_9DOF_FIFO[NUM_ELEMENTOS_BUFFER_IMU];
+
+/*  MUTEX  */
+osMutexId MutexVariablesEstado;
+osMutexId MutexAHRS;
+osMutexId MutexFIFO_Lectura9DOF;
+
+/*  VARIABLES ALMACENADAS  */
+static q15_t VariablesEstadoAlmacenadas[NUM_VAR_ESTADO];
+static tpAHRS AHRSAlmacenado;
+
+void IniciarServidoresVariables(){
+	MutexVariablesEstado = xSemaphoreCreateMutex();
+	MutexAHRS = xSemaphoreCreateMutex();
+	MutexFIFO_Lectura9DOF = xSemaphoreCreateMutex();
+}
+
+void LeerVariablesEstado_Q16(q15_t VariablesEstado[NUM_VAR_ESTADO]){
+
+	xSemaphoreTake(MutexVariablesEstado, portMAX_DELAY);
+	memcpy(VariablesEstado, VariablesEstadoAlmacenadas, sizeof(VariablesEstadoAlmacenadas));
+	xSemaphoreGive(MutexVariablesEstado);
+
+}
+
+void EscribirVariablesEstado_Q16(q15_t VariablesEstado[NUM_VAR_ESTADO]){
+
+	xSemaphoreTake(MutexVariablesEstado, portMAX_DELAY);
+	memcpy(VariablesEstadoAlmacenadas, VariablesEstado, sizeof(VariablesEstadoAlmacenadas));
+	xSemaphoreGive(MutexVariablesEstado);
+}
+
+tpLecturas_9DOF_IMU* dirFIFOLecturasIMU9DOF(){
+	return (&(Lecturas_IMU_9DOF_FIFO[IndiceEscrituraIMU]));
+}
+
+uint8_t* dirIndiceEscrituraFIFOLecturasIMU9DOF(){
+	return (&IndiceEscrituraIMU);
+}
+
+//TODO añadir Mutex para evitar conflictos
+uint8_t LeerDatosIMUFIFO(int16_t VelAngular_X[], int16_t VelAngular_Y[], int16_t VelAngular_Z[],
+		int16_t AcelAngular_X[], int16_t AcelAngular_Y[], int16_t AcelAngular_Z[],
+		int16_t MagAngular_X[], int16_t MagAngular_Y[], int16_t MagAngular_Z[],
+		int16_t Temp, uint8_t* DatosLeidos){
+
+	xSemaphoreTake(MutexFIFO_Lectura9DOF, portMAX_DELAY);
+
+	while(IndiceLecturaIMU < IndiceEscrituraIMU){
+		VelAngular_X[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.x_vel;
+		VelAngular_Y[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.y_vel;
+		VelAngular_Z[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.z_vel;
+
+		AcelAngular_X[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.x_acel;
+		AcelAngular_Y[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.y_acel;
+		AcelAngular_Z[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.z_acel;
+
+		MagAngular_X[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.x_mag;
+		MagAngular_Y[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.y_mag;
+		MagAngular_Z[*DatosLeidos] = Lecturas_IMU_9DOF_FIFO[IndiceLecturaIMU].Valor.z_mag;
+
+		IndiceLecturaIMU++;
+		(*DatosLeidos)++;
+	}
+
+	xSemaphoreGive(MutexFIFO_Lectura9DOF);
+}
+
+
+void LeerVariableAHRS(tpAHRS* AHRS){
+	xSemaphoreTake(MutexAHRS, portMAX_DELAY);
+	memcpy(AHRS, &AHRSAlmacenado, sizeof(AHRSAlmacenado));
+	xSemaphoreGive(MutexAHRS);
+}
+
+void EscribirVariableAHRS(tpAHRS* AHRS){
+	xSemaphoreTake(MutexAHRS, portMAX_DELAY);
+	memcpy(&AHRSAlmacenado, AHRS, sizeof(AHRSAlmacenado));
+	xSemaphoreGive(MutexAHRS);
+}
+
+void LeerRollPitchYaw(q15_t Roll, q15_t Pitch, q15_t Yaw){
+	xSemaphoreTake(MutexAHRS, portMAX_DELAY);
+	Roll = AHRSAlmacenado.Roll;
+	Pitch = AHRSAlmacenado.Pitch;
+	Yaw = AHRSAlmacenado.Yaw;
+	xSemaphoreGive(MutexAHRS);
+}

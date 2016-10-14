@@ -1,148 +1,167 @@
-23:14:23 **** Incremental Build of configuration Debug for project CM3drone ****
+14:16:54 **** Incremental Build of configuration Debug for project CM3drone ****
 make all 
+'Building file: ../Src/Funciones/FuncionAHRS.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3 -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/Funciones/FuncionAHRS.d" -MT"Src/Funciones/FuncionAHRS.o" -o "Src/Funciones/FuncionAHRS.o" "../Src/Funciones/FuncionAHRS.c"
+'Finished building: ../Src/Funciones/FuncionAHRS.c'
+' '
 'Building file: ../Src/Funciones/FuncionControl.c'
 'Invoking: MCU GCC Compiler'
-C:\Users\Ruben\Documents\GitHub\ESPCM3drone\Programacion\WorkSpace\CM3drone\Debug
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3 -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/Funciones/FuncionControl.d" -MT"Src/Funciones/FuncionControl.o" -o "Src/Funciones/FuncionControl.o" "../Src/Funciones/FuncionControl.c"
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3 -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/Funciones/FuncionControl.d" -MT"Src/Funciones/FuncionControl.o" -o "Src/Funciones/FuncionControl.o" "../Src/Funciones/FuncionControl.c"
 ../Src/Funciones/FuncionControl.c: In function 'CONTROL_TASK_FCN':
-../Src/Funciones/FuncionControl.c:19:25: warning: missing braces around initializer [-Wmissing-braces]
+../Src/Funciones/FuncionControl.c:17:25: warning: missing braces around initializer [-Wmissing-braces]
   q15_t Posicion[4][3] = { 0, 0, 0, 0};
                          ^
-../Src/Funciones/FuncionControl.c:19:25: note: (near initialization for 'Posicion')
-In file included from C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/stm32f1xx_hal_conf.h:306:0,
-                 from C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
+../Src/Funciones/FuncionControl.c:17:25: note: (near initialization for 'Posicion')
+In file included from C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc/stm32f1xx_hal_conf.h:306:0,
+                 from C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:48,
                  from ../Src/Funciones/Funciones_RTOS.h:39,
                  from ../Src/Funciones/FuncionControl.c:1:
-../Src/Funciones/FuncionControl.c:82:60: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:75:60: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_1, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                             ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:82:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:75:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_1, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:82:75: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:75:75: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_1, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                                            ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:82:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:75:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_1, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:82:90: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:75:90: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_1, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                                                           ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:82:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:75:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_1, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:83:60: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:76:60: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_2, (Accion[0]>>2 - Accion[1]>>2 - Accion[2]>>2 + Accion[3]>>2));
                                                             ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:83:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:76:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_2, (Accion[0]>>2 - Accion[1]>>2 - Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:83:75: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:76:75: warning: suggest parentheses around '-' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_2, (Accion[0]>>2 - Accion[1]>>2 - Accion[2]>>2 + Accion[3]>>2));
                                                                            ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:83:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:76:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_2, (Accion[0]>>2 - Accion[1]>>2 - Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:83:90: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:76:90: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_2, (Accion[0]>>2 - Accion[1]>>2 - Accion[2]>>2 + Accion[3]>>2));
                                                                                           ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:83:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:76:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_2, (Accion[0]>>2 - Accion[1]>>2 - Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:84:60: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:77:60: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_3, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                             ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:84:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:77:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_3, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:84:75: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:77:75: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_3, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                                            ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:84:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:77:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_3, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:84:90: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:77:90: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_3, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                                                           ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:84:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:77:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_3, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:85:60: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:78:60: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_4, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                             ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:85:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:78:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_4, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:85:75: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:78:75: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_4, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                                            ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:85:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:78:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_4, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:85:90: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
+../Src/Funciones/FuncionControl.c:78:90: warning: suggest parentheses around '+' inside '>>' [-Wparentheses]
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_4, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
                                                                                           ^
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:1381:79: note: in definition of macro '__HAL_TIM_SET_COMPARE'
  (*(__IO uint32_t *)(&((__HANDLE__).Instance->CCR1) + ((__CHANNEL__) >> 2)) = (__COMPARE__)) //Cambiado el . por el ->
                                                                                ^
-../Src/Funciones/FuncionControl.c:85:3: note: in expansion of macro '__HAL_TIM_SetCompare'
+../Src/Funciones/FuncionControl.c:78:3: note: in expansion of macro '__HAL_TIM_SetCompare'
    __HAL_TIM_SetCompare(htim3, TIM_CHANNEL_4, (Accion[0]>>2 + Accion[1]>>2 + Accion[2]>>2 + Accion[3]>>2));
    ^
-../Src/Funciones/FuncionControl.c:68:38: warning: 'Error[2][0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   Accion[2] += (Kp[2] * (Error[2][0] - Error[2][1]));
-                                      ^
-../Src/Funciones/FuncionControl.c:59:38: warning: 'Error[1][0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   Accion[1] += (Kp[1] * (Error[1][0] - Error[1][1]));
-                                      ^
-../Src/Funciones/FuncionControl.c:50:38: warning: 'Error[0][0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
-   Accion[0] += (Kp[0] * (Error[0][0] - Error[0][1]));
-                                      ^
 'Finished building: ../Src/Funciones/FuncionControl.c'
+' '
+'Building file: ../Src/Dispositivos/IMU.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3 -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/Dispositivos/IMU.d" -MT"Src/Dispositivos/IMU.o" -o "Src/Dispositivos/IMU.o" "../Src/Dispositivos/IMU.c"
+'Finished building: ../Src/Dispositivos/IMU.c'
+' '
+'Building file: ../Src/AHRS.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3 -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/AHRS.d" -MT"Src/AHRS.o" -o "Src/AHRS.o" "../Src/AHRS.c"
+'Finished building: ../Src/AHRS.c'
+' '
+'Building file: ../Src/ServidoresVariables.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3 -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/ServidoresVariables.d" -MT"Src/ServidoresVariables.o" -o "Src/ServidoresVariables.o" "../Src/ServidoresVariables.c"
+'Finished building: ../Src/ServidoresVariables.c'
+' '
+'Building file: ../Src/main.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3 -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/DTUser/Desktop/ESPCM3drone-master/Programacion/WorkSpace/CM3drone/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+'Finished building: ../Src/main.c'
 ' '
 'Building target: CM3drone.elf'
 'Invoking: MCU GCC Linker'
 arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "CM3drone.elf" @"objects.list"  
 Src/Funciones/Funciones_RTOS.o: In function `MX_FREERTOS_Init':
-C:\Users\Ruben\Documents\GitHub\ESPCM3drone\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `IMU_TIMER_FCN'
-C:\Users\Ruben\Documents\GitHub\ESPCM3drone\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `COORDINADOR_TIMER_FCN'
-C:\Users\Ruben\Documents\GitHub\ESPCM3drone\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `AHRS_TIMER_FCN'
-C:\Users\Ruben\Documents\GitHub\ESPCM3drone\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `COMPASS_TIMER_FCN'
-C:\Users\Ruben\Documents\GitHub\ESPCM3drone\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `ALTURA_TIMER_FCN'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `IMU_TIMER_FCN'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `COORDINADOR_TIMER_FCN'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `COMPASS_TIMER_FCN'
+C:\Users\DTUser\Desktop\ESPCM3drone-master\Programacion\WorkSpace\CM3drone\Debug/../Src/Funciones/Funciones_RTOS.c:119: undefined reference to `ALTURA_TIMER_FCN'
 Src/Funciones/Funciones_RTOS.o:(.rodata+0x18): undefined reference to `IMU_TASK_FCN'
-Src/Funciones/Funciones_RTOS.o:(.rodata+0x2c): undefined reference to `AHRS_TASK_FCN'
 Src/Funciones/Funciones_RTOS.o:(.rodata+0x40): undefined reference to `COORDINADOR_TASK_FCN'
 Src/Funciones/Funciones_RTOS.o:(.rodata+0x54): undefined reference to `COMPASS_TASK_FCN'
 Src/Funciones/Funciones_RTOS.o:(.rodata+0x68): undefined reference to `ALTURA_TASK_FCN'

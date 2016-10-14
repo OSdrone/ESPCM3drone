@@ -5,8 +5,6 @@ void CONTROL_TASK_FCN(void const * argument){
 
 	//Accion = (Kp + Ki/(1-z^-1))Error + Kd(1-z^-1)Pos
 
-
-
 	//TODO Constantes desde memoria FLASH para poder ser ajustada sin reflashear
 	q15_t Kp[4] = {2200, 2, 2, 4}; //Ajustar
 	q15_t Kv[4] = {2, 2, 2, 4}; //Ajustar
@@ -18,8 +16,6 @@ void CONTROL_TASK_FCN(void const * argument){
 	q15_t Referencia[4] = { 0, 0, 0, 0};
 	q15_t Posicion[4][3] = { 0, 0, 0, 0};
 	q15_t Error[4][2];
-
-	q15_t VariablesEstado[10] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 	while(1){
 		xSemaphoreTake(CONTROL_SMPHRHandle, portMAX_DELAY);
@@ -35,10 +31,7 @@ void CONTROL_TASK_FCN(void const * argument){
 		Posicion[3][1] = Posicion[3][0];
 
 		//TODO Leer posicion
-		LeerVariablesEstado_Q16(VariablesEstado);
-		Posicion[0][0] = VariablesEstado[1];
-		Posicion[1][0] = VariablesEstado[3];
-		Posicion[2][0] = VariablesEstado[5];
+		LeerRollPitchYaw(Posicion[0][0], Posicion[1][0], Posicion[2][0]);
 
 		//TODO Leer Altura
 
