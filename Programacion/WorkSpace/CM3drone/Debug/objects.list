@@ -55,4 +55,5 @@
 "Src/Dispositivos/IMU.o"
 "Src/Funciones/FuncionAHRS.o"
 "Src/Funciones/FuncionControl.o"
+"Src/Funciones/FuncionIMU.o"
 "Src/Funciones/Funciones_RTOS.o"

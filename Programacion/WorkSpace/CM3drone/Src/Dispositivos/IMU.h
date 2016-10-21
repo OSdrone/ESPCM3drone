@@ -84,8 +84,6 @@ typedef struct {
 	tpGanancia_Acel Ganancia_Acel;
 
 } tpIMU9250;
-
-
 /*
  typedef union{
  struct{
@@ -129,8 +127,7 @@ typedef struct {
  int16_t y_mag;
  int16_t z_mag;
  }Valor;
- }tpLecturas_9DOF_IMU;
- */
+ }tpLecturas9DOFIMU;
 
 typedef union { //tpLecturas_IMU
 	struct {
@@ -164,7 +161,46 @@ typedef union { //tpLecturas_IMU
 		int16_t y_vel;
 		int16_t z_vel;
 	}Valor;
-}tpLecturas_IMU;
+}tpLecturasIMU;
+
+typedef struct {
+	struct{
+		uint8_t x_mag_l;
+		uint8_t x_mag_h;
+		uint8_t y_mag_l;
+		uint8_t y_mag_h;
+		uint8_t z_mag_l;
+		uint8_t z_mag_h;
+	}Reg;
+	struct{
+		int16_t  x_mag;
+		int16_t  y_mag;
+		int16_t  z_mag;
+	}Valor;
+}tpLecturasBrujula;
+*/
+typedef struct {
+	int16_t x_acel;
+	int16_t y_acel;
+	int16_t z_acel;
+
+	int16_t temp;
+
+	int16_t x_vel;
+	int16_t y_vel;
+	int16_t z_vel;
+}tpLecturasIMU;
+
+typedef struct{
+	int16_t  x_mag;
+	int16_t  y_mag;
+	int16_t  z_mag;
+}tpLecturasBrujula;
+
+typedef struct{
+	tpLecturasIMU LecturasIMU;
+	tpLecturasBrujula LecturasBrujula;
+}tpLecturas9DOFIMU;
 
 typedef struct { //tpCalibracion_IMU
 	int16_t Rango_Acel_x[2]; // Min Max
@@ -205,10 +241,10 @@ typedef struct { //tpCalibracion_IMU
 
 	float32_t Giro[3];
 
-} tpCalibracion_IMU_9DOF;
+} tpCalibracionIMU9DOF;
 
 void CalibracionSensor();
-tpCalibracion_IMU_9DOF LeerCalibracionSensor();
+tpCalibracionIMU9DOF LeerCalibracionSensor();
 int16_t LeerOffsetGyro_X();
 int16_t LeerOffsetGyro_Y();
 int16_t LeerOffsetGyro_Z();

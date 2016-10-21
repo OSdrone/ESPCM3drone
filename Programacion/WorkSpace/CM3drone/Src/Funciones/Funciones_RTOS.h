@@ -57,8 +57,10 @@ osTimerId COORDINADOR_TIMERHandle;
 osTimerId AHRS_TIMERHandle;
 osTimerId COMPASS_TIMERHandle;
 osTimerId ALTURA_TIMERHandle;
+
 osMutexId I2C_2_MUTEXHandle;
 osMutexId UART_MUTEXHandle;
+
 osSemaphoreId CONTROL_SMPHRHandle;
 osSemaphoreId IMU_SMPHRHandle;
 osSemaphoreId COMPASS_SMPHRHandle;
@@ -74,7 +76,6 @@ osSemaphoreId AHRS_SMPHRHandle;
 //void StartDefaultTask(void const * argument);
 extern void CONTROL_TASK_FCN(void const * argument);
 extern void CONTROL_TIMER_FCN(void const * argument);
-
 extern void IMU_TASK_FCN(void const * argument);
 extern void AHRS_TASK_FCN(void const * argument);
 extern void COORDINADOR_TASK_FCN(void const * argument);

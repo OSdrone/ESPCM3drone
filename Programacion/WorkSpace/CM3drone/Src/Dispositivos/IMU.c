@@ -7,9 +7,9 @@
 
 #include "IMU.h"
 
-static tpCalibracion_IMU_9DOF CalibracionIMU9DOF;
+static tpCalibracionIMU9DOF CalibracionIMU9DOF;
 
-tpCalibracion_IMU_9DOF LeerCalibracionSensor(){
+tpCalibracionIMU9DOF LeerCalibracionSensor(){
 	return CalibracionIMU9DOF;
 }
 

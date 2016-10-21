@@ -1,24 +1,24 @@
-/*
- * FuncionIMU.c
- *
- *  Created on: 14 de oct. de 2016
- *      Author: DTUser
- */
-
 #include "Funciones_RTOS.h"
-#include "../ServidoresVariables.h"
-#include "../Dispositivos/IMU.h"
 
-void IMU_TASK_FCN(void const * argument) {
-	tpI
-	while (1) {
-		xSemaphoreTask(IMU_SMPHRHandle, portMAX_DELAY);
+void IMU_TASK_FCN(void const * argument){
 
+
+	osSemaphoreId SEMPH_RecepcionDatos;
+
+	SEMPH_RecepcionDatos = xSemaphoreCreateBinary();
+
+	//TODO Configurar DMA
+	while(1){
+		xSemaphoreTake(IMU_SMPHRHandle, portMAX_DELAY);
+
+
+		xSemaphoreTake(I2C_2_MUTEXHandle, portMAX_DELAY);
+		//TODO Lanzar DMA
+
+		xSemaphoreTake(SEMPH_RecepcionDatos, portMAX_DELAY);
 	}
-
 }
 
-void IMU_TIMER_FCN(void const * argument) {
+void IMU_TIMER_FCN(void const * argument){
 	xSemaphoreGive(IMU_SMPHRHandle);
 }
-

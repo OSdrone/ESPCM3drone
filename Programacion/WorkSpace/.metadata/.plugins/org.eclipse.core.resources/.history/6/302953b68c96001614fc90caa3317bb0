@@ -1,0 +1,16 @@
+#include "Funciones_RTOS.h"
+
+void IMU_TASK_FCN(void const * argument){
+
+	//TODO Configurar DMA
+
+	while(1){
+		xSemaphoreTake(IMU_SMPHRHandle, portMAX_DELAY);
+
+		//TODO Lanzar DMA
+	}
+}
+
+void IMU_TIMER_FCN(void const * argument){
+	xSemaphoreGive(IMU_SMPHRHandle);
+}

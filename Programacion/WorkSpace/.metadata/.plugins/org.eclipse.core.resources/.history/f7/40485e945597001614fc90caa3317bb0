@@ -1,0 +1,35 @@
+/*
+ * FuncionAHRS.c
+ *
+ *  Created on: 13 de oct. de 2016
+ *      Author: DTUser
+ */
+
+#include "Funciones_RTOS.h"
+#include "../AHRS.h"
+#include "../ServidoresVariables.h"
+
+void AHRS_TASK_FCN(void const * argument) {
+
+	static tpAHRS AHRS;
+	static tpLecturas9DOFIMU Lecturas9DOFIMU;
+
+	//TODO Configurar AHRS
+
+	while (1) {
+		xSemaphoreTake(AHRS_SMPHRHandle, portMAX_DELAY);
+
+		LeerLecturasIMU9DOF(&Lecturas9DOFIMU);
+		//Pasamos a velocidad
+		arm_scale_q15(&(Lecturas9DOFIMU.Valor.))
+
+		//Ejecutamos Algoritmo
+
+		//Almacenamos resultados
+		EscribirVariableAHRS(&AHRS);
+	}
+}
+
+void AHRS_TIMER_FCN(void const * argument) {
+	xSemaphoreGive(AHRS_SMPHRHandle);
+}

@@ -1,0 +1,14 @@
+#include "Funciones_RTOS.h"
+
+void IMU_TASK_FCN(void const * argument){
+
+	while(1){
+		xSemaphoreTake(IMU_SMPHRHandle, portMAX_DELAY);
+
+		//
+	}
+}
+
+void IMU_TIMER_FCN(void const * argument){
+	xSemaphoreGive(IMU_SMPHRHandle);
+}

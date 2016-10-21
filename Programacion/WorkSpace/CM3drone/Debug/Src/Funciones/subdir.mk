@@ -6,16 +6,19 @@
 C_SRCS += \
 ../Src/Funciones/FuncionAHRS.c \
 ../Src/Funciones/FuncionControl.c \
+../Src/Funciones/FuncionIMU.c \
 ../Src/Funciones/Funciones_RTOS.c 
 
 OBJS += \
 ./Src/Funciones/FuncionAHRS.o \
 ./Src/Funciones/FuncionControl.o \
+./Src/Funciones/FuncionIMU.o \
 ./Src/Funciones/Funciones_RTOS.o 
 
 C_DEPS += \
 ./Src/Funciones/FuncionAHRS.d \
 ./Src/Funciones/FuncionControl.d \
+./Src/Funciones/FuncionIMU.d \
 ./Src/Funciones/Funciones_RTOS.d 
 
 
