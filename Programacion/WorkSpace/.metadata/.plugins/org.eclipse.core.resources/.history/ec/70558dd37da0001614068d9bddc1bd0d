@@ -1,0 +1,35 @@
+/*
+ * AHRS.h
+
+ *
+ *  Created on: 1 de nov. de 2016
+ *      Author: Ruben
+ */
+
+#include "arm_math.h"
+#include "OSmath.h"
+
+#ifndef AHRS_H_
+#define AHRS_H_
+
+typedef struct{
+	q16_t TiempoMuestreo;
+
+	q15_t Kp_Roll_Pitch;
+	q15_t Ki_Roll_Pitch;
+	q15_t Kp_Yaw;
+	q15_t Ki_Yaw;
+
+	q11_4_t Correccion_Proporcional[3];
+	q11_4_t Correccion_Integral[3];
+};
+typedef struct{
+	q15_t Roll;
+	q15_t Pitch;
+	q15_t Yaw;
+
+	q15_t DCM_matriz[3][3];
+	arm_matrix_instance_q15 DCM;
+};
+
+#endif /* AHRS_H_ */

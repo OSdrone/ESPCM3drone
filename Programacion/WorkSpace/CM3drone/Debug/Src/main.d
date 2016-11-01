@@ -57,14 +57,7 @@ Src/main.o: ../Src/main.c \
  C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/iwdg.h \
  C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/tim.h \
  C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/usart.h \
- C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/usb_device.h \
- C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/usbd_conf.h \
- C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/gpio.h \
- ../Src/Funciones/Funciones_RTOS.h \
- C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include/arm_math.h \
- C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include/core_cm3.h \
- ../Src/Dispositivos/IMU.h ../Src/Dispositivos/../Constantes.h
+ C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/gpio.h
 
 C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 
@@ -182,20 +175,4 @@ C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/
 
 C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/usart.h:
 
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/usb_device.h:
-
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
-
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/usbd_conf.h:
-
 C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc/gpio.h:
-
-../Src/Funciones/Funciones_RTOS.h:
-
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include/arm_math.h:
-
-C:/Users/Ruben/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include/core_cm3.h:
-
-../Src/Dispositivos/IMU.h:
-
-../Src/Dispositivos/../Constantes.h:

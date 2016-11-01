@@ -1,0 +1,14 @@
+/*
+ * OSmath.h
+ *
+ *  Created on: 1 de nov. de 2016
+ *      Author: Ruben
+ */
+#include "arm_math.h"
+
+#ifndef OSMATH_H_
+#define OSMATH_H_
+
+typedef
+
+#endif /* OSMATH_H_ */

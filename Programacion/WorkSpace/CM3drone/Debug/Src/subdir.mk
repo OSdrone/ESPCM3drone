@@ -4,12 +4,10 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Src/AHRS.c \
-../Src/Constantes.c \
-../Src/ServidoresVariables.c \
 ../Src/adc.c \
 ../Src/crc.c \
 ../Src/dma.c \
+../Src/freertos.c \
 ../Src/gpio.c \
 ../Src/i2c.c \
 ../Src/iwdg.c \
@@ -24,12 +22,10 @@ C_SRCS += \
 ../Src/usbd_dfu_if.c 
 
 OBJS += \
-./Src/AHRS.o \
-./Src/Constantes.o \
-./Src/ServidoresVariables.o \
 ./Src/adc.o \
 ./Src/crc.o \
 ./Src/dma.o \
+./Src/freertos.o \
 ./Src/gpio.o \
 ./Src/i2c.o \
 ./Src/iwdg.o \
@@ -44,12 +40,10 @@ OBJS += \
 ./Src/usbd_dfu_if.o 
 
 C_DEPS += \
-./Src/AHRS.d \
-./Src/Constantes.d \
-./Src/ServidoresVariables.d \
 ./Src/adc.d \
 ./Src/crc.d \
 ./Src/dma.d \
+./Src/freertos.d \
 ./Src/gpio.d \
 ./Src/i2c.d \
 ./Src/iwdg.d \

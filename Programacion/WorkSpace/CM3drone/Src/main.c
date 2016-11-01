@@ -40,11 +40,8 @@
 #include "iwdg.h"
 #include "tim.h"
 #include "usart.h"
-#include "usb_device.h"
+//#include "usb_device.h"
 #include "gpio.h"
-
-#include "Funciones/Funciones_RTOS.h"
-#include "Dispositivos/IMU.h"
 
 /* USER CODE BEGIN Includes */
 
@@ -103,8 +100,6 @@ int main(void)
 
   /* Call init function for freertos objects (in freertos.c) */
   MX_FREERTOS_Init();
-
-  //MX_USB_DEVICE_Init();
 
   /* Start scheduler */
   osKernelStart();

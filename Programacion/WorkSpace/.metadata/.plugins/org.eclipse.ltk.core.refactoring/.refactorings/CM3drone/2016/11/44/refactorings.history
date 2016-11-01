@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CM3drone/Debug/Funciones_RTOS.h&apos; to &apos;FuncionesRTOS&apos;" description="Rename resource &apos;Funciones_RTOS.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/Funciones_RTOS.h" name="FuncionesRTOS" stamp="1478030629253" updateReferences="true"/>
+</session>

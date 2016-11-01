@@ -1,0 +1,18 @@
+/*
+ * AHRS.h
+ *
+ *  Created on: 1 de nov. de 2016
+ *      Author: Ruben
+ */
+#ifndef AHRS_H_
+#define AHRS_H_
+
+#include "arm_math.h"
+#include "OSmath.h"
+
+typedef struct{
+	q15 TiempoMuestreo;
+}tpConfiguracionAHRS;
+
+
+#endif /* AHRS_H_ */

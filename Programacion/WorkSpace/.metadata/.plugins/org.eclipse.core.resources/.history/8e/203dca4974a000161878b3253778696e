@@ -1,0 +1,18 @@
+/*
+ * AHRS.h
+ *
+ *  Created on: 1 de nov. de 2016
+ *      Author: Ruben
+ */
+#include "arm_math.h"
+#include "OSmath.h"
+
+#ifndef AHRS_H_
+#define AHRS_H_
+
+typedef struct{
+	q_16
+};
+
+
+#endif /* AHRS_H_ */
