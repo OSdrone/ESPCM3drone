@@ -7,7 +7,7 @@
 
 #include "AHRS.h"
 
-q15_t Compensacion_Sensor_magnetico(q15_t Roll, q15_t Pitch, int16_t VectorMagnetico[3]){
+q31_t Compensacion_Sensor_magnetico(q15_t Roll, q15_t Pitch, int16_t VectorMagnetico[3]){
 	q31_t SenRoll = 0;
 	q31_t CosRoll = 0;
 	q31_t SenPitch = 0;
@@ -29,7 +29,7 @@ q15_t Compensacion_Sensor_magnetico(q15_t Roll, q15_t Pitch, int16_t VectorMagne
 	MagX = ((( (CosPitch*VectorMagnetico[0] + SenRoll*VectorMagnetico[1]) +
 			 (CosRoll*VectorMagnetico[2]) )>>15) * SenPitch);
 
-	return (q15_t)(32767 * atan2(-MagY, MagX));
+	return (q15_t)(2147483648 * atan2(-MagY, MagX));
 }
 
 void Actualizar_Matriz_DCM_V2(tpAHRS *AHRS, q16_4_t VelocidadAngular[3]){
@@ -138,13 +138,42 @@ void Normalizar_DCM(tpAHRS *AHRS) {
 
 }
 
-void Correccion_deriva(tpAHRS *AHRS, q15_t AceleracionLineal[3]) {
+void Correccion_deriva(tpAHRS *AHRS, q15_t AceleracionLineal[3], q31_t OrientacionMagentica) {
 	q15_t error[3] = { 0, 0, 0 };
 	q15_t Aux[3] = { 0, 0, 0 };
 
+	q31_t Seno = 0;
+	q31_t Coseno = 0;
 	//ROLL PITCH
 	//faltaria filtrar???
+
 	//Producto cruz
 	error[0] = (q15_t)((int32_t)AceleracionLineal[1] * AHRS->OrientacionAHRS.DCM_matriz[2][2] -
 			           (int32_t)AceleracionLineal[2] * AHRS->OrientacionAHRS.DCM_matriz[2][1])>>15;
+	error[1] = (q15_t)((int32_t)AceleracionLineal[2] * AHRS->OrientacionAHRS.DCM_matriz[2][0] -
+				       (int32_t)AceleracionLineal[0] * AHRS->OrientacionAHRS.DCM_matriz[2][2])>>15;
+	error[2] = (q15_t)((int32_t)AceleracionLineal[0] * AHRS->OrientacionAHRS.DCM_matriz[2][1] -
+				       (int32_t)AceleracionLineal[1] * AHRS->OrientacionAHRS.DCM_matriz[2][0])>>15;
+
+	arm_scale_q15(error, AHRS->ConfiguracionAHRS.Kp_Roll_Pitch, (int8_t)SHIFT_GANANCIA_AHRS, AHRS->ConfiguracionAHRS.Correccion_Proporcional, 3);
+	arm_scale_q15(error, AHRS->ConfiguracionAHRS.Ki_Roll_Pitch, (int8_t)SHIFT_GANANCIA_AHRS, Aux, 3);
+	arm_add_q15(Aux, AHRS->ConfiguracionAHRS.Correccion_Integral,AHRS->ConfiguracionAHRS.Correccion_Integral, 3);
+
+
+//YAW
+	arm_sin_cos_q31(OrientacionMagentica, &Seno, &Coseno);
+	Aux[0] = (q15_t)((((Seno>>15) * AHRS->OrientacionAHRS.DCM_matriz[0][0]) - ((Coseno>>15) * AHRS->OrientacionAHRS.DCM_matriz[1][0]))>>16);
+	arm_scale_q15(&AHRS->OrientacionAHRS.DCM_matriz[2][0], Aux[0], 0, error, 3);
+
+	arm_scale_q15(error, AHRS->ConfiguracionAHRS.Kp_Yaw, 0, Aux, 3);
+	arm_add_q15(Aux, AHRS->ConfiguracionAHRS.Correccion_Proporcional,AHRS->ConfiguracionAHRS.Correccion_Proporcional, 3);
+
+	arm_scale_q15(error, AHRS->ConfiguracionAHRS.Ki_Yaw, 0, Aux, 3);
+	arm_add_q15(Aux, AHRS->ConfiguracionAHRS.Correccion_Integral,AHRS->ConfiguracionAHRS.Correccion_Integral, 3);
+}
+
+void Angulos_Euler(tpAHRS *AHRS) {
+	AHRS->OrientacionAHRS.Pitch = 32767 * (-asin(AHRS->OrientacionAHRS.DCM_matriz[2][0])) / PI;
+	AHRS->OrientacionAHRS.Roll  = 32767 * (atan2(AHRS->OrientacionAHRS.DCM_matriz[2][1], AHRS->OrientacionAHRS.DCM_matriz[2][2])) / PI;
+	AHRS->OrientacionAHRS.Yaw = 32767 * (atan2(AHRS->OrientacionAHRS.DCM_matriz[1][0], AHRS->OrientacionAHRS.DCM_matriz[0][0])) / PI;
 }

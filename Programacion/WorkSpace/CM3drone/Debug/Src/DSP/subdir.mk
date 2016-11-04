@@ -4,24 +4,33 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Src/DSP/arm_add_q15.c \
 ../Src/DSP/arm_copy_q15.c \
+../Src/DSP/arm_dot_prod_q15.c \
 ../Src/DSP/arm_mat_mult_q15.c \
+../Src/DSP/arm_scale_q15.c \
 ../Src/DSP/arm_sin_cos_q31.c \
 ../Src/DSP/arm_sqrt_q15.c \
 ../Src/DSP/arm_sqrt_q31.c \
 ../Src/DSP/common_tables.c 
 
 OBJS += \
+./Src/DSP/arm_add_q15.o \
 ./Src/DSP/arm_copy_q15.o \
+./Src/DSP/arm_dot_prod_q15.o \
 ./Src/DSP/arm_mat_mult_q15.o \
+./Src/DSP/arm_scale_q15.o \
 ./Src/DSP/arm_sin_cos_q31.o \
 ./Src/DSP/arm_sqrt_q15.o \
 ./Src/DSP/arm_sqrt_q31.o \
 ./Src/DSP/common_tables.o 
 
 C_DEPS += \
+./Src/DSP/arm_add_q15.d \
 ./Src/DSP/arm_copy_q15.d \
+./Src/DSP/arm_dot_prod_q15.d \
 ./Src/DSP/arm_mat_mult_q15.d \
+./Src/DSP/arm_scale_q15.d \
 ./Src/DSP/arm_sin_cos_q31.d \
 ./Src/DSP/arm_sqrt_q15.d \
 ./Src/DSP/arm_sqrt_q31.d \

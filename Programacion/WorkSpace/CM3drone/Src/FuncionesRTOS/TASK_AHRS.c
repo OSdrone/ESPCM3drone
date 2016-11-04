@@ -11,7 +11,7 @@
 
 void AHRS_TASK_FCN(void const * argument) {
 
-	q15_t OrientacionMagnetica = 0;
+	q31_t OrientacionMagnetica = 0;
 	q16_4_t VelocidadAngular[3];
 	tpLecturas9DOFIMU Lecturas9DOFIMU;
 
@@ -30,7 +30,9 @@ void AHRS_TASK_FCN(void const * argument) {
 		VelocidadAngular[2] = (q16_4_t)(((int32_t)Lecturas9DOFIMU.LecturasIMU.z_vel/SensibilidadGiroscopo)>>12);
 
 		Actualizar_Matriz_DCM_V2(&AHRS, VelocidadAngular);
-
+		Normalizar_DCM(&AHRS);
+//		Correccion_deriva(&AHRS, (q15_t*)&Lecturas9DOFIMU.LecturasIMU.x_acel, OrientacionMagnetica);
+		Angulos_Euler(&AHRS);
 	}
 }
 
