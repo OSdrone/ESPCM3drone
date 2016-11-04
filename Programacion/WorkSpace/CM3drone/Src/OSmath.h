@@ -9,8 +9,8 @@
 
 #include "arm_math.h"
 
-typedef int16_t q16_t;
-typedef int16_t q11_4_t;
-typedef int16_t q12_3_t;
+typedef int16_t q16_16_t;
+typedef int16_t q16_4_t;
+typedef int16_t q16_3_t;
 
 #endif /* OSMATH_H_ */

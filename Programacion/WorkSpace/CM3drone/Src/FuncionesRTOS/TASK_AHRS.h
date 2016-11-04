@@ -7,7 +7,11 @@
 
 #include "FreeRTOS.h"
 #include "cmsis_os.h"
-#include "../AHRS.h"
+#include "AHRS.h"
+#include "arm_math.h"
+#include "OSmath.h"
+#include "ServidoresVariables.h"
+#include "Dispositivos/IMU_9DOF.h"
 
 #ifndef FUNCIONESRTOS_TASK_AHRS_H_
 #define FUNCIONESRTOS_TASK_AHRS_H_

@@ -13,15 +13,15 @@
 #define AHRS_H_
 
 typedef struct{
-	q16_t TiempoMuestreo;
+	q16_16_t TiempoMuestreo;
 
 	q15_t Kp_Roll_Pitch;
 	q15_t Ki_Roll_Pitch;
 	q15_t Kp_Yaw;
 	q15_t Ki_Yaw;
 
-	q11_4_t Correccion_Proporcional[3];
-	q11_4_t Correccion_Integral[3];
+	q16_4_t Correccion_Proporcional[3];
+	q16_4_t Correccion_Integral[3];
 }tpConfiguracionAHRS;
 
 typedef struct{
@@ -39,7 +39,7 @@ typedef struct{
 }tpAHRS;
 
 q15_t Compensacion_Sensor_magnetico(q15_t Roll, q15_t Pitch, int16_t VectorMagnetico[3]);
-void Actualizar_Matriz_DCM_V2(tpAHRS *AHRS, q11_4_t VelocidadAngular[3]);
+void Actualizar_Matriz_DCM_V2(tpAHRS *AHRS, q16_4_t VelocidadAngular[3]);
 void Normalizar_DCM(tpAHRS *AHRS);
 void Correccion_deriva(tpAHRS *AHRS, int16_t AceleracionLineal[3]);
 void Angulos_Euler(tpAHRS *AHRS);

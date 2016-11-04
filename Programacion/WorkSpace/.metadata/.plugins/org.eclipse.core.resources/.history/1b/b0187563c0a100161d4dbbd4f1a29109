@@ -1,0 +1,63 @@
+/*
+ * AHRS.c
+ *
+ *  Created on: 3 de nov. de 2016
+ *      Author: DTUser
+ */
+
+#include "AHRS.h"
+
+q15_t Compensacion_Sensor_magnetico(q15_t Roll, q15_t Pitch, int16_t VectorMagnetico[3]){
+	q31_t SenRoll = 0;
+	q31_t CosRoll = 0;
+	q31_t SenPitch = 0;
+	q31_t CosPitch = 0;
+
+	q31_t MagX = 0;
+	q31_t MagY = 0;
+
+	arm_sin_cos_q31(Roll, &SenRoll, &CosRoll);
+	arm_sin_cos_q31(Pitch, &SenPitch, &CosPitch);
+
+	//Pasamos a q15
+	SenRoll= SenRoll>>16;
+	CosRoll= CosRoll>>16;
+	SenPitch= SenPitch>>16;
+	CosPitch= CosPitch>>16;
+
+	MagY = ((CosRoll*VectorMagnetico[1] - SenRoll*VectorMagnetico[2])>>16);
+	MagX = ((( (CosPitch*VectorMagnetico[0] + SenRoll*VectorMagnetico[1]) +
+			 (CosRoll*VectorMagnetico[2]) )>>15) * SenPitch);
+
+	return (q15_t)(32767 * atan2(-MagY, MagX));
+}
+
+void Actualizar_Matriz_DCM_V2(tpAHRS *AHRS, q11_4_t VelocidadAngular[3]){
+	q11_4_t VelocidadAngularTotal[3];
+	q12_3_t VelocidadAngularMagnitud = 0;
+	q31_t Seno = 0;
+	q31_t Coseno = 0;
+
+	int32_t Aux = 0;
+
+	q15_t Rot_matriz[3][3] = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+	arm_matrix_instance_q15 Rotacion = { 3, 3, (q15_t *) Rot_matriz };
+	q15_t Aux_matriz[3][3] = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+	arm_matrix_instance_q15 Aux = { 3, 3, (q15_t *) Aux_matriz };
+
+	VelocidadAngularTotal[0] = VelocidadAngular[0] +
+			AHRS->ConfiguracionAHRS.Correccion_Proporcional[0] +
+			AHRS.ConfiguracionAHRS.Correccion_Integral[0];
+	VelocidadAngularTotal[1] = VelocidadAngular[1] +
+				AHRS->ConfiguracionAHRS.Correccion_Proporcional[1] +
+				AHRS.ConfiguracionAHRS.Correccion_Integral[1];
+	VelocidadAngularTotal[2] = VelocidadAngular[2] +
+				AHRS->ConfiguracionAHRS.Correccion_Proporcional[2] +
+				AHRS.ConfiguracionAHRS.Correccion_Integral[2];
+
+	Aux = ((int32_t)VelocidadAngularTotal[0]] * VelocidadAngularTotal[0]]);
+	Aux += ((int32_t)VelocidadAngularTotal[0]] * VelocidadAngularTotal[0]]);
+	Aux += ((int32_t)VelocidadAngularTotal[0]] * VelocidadAngularTotal[0]]);
+
+	arm_sqrt_q15(((int32_t)(VelocidadAngularTotal[0]])))
+}
