@@ -1,0 +1,20 @@
+/*
+ * TASK_CONTROL.c
+ *
+ *  Created on: 1 de nov. de 2016
+ *      Author: Ruben
+ */
+
+#include "TASK_CONTROL.h"
+
+void CONTROL_TASK_FCN(void const * argument){
+
+	while(1){
+		xSemaphoreTake(CONTROL_SMPHRHandle, portMAX_DELAY);
+
+	}
+}
+
+void CONTROL_TIMER_FCN(void const * argument){
+	xSemaphoreGive(CONTROL_SMPHRHandle);
+}

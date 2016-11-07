@@ -23,8 +23,10 @@ void LeerLecturasIMU9DOF(tpLecturas9DOFIMU* Lecturas9DOFIMU);
 void EscribirLecturasIMU(tpLecturasIMU* LecturasIMU);
 void EscribirLecturasBrujulas(tpLecturasBrujula* LecturasBrujula);
 
-void LeerVariableAHRS_Orientacion_q15(tpOrientacionAHRS* OrientacionAHRS_q15);
-void EscribirVariableAHRS_Orientacion_q15(tpOrientacionAHRS* OrientacionAHRS_q15);
+void LeerVariableAHRS_Orientacion_q15(tpOrientacionAHRS* OrientacionAHRS);
+void EscribirVariableAHRS_Orientacion_q15(tpOrientacionAHRS* OrientacionAHRS);
 void LeerRollPitchYaw(q15_t Roll, q15_t Pitch, q15_t Yaw);
 
+void LeerOrientacionMagnetica(q31_t OrientacionMagnetica);
+void EscribirOrientacionMagnetica(q31_t OrientacionMagnetica);
 #endif /* SERVIDORESVARIABLES_H_ */

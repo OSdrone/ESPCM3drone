@@ -11,12 +11,14 @@
 static osMutexId MutexLecturas9DOFIMU;
 static osMutexId MutexVariablesEstado;
 static osMutexId MutexAHRS_Orientacion_q15;
+static osMutexId MutexOrientacionMagnetica;
 
 /*  VARIABLES ALMACENADAS  */
 
 static tpLecturas9DOFIMU Lecturas9DOFIMUAlmacenadas;
 static q15_t VariablesEstadoAlmacenadas[NUM_VAR_ESTADO];
 static tpOrientacionAHRS OrientacionAHRS_q15Almacenado;
+static q31_t OrientacionMagneticaAlmacenada = 0;
 
 void IniciarServidoresVariables(){
 	MutexVariablesEstado = xSemaphoreCreateMutex();
@@ -79,4 +81,16 @@ void LeerRollPitchYaw(q15_t Roll, q15_t Pitch, q15_t Yaw){
 	Pitch = OrientacionAHRS_q15Almacenado.Pitch;
 	Yaw = OrientacionAHRS_q15Almacenado.Yaw;
 	xSemaphoreGive(MutexAHRS_Orientacion_q15);
+}
+
+void LeerOrientacionMagnetica(q31_t OrientacionMagnetica){
+	xSemaphoreTake(MutexOrientacionMagnetica, portMAX_DELAY);
+	OrientacionMagnetica = OrientacionMagneticaAlmacenada;
+	xSemaphoreGive(MutexOrientacionMagnetica);
+}
+
+void EscribirOrientacionMagnetica(q31_t OrientacionMagnetica){
+	xSemaphoreTake(MutexOrientacionMagnetica, portMAX_DELAY);
+	OrientacionMagneticaAlmacenada = OrientacionMagnetica;
+	xSemaphoreGive(MutexOrientacionMagnetica);
 }

@@ -31,8 +31,11 @@ void AHRS_TASK_FCN(void const * argument) {
 
 		Actualizar_Matriz_DCM_V2(&AHRS, VelocidadAngular);
 		Normalizar_DCM(&AHRS);
-//		Correccion_deriva(&AHRS, (q15_t*)&Lecturas9DOFIMU.LecturasIMU.x_acel, OrientacionMagnetica);
+		Correccion_deriva(&AHRS, (q15_t*)&Lecturas9DOFIMU.LecturasIMU.x_acel, OrientacionMagnetica);
 		Angulos_Euler(&AHRS);
+
+		EscribirVariableAHRS_Orientacion_q15(&AHRS.OrientacionAHRS);
+		EscribirOrientacionMagnetica(OrientacionMagnetica);
 	}
 }
 

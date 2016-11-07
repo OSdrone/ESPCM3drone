@@ -173,7 +173,7 @@ void Correccion_deriva(tpAHRS *AHRS, q15_t AceleracionLineal[3], q31_t Orientaci
 }
 
 void Angulos_Euler(tpAHRS *AHRS) {
-	AHRS->OrientacionAHRS.Pitch = 32767 * (-asin(AHRS->OrientacionAHRS.DCM_matriz[2][0])) / PI;
+//	AHRS->OrientacionAHRS.Pitch = 32767 * (-asin(AHRS->OrientacionAHRS.DCM_matriz[2][0]/32768.0)) / PI;
 	AHRS->OrientacionAHRS.Roll  = 32767 * (atan2(AHRS->OrientacionAHRS.DCM_matriz[2][1], AHRS->OrientacionAHRS.DCM_matriz[2][2])) / PI;
 	AHRS->OrientacionAHRS.Yaw = 32767 * (atan2(AHRS->OrientacionAHRS.DCM_matriz[1][0], AHRS->OrientacionAHRS.DCM_matriz[0][0])) / PI;
 }
