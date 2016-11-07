@@ -70,8 +70,6 @@ typedef enum {
 #define IMU_MPU9250_MAG_CTL1 0x0A
 #define IMU_MPU9250_MAG_HXL 0x03
 
-#define IMU_MPU6050_ACCEL_XOUT_H 0x3B
-
 typedef struct {
 	uint8_t Direccion_IMU;
 	uint8_t Direccion_MAG;
