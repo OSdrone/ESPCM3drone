@@ -21,7 +21,7 @@ void CONTROL_TASK_FCN(void const * argument){
 	uint16_t Accion[4] = { 0, 0, 0, 0};
 
 	q15_t Referencia[4] = { 0, 0, 0, 0};
-	q15_t Posicion[4][2] = {{0, 0, 0, 0},{0, 0, 0, 0}};
+	q15_t Posicion[4][2] = {{0, 0},{ 0, 0},{0, 0},{ 0, 0}};
 	q15_t Error[4][2];
 
 	while(1){

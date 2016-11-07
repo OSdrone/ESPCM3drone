@@ -5,7 +5,6 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Src/AHRS.c \
-../Src/Constantes.c \
 ../Src/ServidoresVariables.c \
 ../Src/adc.c \
 ../Src/crc.c \
@@ -26,7 +25,6 @@ C_SRCS += \
 
 OBJS += \
 ./Src/AHRS.o \
-./Src/Constantes.o \
 ./Src/ServidoresVariables.o \
 ./Src/adc.o \
 ./Src/crc.o \
@@ -47,7 +45,6 @@ OBJS += \
 
 C_DEPS += \
 ./Src/AHRS.d \
-./Src/Constantes.d \
 ./Src/ServidoresVariables.d \
 ./Src/adc.d \
 ./Src/crc.d \

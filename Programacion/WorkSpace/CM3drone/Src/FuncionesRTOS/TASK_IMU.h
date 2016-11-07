@@ -12,6 +12,8 @@
 #include "cmsis_os.h"
 #include "Dispositivos/IMU_9DOF.h"
 #include "i2c.h"
+#include "Constantes.h"
+#include "ServidoresVariables.h"
 
 extern osSemaphoreId IMU_SMPHRHandle;
 

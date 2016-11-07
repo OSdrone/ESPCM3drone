@@ -1,4 +1,4 @@
-15:53:04 **** Incremental Build of configuration Debug for project CM3drone ****
+17:40:41 **** Incremental Build of configuration Debug for project CM3drone ****
 make all 
 'Building file: ../Src/FuncionesRTOS/TASK_IMU.c'
 'Invoking: MCU GCC Compiler'
@@ -23,5 +23,5 @@ make --no-print-directory post-build
 arm-none-eabi-objcopy -O binary "CM3drone.elf" "CM3drone.bin"
 arm-none-eabi-size "CM3drone.elf"
    text	   data	    bss	    dec	    hex	filename
-  45304	    204	  14436	  59944	   ea28	CM3drone.elf
+  46416	    340	  14804	  61560	   f078	CM3drone.elf
 ' '

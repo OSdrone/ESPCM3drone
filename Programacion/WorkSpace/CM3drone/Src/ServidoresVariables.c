@@ -49,7 +49,7 @@ void LeerLecturasIMU9DOF(tpLecturas9DOFIMU* Lecturas9DOFIMU){
 	xSemaphoreGive(MutexLecturas9DOFIMU);
 }
 
-void EscribirLecturasIMU(tpLecturasIMU* LecturasIMU){
+void EscribirLecturasIMU(tpLecturasIMU *LecturasIMU){
 
 	xSemaphoreTake(MutexLecturas9DOFIMU, portMAX_DELAY);
 	memcpy(&Lecturas9DOFIMUAlmacenadas.LecturasIMU, LecturasIMU, sizeof(tpLecturasIMU));

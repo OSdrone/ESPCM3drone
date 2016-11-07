@@ -124,40 +124,36 @@ typedef struct { //tpCalibracion_IMU
 	int16_t Media_Temp;
 	float32_t Des_est_Temp;
 
-	int16_t Rango_Vel_x[2];
+//	int16_t Rango_Vel_x[2];
 	int16_t Media_Vel_x;
 	float32_t Des_est_Vel_x;
-	int16_t Rango_Vel_y[2];
+//	int16_t Rango_Vel_y[2];
 	int16_t Media_Vel_y;
 	float32_t Des_est_Vel_y;
-	int16_t Rango_Vel_z[2];
+//	int16_t Rango_Vel_z[2];
 	int16_t Media_Vel_z;
 	float32_t Des_est_Vel_z;
 
-	int16_t Rango_Mag_x[2];
+//	int16_t Rango_Mag_x[2];
 	int16_t Media_Mag_x;
 	float32_t Des_est_Mag_x;
-	int16_t Rango_Mag_y[2];
+//	int16_t Rango_Mag_y[2];
 	int16_t Media_Mag_y;
 	float32_t Des_est_Mag_y;
-	int16_t Rango_Mag_z[2];
+//	int16_t Rango_Mag_z[2];
 	int16_t Media_Mag_z;
 	float32_t Des_est_Mag_z;
 
 	float32_t Correccion_Alineamiento_matriz[9];
 	arm_matrix_instance_f32 Correccion_Alineamiento;
 
-	float32_t Giro[3];
-
 } tpCalibracionIMU9DOF;
 
 tpIMU9250 IMU9250;
 
 void CalibracionSensor();
-tpCalibracionIMU9DOF LeerCalibracionSensor();
-int16_t LeerOffsetGyro_X();
-int16_t LeerOffsetGyro_Y();
-int16_t LeerOffsetGyro_Z();
+void LeerCalibracionSensor(tpCalibracionIMU9DOF *CalibracionIMU9DOF);
+
 
 //int16_t LeerSensibilidadGiroscopo();
 //..........IMU..6DOF.................................//

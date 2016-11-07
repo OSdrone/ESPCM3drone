@@ -19,9 +19,9 @@ void IniciarServidoresVariables();
 void LeerVariablesEstado_Q16(q15_t VariablesEstado[NUM_VAR_ESTADO]);
 void EscribirVariablesEstado_Q16(q15_t VariablesEstado[NUM_VAR_ESTADO]);
 
-void LeerLecturasIMU9DOF(tpLecturas9DOFIMU* Lecturas9DOFIMU);
-void EscribirLecturasIMU(tpLecturasIMU* LecturasIMU);
-void EscribirLecturasBrujulas(tpLecturasBrujula* LecturasBrujula);
+void LeerLecturasIMU9DOF(tpLecturas9DOFIMU *Lecturas9DOFIMU);
+void EscribirLecturasIMU(tpLecturasIMU *LecturasIMU);
+void EscribirLecturasBrujulas(tpLecturasBrujula *LecturasBrujula);
 
 void LeerVariableAHRS_Orientacion_q15(tpOrientacionAHRS* OrientacionAHRS);
 void EscribirVariableAHRS_Orientacion_q15(tpOrientacionAHRS* OrientacionAHRS);
