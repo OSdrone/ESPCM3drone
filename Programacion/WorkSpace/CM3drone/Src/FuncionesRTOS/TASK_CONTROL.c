@@ -23,6 +23,7 @@ void CONTROL_TASK_FCN(void const * argument){
 	q15_t Referencia[4] = { 0, 0, 0, 0};
 	q15_t Posicion[4][2] = {{0, 0, 0, 0},{0, 0, 0, 0}};
 	q15_t Error[4][2];
+
 	while(1){
 		xSemaphoreTake(CONTROL_SMPHRHandle, portMAX_DELAY);
 

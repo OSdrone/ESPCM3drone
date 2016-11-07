@@ -7,10 +7,17 @@
 
 #include "TASK_IMU.h"
 
-void IMU_TASK_FCN(void const * argument){
 
+void IMU_TASK_FCN(void const * argument){
+	uint8_t DatosLeidos[14];
+
+	while(1){
+		xSemaphoreTake(IMU_SMPHRHandle, portMAX_DELAY);
+
+		HAL_I2C_Master_Transmit_DMA(&hi2c2, IMU9250.Direccion_IMU, DatosLeidos, 14);
+	}
 }
 
 void IMU_TIMER_FCN(void const * argument){
-
+	xSemaphoreGive(IMU_SMPHRHandle);
 }

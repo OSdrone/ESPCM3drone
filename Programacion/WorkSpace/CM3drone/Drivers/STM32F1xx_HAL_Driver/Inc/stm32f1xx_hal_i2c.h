@@ -161,6 +161,7 @@ typedef struct
 
   __IO uint32_t              ErrorCode;  /*!< I2C Error code                 */
 
+
 }I2C_HandleTypeDef;
 /**
   * @}

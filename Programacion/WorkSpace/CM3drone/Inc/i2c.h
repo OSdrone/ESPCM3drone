@@ -40,6 +40,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h"
+#include "FreeRTOS.h"
+#include "cmsis_os.h"
 
 /* USER CODE BEGIN Includes */
 
@@ -64,6 +66,13 @@ void MX_I2C2_Init(void);
 #endif
 #endif /*__ i2c_H */
 
+ void HAL_I2C_Master_Transmit_DMA_PROC(I2C_HandleTypeDef *hi2c, uint16_t DevAddress,
+		 	 	 	 	 	 	 	 uint8_t *pData, uint16_t Size, osMutexId Mutex, osSemaphoreId Semaforo ){
+
+	 xSemaphoreTake(Mutex, portMAX_DELAY); //Bloqueo para los demas
+	 xSemaphoreTake(Semaforo, portMAX_DELAY);
+	 HAL_I2C_Master_Transmit_DMA(hi2c, DevAddress, pData, Size);
+ }
 /**
   * @}
   */

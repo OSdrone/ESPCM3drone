@@ -24,6 +24,7 @@ void IniciarServidoresVariables(){
 	MutexVariablesEstado = xSemaphoreCreateMutex();
 	MutexAHRS_Orientacion_q15 = xSemaphoreCreateMutex();
 	MutexLecturas9DOFIMU = xSemaphoreCreateMutex();
+	MutexOrientacionMagnetica = xSemaphoreCreateMutex();
 }
 
 void LeerVariablesEstado_Q16(q15_t VariablesEstado[NUM_VAR_ESTADO]){

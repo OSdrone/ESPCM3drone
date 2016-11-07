@@ -74,9 +74,9 @@ typedef struct {
 	uint8_t Direccion_IMU;
 	uint8_t Direccion_MAG;
 	uint8_t SMPLRT_DIV;
-	float32_t Sensibilidad_Giroscopo;
-	float32_t Sensibilidad_Acel;
-	float32_t Sensibilidad_Brujula;
+	uint16_t Sensibilidad_Giroscopo;
+	uint16_t Sensibilidad_Acel;
+	uint16_t Sensibilidad_Brujula;
 
 	tpDLPF_CFG_GYRO DLPF_CFG_GYRO;
 	tpGanancia_Gyro Ganancia_Gyro;
@@ -149,13 +149,15 @@ typedef struct { //tpCalibracion_IMU
 
 } tpCalibracionIMU9DOF;
 
+tpIMU9250 IMU9250;
+
 void CalibracionSensor();
 tpCalibracionIMU9DOF LeerCalibracionSensor();
 int16_t LeerOffsetGyro_X();
 int16_t LeerOffsetGyro_Y();
 int16_t LeerOffsetGyro_Z();
 
-int16_t LeerSensibilidadGiroscopo();
+//int16_t LeerSensibilidadGiroscopo();
 //..........IMU..6DOF.................................//
 #ifdef IMU6050
 //..............................IMU_6050........................................//

@@ -15,7 +15,7 @@ void AHRS_TASK_FCN(void const * argument) {
 	q16_4_t VelocidadAngular[3];
 	tpLecturas9DOFIMU Lecturas9DOFIMU;
 
-	SensibilidadGiroscopo = LeerSensibilidadGiroscopo();
+	SensibilidadGiroscopo = IMU9250.Sensibilidad_Giroscopo;
 	while(1){
 		xSemaphoreTake(AHRS_SMPHRHandle, portMAX_DELAY);
 

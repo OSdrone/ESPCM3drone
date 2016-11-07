@@ -1,0 +1,11 @@
+/*
+ * ControladorI2C.c
+ *
+ *  Created on: 7 de nov. de 2016
+ *      Author: DTUser
+ */
+
+#include "ControladorI2C.h"
+
+
+static osMutexId MutexI2C;
