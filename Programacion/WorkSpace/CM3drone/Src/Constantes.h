@@ -9,6 +9,10 @@
 #ifndef CONSTANTES_H_
 #define CONSTANTES_H_
 
+//.........CONTROL............//
+#define K_MAX_CONTROL 256
+#define SHIFT_K_CONTROL 8
+
 #define NUM_MOTORES 4
 #define NUM_EJES_CONTROL 3
 
@@ -16,7 +20,6 @@
 
 
 //.........IMU..............//
-
 #define NUM_ELEMENTOS_BUFFER_IMU 32
 
 // Filtros IMU

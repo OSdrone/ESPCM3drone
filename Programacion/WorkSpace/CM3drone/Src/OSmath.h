@@ -13,5 +13,4 @@ typedef int16_t q16_16_t;
 typedef int16_t q16_4_t;
 typedef int16_t q16_3_t;
 
-void OSmath_sqrt_q16_4_t(q16_4_t in, q16_4_t* out);
 #endif /* OSMATH_H_ */

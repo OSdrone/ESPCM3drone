@@ -12,6 +12,7 @@ static osMutexId MutexLecturas9DOFIMU;
 static osMutexId MutexVariablesEstado;
 static osMutexId MutexAHRS_Orientacion_q15;
 static osMutexId MutexOrientacionMagnetica;
+static osMutexId MutexReferencia;
 
 /*  VARIABLES ALMACENADAS  */
 
@@ -19,12 +20,14 @@ static tpLecturas9DOFIMU Lecturas9DOFIMUAlmacenadas;
 static q15_t VariablesEstadoAlmacenadas[NUM_VAR_ESTADO];
 static tpOrientacionAHRS OrientacionAHRS_q15Almacenado;
 static q31_t OrientacionMagneticaAlmacenada = 0;
+static q15_t ReferenciaAlmacenada[16] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 void IniciarServidoresVariables(){
 	MutexVariablesEstado = xSemaphoreCreateMutex();
 	MutexAHRS_Orientacion_q15 = xSemaphoreCreateMutex();
 	MutexLecturas9DOFIMU = xSemaphoreCreateMutex();
 	MutexOrientacionMagnetica = xSemaphoreCreateMutex();
+	MutexReferencia = xSemaphoreCreateMutex();
 }
 
 void LeerVariablesEstado_Q16(q15_t VariablesEstado[NUM_VAR_ESTADO]){
@@ -94,4 +97,16 @@ void EscribirOrientacionMagnetica(q31_t OrientacionMagnetica){
 	xSemaphoreTake(MutexOrientacionMagnetica, portMAX_DELAY);
 	OrientacionMagneticaAlmacenada = OrientacionMagnetica;
 	xSemaphoreGive(MutexOrientacionMagnetica);
+}
+
+void LeerReferencia(q15_t* Referencia, uint8_t numero){
+	xSemaphoreTake(MutexReferencia, portMAX_DELAY);
+	memcpy(Referencia, ReferenciaAlmacenada, 2*numero);
+	xSemaphoreGive(MutexReferencia);
+}
+
+void EscribirReferencia(q15_t* Referencia, uint8_t numero){
+	xSemaphoreTake(MutexReferencia, portMAX_DELAY);
+	memcpy(ReferenciaAlmacenada, Referencia, 2*numero);
+	xSemaphoreGive(MutexReferencia);
 }

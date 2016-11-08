@@ -29,4 +29,8 @@ void LeerRollPitchYaw(q15_t Roll, q15_t Pitch, q15_t Yaw);
 
 void LeerOrientacionMagnetica(q31_t OrientacionMagnetica);
 void EscribirOrientacionMagnetica(q31_t OrientacionMagnetica);
+
+void LeerReferencia(q15_t* Referencia, uint8_t numero);
+void EscribirReferencia(q15_t* Referencia, uint8_t numero);
+
 #endif /* SERVIDORESVARIABLES_H_ */
