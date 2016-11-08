@@ -17,6 +17,9 @@
 
 extern osSemaphoreId IMU_SMPHRHandle;
 
+extern tpIMU9250 IMU9250;
+extern tpCalibracionIMU9DOF CalibracionIMU9DOF;
+
 void IMU_TASK_FCN(void const * argument);
 void IMU_TIMER_FCN(void const * argument);
 

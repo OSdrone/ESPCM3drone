@@ -144,16 +144,11 @@ typedef struct { //tpCalibracion_IMU
 	int16_t Media_Mag_z;
 	float32_t Des_est_Mag_z;
 
-	float32_t Correccion_Alineamiento_matriz[9];
-	arm_matrix_instance_f32 Correccion_Alineamiento;
-
+	q15_t Correccion_Alineamiento_IMU_matriz[9];
+	arm_matrix_instance_q15 Correccion_Alineamiento_IMU;
+	q15_t Correccion_COMPASS_matriz[9];
+	arm_matrix_instance_q15 Correccion_COMPASS_IMU;
 } tpCalibracionIMU9DOF;
-
-tpIMU9250 IMU9250;
-
-void CalibracionSensor();
-void LeerCalibracionSensor(tpCalibracionIMU9DOF *CalibracionIMU9DOF);
-
 
 //int16_t LeerSensibilidadGiroscopo();
 //..........IMU..6DOF.................................//

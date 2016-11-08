@@ -7,8 +7,6 @@
 
 #include "TASK_IMU.h"
 
-static tpCalibracionIMU9DOF CalibracionIMU9DOF;
-
 static q15_t CoeficientesFiltroVelocidad[5*NUM_ETAPAS_FILTRO_VEL_ANG] =  COEF_FILTRO_VEL_VALUES;
 static q15_t EstadoFiltroVelocidad [4*NUM_ETAPAS_FILTRO_VEL_ANG][3];
 static arm_biquad_casd_df1_inst_q15 FiltroVelocidad[3] = {
@@ -29,8 +27,6 @@ void IMU_TASK_FCN(void const * argument){
 	tpLecturasIMU LecturasIMU;
 	const uint8_t BufferSalida[] = {IMU_MPU6050_ACCEL_XOUT_H};
 	uint8_t DatosLeidos[14];
-
-	LeerCalibracionSensor(&CalibracionIMU9DOF);
 
 	while(1){
 		xSemaphoreTake(IMU_SMPHRHandle, portMAX_DELAY);

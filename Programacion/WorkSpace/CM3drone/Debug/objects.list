@@ -63,7 +63,6 @@
 "Src/DSP/arm_sqrt_q15.o"
 "Src/DSP/arm_sqrt_q31.o"
 "Src/DSP/common_tables.o"
-"Src/Dispositivos/IMU_9DOF.o"
 "Src/FuncionesRTOS/TASK_AHRS.o"
 "Src/FuncionesRTOS/TASK_ALTURA.o"
 "Src/FuncionesRTOS/TASK_COMPASS.o"

@@ -23,5 +23,6 @@ void AHRS_TIMER_FCN(void const * argument);
 
 void ResetAHRS();
 void setAHRS(tpAHRS *AHRS);
+extern uint16_t Sensibilidad_Giroscopo();
 
 #endif /* FUNCIONESRTOS_TASK_AHRS_H_ */

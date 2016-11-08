@@ -26,6 +26,5 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang \
 Src \
 Src/DSP \
-Src/Dispositivos \
 Src/FuncionesRTOS \
 
