@@ -8095,6 +8095,68 @@ Discarded input sections
  .debug_macro   0x00000000       0x35 Src/DSP/arm_dot_prod_q15.o
  .debug_macro   0x00000000      0x1e1 Src/DSP/arm_dot_prod_q15.o
  .debug_macro   0x00000000       0xe4 Src/DSP/arm_dot_prod_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .group         0x00000000        0x8 Src/DSP/arm_fill_q15.o
+ .text          0x00000000        0x0 Src/DSP/arm_fill_q15.o
+ .data          0x00000000        0x0 Src/DSP/arm_fill_q15.o
+ .bss           0x00000000        0x0 Src/DSP/arm_fill_q15.o
+ .text.arm_fill_q15
+                0x00000000       0x40 Src/DSP/arm_fill_q15.o
+ .debug_info    0x00000000      0x14e Src/DSP/arm_fill_q15.o
+ .debug_abbrev  0x00000000       0x95 Src/DSP/arm_fill_q15.o
+ .debug_loc     0x00000000      0x122 Src/DSP/arm_fill_q15.o
+ .debug_aranges
+                0x00000000       0x20 Src/DSP/arm_fill_q15.o
+ .debug_ranges  0x00000000       0x10 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000      0x155 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000      0x886 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x12 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x22 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x44 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0xfd Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x22 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000      0x1df Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x34 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x34 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x58 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x35 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x9c Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000      0x174 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x52 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x16 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x43 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000      0x187 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000      0x329 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x10 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0x35 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000      0x1e1 Src/DSP/arm_fill_q15.o
+ .debug_macro   0x00000000       0xe4 Src/DSP/arm_fill_q15.o
+ .debug_line    0x00000000      0x408 Src/DSP/arm_fill_q15.o
+ .debug_str     0x00000000     0x6f42 Src/DSP/arm_fill_q15.o
+ .comment       0x00000000       0x6f Src/DSP/arm_fill_q15.o
+ .debug_frame   0x00000000       0x30 Src/DSP/arm_fill_q15.o
+ .ARM.attributes
+                0x00000000       0x33 Src/DSP/arm_fill_q15.o
  .group         0x00000000        0x8 Src/DSP/arm_mat_mult_q15.o
  .group         0x00000000        0x8 Src/DSP/arm_mat_mult_q15.o
  .group         0x00000000        0x8 Src/DSP/arm_mat_mult_q15.o
@@ -8487,6 +8549,9 @@ Discarded input sections
  .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_AHRS.o
  .text          0x00000000        0x0 Src/FuncionesRTOS/TASK_AHRS.o
  .data          0x00000000        0x0 Src/FuncionesRTOS/TASK_AHRS.o
+ .text.ResetAHRS
+                0x00000000       0x28 Src/FuncionesRTOS/TASK_AHRS.o
+ .text.setAHRS  0x00000000       0x30 Src/FuncionesRTOS/TASK_AHRS.o
  .debug_macro   0x00000000      0x886 Src/FuncionesRTOS/TASK_AHRS.o
  .debug_macro   0x00000000      0x174 Src/FuncionesRTOS/TASK_AHRS.o
  .debug_macro   0x00000000       0x22 Src/FuncionesRTOS/TASK_AHRS.o
@@ -9009,6 +9074,7 @@ LOAD Src/DSP/arm_add_q15.o
 LOAD Src/DSP/arm_biquad_cascade_df1_q15.o
 LOAD Src/DSP/arm_copy_q15.o
 LOAD Src/DSP/arm_dot_prod_q15.o
+LOAD Src/DSP/arm_fill_q15.o
 LOAD Src/DSP/arm_mat_mult_q15.o
 LOAD Src/DSP/arm_scale_q15.o
 LOAD Src/DSP/arm_sin_cos_q31.o
@@ -10390,7 +10456,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x00000e27       0x1d c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtn.o
 OUTPUT(CM3drone.elf elf32-littlearm)
 
-.debug_line     0x00000000    0x2d339
+.debug_line     0x00000000    0x2d364
  .debug_line    0x00000000       0xac Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_line    0x000000ac      0xb6a Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_line    0x00000c16      0xc61 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -10448,14 +10514,14 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_line    0x0002a391      0x442 Src/DSP/arm_sqrt_q31.o
  .debug_line    0x0002a7d3      0x3eb Src/DSP/common_tables.o
  .debug_line    0x0002abbe      0x46e Src/Dispositivos/IMU_9DOF.o
- .debug_line    0x0002b02c      0x855 Src/FuncionesRTOS/TASK_AHRS.o
- .debug_line    0x0002b881       0x63 Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_line    0x0002b8e4       0x65 Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_line    0x0002b949      0xc73 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_line    0x0002c5bc       0x57 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_line    0x0002c613      0xd26 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_line    0x0002b02c      0x880 Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_line    0x0002b8ac       0x63 Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_line    0x0002b90f       0x65 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_line    0x0002b974      0xc73 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_line    0x0002c5e7       0x57 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_line    0x0002c63e      0xd26 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_info     0x00000000    0x2bb3f
+.debug_info     0x00000000    0x2bba6
  .debug_info    0x00000000       0xc8 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_info    0x000000c8      0x3d1 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_info    0x00000499      0x686 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -10513,14 +10579,14 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_info    0x00029637      0x1eb Src/DSP/arm_sqrt_q31.o
  .debug_info    0x00029822       0xd4 Src/DSP/common_tables.o
  .debug_info    0x000298f6      0x482 Src/Dispositivos/IMU_9DOF.o
- .debug_info    0x00029d78      0x728 Src/FuncionesRTOS/TASK_AHRS.o
- .debug_info    0x0002a4a0       0x60 Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_info    0x0002a500       0x60 Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_info    0x0002a560      0x8d1 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_info    0x0002ae31       0x60 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_info    0x0002ae91      0xcae Src/FuncionesRTOS/TASK_IMU.o
+ .debug_info    0x00029d78      0x78f Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_info    0x0002a507       0x60 Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_info    0x0002a567       0x60 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_info    0x0002a5c7      0x8d1 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_info    0x0002ae98       0x60 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_info    0x0002aef8      0xcae Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_abbrev   0x00000000     0x7098
+.debug_abbrev   0x00000000     0x70b0
  .debug_abbrev  0x00000000       0x12 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_abbrev  0x00000012      0x125 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_abbrev  0x00000137      0x22f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -10578,14 +10644,14 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_abbrev  0x00006773       0xdf Src/DSP/arm_sqrt_q31.o
  .debug_abbrev  0x00006852       0x6d Src/DSP/common_tables.o
  .debug_abbrev  0x000068bf      0x12b Src/Dispositivos/IMU_9DOF.o
- .debug_abbrev  0x000069ea      0x1b0 Src/FuncionesRTOS/TASK_AHRS.o
- .debug_abbrev  0x00006b9a       0x5e Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_abbrev  0x00006bf8       0x5e Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_abbrev  0x00006c56      0x205 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_abbrev  0x00006e5b       0x5e Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_abbrev  0x00006eb9      0x1df Src/FuncionesRTOS/TASK_IMU.o
+ .debug_abbrev  0x000069ea      0x1c8 Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_abbrev  0x00006bb2       0x5e Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_abbrev  0x00006c10       0x5e Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_abbrev  0x00006c6e      0x205 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_abbrev  0x00006e73       0x5e Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_abbrev  0x00006ed1      0x1df Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_aranges  0x00000000     0x19a8
+.debug_aranges  0x00000000     0x19b8
  .debug_aranges
                 0x00000000       0x28 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_aranges
@@ -10701,19 +10767,19 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_aranges
                 0x000018b0       0x20 Src/Dispositivos/IMU_9DOF.o
  .debug_aranges
-                0x000018d0       0x28 Src/FuncionesRTOS/TASK_AHRS.o
+                0x000018d0       0x38 Src/FuncionesRTOS/TASK_AHRS.o
  .debug_aranges
-                0x000018f8       0x20 Src/FuncionesRTOS/TASK_ALTURA.o
+                0x00001908       0x20 Src/FuncionesRTOS/TASK_ALTURA.o
  .debug_aranges
-                0x00001918       0x20 Src/FuncionesRTOS/TASK_COMPASS.o
+                0x00001928       0x20 Src/FuncionesRTOS/TASK_COMPASS.o
  .debug_aranges
-                0x00001938       0x28 Src/FuncionesRTOS/TASK_CONTROL.o
+                0x00001948       0x28 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_aranges
-                0x00001960       0x20 Src/FuncionesRTOS/TASK_COORDINADOR.o
+                0x00001970       0x20 Src/FuncionesRTOS/TASK_COORDINADOR.o
  .debug_aranges
-                0x00001980       0x28 Src/FuncionesRTOS/TASK_IMU.o
+                0x00001990       0x28 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_ranges   0x00000000     0x4848
+.debug_ranges   0x00000000     0x4858
  .debug_ranges  0x00000000       0x20 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_ranges  0x00000020       0x18 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_ranges  0x00000038       0xb0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -10770,14 +10836,14 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_ranges  0x00004788       0x28 Src/DSP/arm_sin_cos_q31.o
  .debug_ranges  0x000047b0       0x10 Src/DSP/arm_sqrt_q31.o
  .debug_ranges  0x000047c0       0x10 Src/Dispositivos/IMU_9DOF.o
- .debug_ranges  0x000047d0       0x18 Src/FuncionesRTOS/TASK_AHRS.o
- .debug_ranges  0x000047e8       0x10 Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_ranges  0x000047f8       0x10 Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_ranges  0x00004808       0x18 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_ranges  0x00004820       0x10 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_ranges  0x00004830       0x18 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_ranges  0x000047d0       0x28 Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_ranges  0x000047f8       0x10 Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_ranges  0x00004808       0x10 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_ranges  0x00004818       0x18 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_ranges  0x00004830       0x10 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_ranges  0x00004840       0x18 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_loc      0x00000000    0x206aa
+.debug_loc      0x00000000    0x206d8
  .debug_loc     0x00000000       0xf0 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_loc     0x000000f0       0x81 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_loc     0x00000171      0xd2c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
@@ -10825,9 +10891,9 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_loc     0x000200d8      0x311 Src/DSP/arm_sin_cos_q31.o
  .debug_loc     0x000203e9      0x12a Src/DSP/arm_sqrt_q31.o
  .debug_loc     0x00020513       0x21 Src/Dispositivos/IMU_9DOF.o
- .debug_loc     0x00020534       0x6c Src/FuncionesRTOS/TASK_AHRS.o
- .debug_loc     0x000205a0       0xc8 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_loc     0x00020668       0x42 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_loc     0x00020534       0x9a Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_loc     0x000205ce       0xc8 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_loc     0x00020696       0x42 Src/FuncionesRTOS/TASK_IMU.o
 
 .debug_macro    0x00000000    0x24a1a
  .debug_macro   0x00000000      0x3cf Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
@@ -10988,7 +11054,7 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_macro   0x00024573       0x11 Src/FuncionesRTOS/TASK_COORDINADOR.o
  .debug_macro   0x00024584      0x496 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_str      0x00000000    0xa40f5
+.debug_str      0x00000000    0xa4114
  .debug_str     0x00000000    0x981bd Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
                               0x9855b (size before relaxing)
  .debug_str     0x000981bd      0x590 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -11101,17 +11167,17 @@ OUTPUT(CM3drone.elf elf32-littlearm)
                                0x6eef (size before relaxing)
  .debug_str     0x000a3c5d      0x1e2 Src/Dispositivos/IMU_9DOF.o
                                0x7769 (size before relaxing)
- .debug_str     0x000a3e3f       0x70 Src/FuncionesRTOS/TASK_AHRS.o
-                               0xd17f (size before relaxing)
- .debug_str     0x000a3eaf       0x52 Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_str     0x000a3e3f       0x8f Src/FuncionesRTOS/TASK_AHRS.o
+                               0xd1a6 (size before relaxing)
+ .debug_str     0x000a3ece       0x52 Src/FuncionesRTOS/TASK_ALTURA.o
                                0x2556 (size before relaxing)
- .debug_str     0x000a3f01       0x55 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_str     0x000a3f20       0x55 Src/FuncionesRTOS/TASK_COMPASS.o
                                0x2559 (size before relaxing)
- .debug_str     0x000a3f56       0x81 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_str     0x000a3f75       0x81 Src/FuncionesRTOS/TASK_CONTROL.o
                               0x99f02 (size before relaxing)
- .debug_str     0x000a3fd7       0x3e Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_str     0x000a3ff6       0x3e Src/FuncionesRTOS/TASK_COORDINADOR.o
                                0x2542 (size before relaxing)
- .debug_str     0x000a4015       0xe0 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_str     0x000a4034       0xe0 Src/FuncionesRTOS/TASK_IMU.o
                               0x9a269 (size before relaxing)
 
 .comment        0x00000000       0x6e
@@ -11179,7 +11245,7 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .comment       0x0000006e       0x6f Src/FuncionesRTOS/TASK_COORDINADOR.o
  .comment       0x0000006e       0x6f Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_frame    0x00000000     0x4f38
+.debug_frame    0x00000000     0x4f74
  .debug_frame   0x00000000       0x3c Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_frame   0x0000003c      0x168 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_frame   0x000001a4      0x348 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
@@ -11235,12 +11301,12 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_frame   0x00004cd4       0x40 Src/DSP/arm_sin_cos_q31.o
  .debug_frame   0x00004d14       0x40 Src/DSP/arm_sqrt_q31.o
  .debug_frame   0x00004d54       0x20 Src/Dispositivos/IMU_9DOF.o
- .debug_frame   0x00004d74       0x40 Src/FuncionesRTOS/TASK_AHRS.o
- .debug_frame   0x00004db4       0x30 Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_frame   0x00004de4       0x30 Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_frame   0x00004e14       0x3c Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_frame   0x00004e50       0x30 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_frame   0x00004e80       0x44 Src/FuncionesRTOS/TASK_IMU.o
- .debug_frame   0x00004ec4       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
- .debug_frame   0x00004ef0       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00004f18       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00004d74       0x7c Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_frame   0x00004df0       0x30 Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_frame   0x00004e20       0x30 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_frame   0x00004e50       0x3c Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_frame   0x00004e8c       0x30 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_frame   0x00004ebc       0x44 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_frame   0x00004f00       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00004f2c       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00004f54       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memset.o)

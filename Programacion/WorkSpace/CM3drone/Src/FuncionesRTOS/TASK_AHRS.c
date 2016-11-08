@@ -42,3 +42,17 @@ void AHRS_TASK_FCN(void const * argument) {
 void AHRS_TIMER_FCN(void const * argument) {
 	xSemaphoreGive(AHRS_SMPHRHandle);
 }
+
+void ResetAHRS(){
+	AHRS.OrientacionAHRS.Pitch = 0;
+	AHRS.OrientacionAHRS.Roll = 0;
+	AHRS.OrientacionAHRS.Yaw = 0;
+
+	arm_fill_q15(0, (q15_t*)AHRS.OrientacionAHRS.DCM_matriz, 9);
+	AHRS.OrientacionAHRS.DCM_matriz[0][0] = 32767;
+	AHRS.OrientacionAHRS.DCM_matriz[1][1] = 32767;
+	AHRS.OrientacionAHRS.DCM_matriz[2][2] = 32767;
+}
+void setAHRS(tpAHRS *AHRSset){
+	memcpy(&AHRS, AHRSset, sizeof(tpAHRS));
+}

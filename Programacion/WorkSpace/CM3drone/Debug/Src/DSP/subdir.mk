@@ -8,6 +8,7 @@ C_SRCS += \
 ../Src/DSP/arm_biquad_cascade_df1_q15.c \
 ../Src/DSP/arm_copy_q15.c \
 ../Src/DSP/arm_dot_prod_q15.c \
+../Src/DSP/arm_fill_q15.c \
 ../Src/DSP/arm_mat_mult_q15.c \
 ../Src/DSP/arm_scale_q15.c \
 ../Src/DSP/arm_sin_cos_q31.c \
@@ -20,6 +21,7 @@ OBJS += \
 ./Src/DSP/arm_biquad_cascade_df1_q15.o \
 ./Src/DSP/arm_copy_q15.o \
 ./Src/DSP/arm_dot_prod_q15.o \
+./Src/DSP/arm_fill_q15.o \
 ./Src/DSP/arm_mat_mult_q15.o \
 ./Src/DSP/arm_scale_q15.o \
 ./Src/DSP/arm_sin_cos_q31.o \
@@ -32,6 +34,7 @@ C_DEPS += \
 ./Src/DSP/arm_biquad_cascade_df1_q15.d \
 ./Src/DSP/arm_copy_q15.d \
 ./Src/DSP/arm_dot_prod_q15.d \
+./Src/DSP/arm_fill_q15.d \
 ./Src/DSP/arm_mat_mult_q15.d \
 ./Src/DSP/arm_scale_q15.d \
 ./Src/DSP/arm_sin_cos_q31.d \
