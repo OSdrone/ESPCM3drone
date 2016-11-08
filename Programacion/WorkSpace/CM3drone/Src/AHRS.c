@@ -39,7 +39,7 @@ void Actualizar_Matriz_DCM_V2(tpAHRS *AHRS, q16_4_t VelocidadAngular[3]){
 	q31_t Seno = 0;
 	q31_t Coseno = 0;
 
-	int32_t Aux32 = 0;
+	uint32_t Aux32 = 0;
 
 	q15_t Rot_matriz[3][3] = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
 	arm_matrix_instance_q15 Rotacion = { 3, 3, (q15_t *) Rot_matriz };
@@ -59,10 +59,12 @@ void Actualizar_Matriz_DCM_V2(tpAHRS *AHRS, q16_4_t VelocidadAngular[3]){
 	Aux32 = ((int32_t)VelocidadAngularTotal[0] * VelocidadAngularTotal[0]);
 	Aux32 += ((int32_t)VelocidadAngularTotal[1] * VelocidadAngularTotal[1]);
 	Aux32 += ((int32_t)VelocidadAngularTotal[2] * VelocidadAngularTotal[2]);
-	//Velocidad en formato q32_6
+	//Velocidad en formato q32_8
 
-	arm_sqrt_q31(Aux32, &Aux32); //TODO revisar coma fija al hacer sqtr, resultado de q32_6 q32_12?
-	VelocidadAngularMagnitud = (q16_3_t)(Aux32>>(12-3));
+
+	VelocidadAngularMagnitud = (q16_3_t)((2^3) * (q16_3_t)sqrtf(Aux32/256.0));
+//	arm_sqrt_q31(Aux32, &Aux32); //TODO revisar coma fija al hacer sqtr, resultado de q32_6 q32_12?
+//	VelocidadAngularMagnitud = (q16_3_t)(Aux32>>(12-3));
 
 	//Normalizamos el vector de rotacion
 	Vector_Rotacion[0] = (q15_t)((int32_t)(VelocidadAngularTotal[0]<<16) / VelocidadAngularMagnitud);
@@ -173,7 +175,7 @@ void Correccion_deriva(tpAHRS *AHRS, q15_t AceleracionLineal[3], q31_t Orientaci
 }
 
 void Angulos_Euler(tpAHRS *AHRS) {
-//	AHRS->OrientacionAHRS.Pitch = 32767 * (-asin(AHRS->OrientacionAHRS.DCM_matriz[2][0]/32768.0)) / PI;
+	AHRS->OrientacionAHRS.Pitch = 32767 * (-asin(AHRS->OrientacionAHRS.DCM_matriz[2][0]/32768.0)) / PI;
 	AHRS->OrientacionAHRS.Roll  = 32767 * (atan2(AHRS->OrientacionAHRS.DCM_matriz[2][1], AHRS->OrientacionAHRS.DCM_matriz[2][2])) / PI;
 	AHRS->OrientacionAHRS.Yaw = 32767 * (atan2(AHRS->OrientacionAHRS.DCM_matriz[1][0], AHRS->OrientacionAHRS.DCM_matriz[0][0])) / PI;
 }
