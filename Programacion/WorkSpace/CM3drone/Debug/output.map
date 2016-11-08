@@ -73,7 +73,6 @@ ALTURA_TASKHandle   0x4               Src/freertos.o
 ALTURA_TIMERHandle  0x4               Src/freertos.o
 htim4               0x3c              Src/tim.o
 ModoCalibracion     0x1               Src/main.o
-CalibracionIMU9DOF  0x94              Src/main.o
 CONTROL_SMPHRHandle
                     0x4               Src/freertos.o
 ModoIdentificacion  0x1               Src/main.o
@@ -91,7 +90,6 @@ htim3               0x3c              Src/tim.o
 IMU_TIMERHandle     0x4               Src/freertos.o
 hdma_i2c2_rx        0x38              Src/i2c.o
 AHRS_TIMERHandle    0x4               Src/freertos.o
-IMU9250             0xe               Src/main.o
 hdma_i2c2_tx        0x38              Src/i2c.o
 hadc1               0x30              Src/adc.o
 IMU_SMPHRHandle     0x4               Src/freertos.o
@@ -6601,8 +6599,6 @@ Discarded input sections
  .group         0x00000000        0x8 Src/main.o
  .group         0x00000000        0x8 Src/main.o
  .text          0x00000000        0x0 Src/main.o
- .data          0x00000000        0x1 Src/main.o
- .bss           0x00000000        0x2 Src/main.o
  .debug_macro   0x00000000      0x886 Src/main.o
  .debug_macro   0x00000000      0x11e Src/main.o
  .debug_macro   0x00000000      0x1bd Src/main.o
@@ -6682,6 +6678,7 @@ Discarded input sections
  .debug_macro   0x00000000       0xe4 Src/main.o
  .debug_macro   0x00000000       0x5e Src/main.o
  .debug_macro   0x00000000       0xa7 Src/main.o
+ COMMON         0x00000000        0x2 Src/main.o
  .group         0x00000000        0x8 Src/stm32f1xx_hal_msp.o
  .group         0x00000000        0x8 Src/stm32f1xx_hal_msp.o
  .group         0x00000000        0x8 Src/stm32f1xx_hal_msp.o
@@ -10275,7 +10272,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 [!provide]                PROVIDE (__fini_array_end, .)
                 0x0800a964                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x1b4 load address 0x0800a964
+.data           0x20000000      0x1c4 load address 0x0800a964
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -10285,100 +10282,104 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x2000002c                USBD_DFU
  .data          0x20000068        0x4 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
  .data          0x2000006c        0x8 Src/i2c.o
- .data          0x20000074       0x34 Src/usbd_desc.o
-                0x20000074                USBD_FS_DeviceDesc
-                0x20000088                USBD_LangIDDesc
-                0x2000008c                FS_Desc
- .data          0x200000a8       0x1c Src/usbd_dfu_if.o
-                0x200000a8                USBD_DFU_fops_FS
- .data          0x200000c4       0x88 Src/FuncionesRTOS/TASK_IMU.o
+ .data          0x20000074        0xf Src/main.o
+                0x20000074                IMU9250
+                0x20000082                ModoTelemetria
+ *fill*         0x20000083        0x1 
+ .data          0x20000084       0x34 Src/usbd_desc.o
+                0x20000084                USBD_FS_DeviceDesc
+                0x20000098                USBD_LangIDDesc
+                0x2000009c                FS_Desc
+ .data          0x200000b8       0x1c Src/usbd_dfu_if.o
+                0x200000b8                USBD_DFU_fops_FS
+ .data          0x200000d4       0x88 Src/FuncionesRTOS/TASK_IMU.o
  *(.data*)
  .data.__fdlib_version
-                0x2000014c        0x1 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_lib_ver.o)
-                0x2000014c                __fdlib_version
- *fill*         0x2000014d        0x3 
+                0x2000015c        0x1 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_lib_ver.o)
+                0x2000015c                __fdlib_version
+ *fill*         0x2000015d        0x3 
  .data.impure_data
-                0x20000150       0x60 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-impure.o)
+                0x20000160       0x60 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-impure.o)
  .data._impure_ptr
-                0x200001b0        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-impure.o)
-                0x200001b0                _impure_ptr
-                0x200001b4                . = ALIGN (0x4)
-                0x200001b4                _edata = .
+                0x200001c0        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-impure.o)
+                0x200001c0                _impure_ptr
+                0x200001c4                . = ALIGN (0x4)
+                0x200001c4                _edata = .
 
-.jcr            0x200001b4        0x0 load address 0x0800ab18
- .jcr           0x200001b4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+.jcr            0x200001c4        0x0 load address 0x0800ab28
+ .jcr           0x200001c4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
 
 .tm_clone_table
-                0x200001b4        0x0 load address 0x0800ab18
+                0x200001c4        0x0 load address 0x0800ab28
  .tm_clone_table
-                0x200001b4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+                0x200001c4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
  .tm_clone_table
-                0x200001b4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtend.o
+                0x200001c4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtend.o
 
-.igot.plt       0x200001b4        0x0 load address 0x0800ab18
- .igot.plt      0x200001b4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
-                0x200001b4                . = ALIGN (0x4)
+.igot.plt       0x200001c4        0x0 load address 0x0800ab28
+ .igot.plt      0x200001c4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+                0x200001c4                . = ALIGN (0x4)
 
-.bss            0x200001b4     0x3380 load address 0x0800ab18
-                0x200001b4                _sbss = .
-                0x200001b4                __bss_start__ = _sbss
+.bss            0x200001c4     0x3370 load address 0x0800ab28
+                0x200001c4                _sbss = .
+                0x200001c4                __bss_start__ = _sbss
  *(.bss)
- .bss           0x200001b4       0x1c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
- .bss           0x200001d0        0x4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .bss           0x200001d4       0xff Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Src/usbd_dfu.o
- .bss           0x200002d3        0x1 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
- .bss           0x200002d4      0x128 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
-                0x20000304                pxCurrentTCB
- .bss           0x200003fc       0x38 Middlewares/Third_Party/FreeRTOS/Source/timers.o
- .bss           0x20000434        0x8 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
- .bss           0x2000043c     0x2018 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .bss           0x20002454       0x7c Src/ServidoresVariables.o
- .bss           0x200024d0      0x41c Src/usbd_conf.o
- .bss           0x200028ec       0x3c Src/FuncionesRTOS/TASK_AHRS.o
- .bss           0x20002928       0x60 Src/FuncionesRTOS/TASK_IMU.o
+ .bss           0x200001c4       0x1c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+ .bss           0x200001e0        0x4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .bss           0x200001e4       0xff Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Src/usbd_dfu.o
+ .bss           0x200002e3        0x1 Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o
+ .bss           0x200002e4      0x128 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+                0x20000314                pxCurrentTCB
+ .bss           0x2000040c       0x38 Middlewares/Third_Party/FreeRTOS/Source/timers.o
+ .bss           0x20000444        0x8 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3/port.o
+ .bss           0x2000044c     0x2018 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
+ .bss           0x20002464       0x7c Src/ServidoresVariables.o
+ .bss           0x200024e0       0x96 Src/main.o
+                0x200024e0                CalibracionIMU9DOF
+                0x20002574                ModoControl
+                0x20002575                Estado
+ *fill*         0x20002576        0x2 
+ .bss           0x20002578      0x41c Src/usbd_conf.o
+ .bss           0x20002994       0x3c Src/FuncionesRTOS/TASK_AHRS.o
+ .bss           0x200029d0       0x60 Src/FuncionesRTOS/TASK_IMU.o
  *(.bss*)
  *(COMMON)
- COMMON         0x20002988       0x40 Middlewares/Third_Party/FreeRTOS/Source/queue.o
-                0x20002988                xQueueRegistry
- COMMON         0x200029c8       0x30 Src/adc.o
-                0x200029c8                hadc1
- COMMON         0x200029f8        0x8 Src/crc.o
-                0x200029f8                hcrc
- COMMON         0x20002a00       0x5c Src/freertos.o
-                0x20002a00                defaultTaskHandle
-                0x20002a04                ALTURA_TASKHandle
-                0x20002a08                ALTURA_TIMERHandle
-                0x20002a0c                CONTROL_SMPHRHandle
-                0x20002a10                COMPASS_TIMERHandle
-                0x20002a14                UART_SMPHRHandle
-                0x20002a18                CONTROL_TASKHandle
-                0x20002a1c                COMPASS_TASKHandle
-                0x20002a20                IMU_TIMERHandle
-                0x20002a24                AHRS_TIMERHandle
-                0x20002a28                IMU_SMPHRHandle
-                0x20002a2c                ALTURA_SMPHRHandle
-                0x20002a30                I2C_2_SMPHRHandle
-                0x20002a34                COORDINADOR_TASHandle
-                0x20002a38                CONTROL_TIMERHandle
-                0x20002a3c                COORDINADOR_SMPHRHandle
-                0x20002a40                COMPASS_SMPHRHandle
-                0x20002a44                IMU_TASKHandle
-                0x20002a48                COORDINADOR_TIMERHandle
-                0x20002a4c                UART_MUTEXHandle
-                0x20002a50                AHRS_SMPHRHandle
-                0x20002a54                AHRS_TASKHandle
-                0x20002a58                I2C_2_MUTEXHandle
- COMMON         0x20002a5c       0xb4 Src/i2c.o
-                0x20002a5c                hi2c2
-                0x20002aa0                hdma_i2c2_rx
-                0x20002ad8                hdma_i2c2_tx
- COMMON         0x20002b10       0x10 Src/iwdg.o
-                0x20002b10                hiwdg
- COMMON         0x20002b20       0xa8 Src/main.o
-                0x20002b20                ModoCalibracion
-                0x20002b24                CalibracionIMU9DOF
-                0x20002bb8                ModoIdentificacion
-                0x20002bba                IMU9250
+ COMMON         0x20002a30       0x40 Middlewares/Third_Party/FreeRTOS/Source/queue.o
+                0x20002a30                xQueueRegistry
+ COMMON         0x20002a70       0x30 Src/adc.o
+                0x20002a70                hadc1
+ COMMON         0x20002aa0        0x8 Src/crc.o
+                0x20002aa0                hcrc
+ COMMON         0x20002aa8       0x5c Src/freertos.o
+                0x20002aa8                defaultTaskHandle
+                0x20002aac                ALTURA_TASKHandle
+                0x20002ab0                ALTURA_TIMERHandle
+                0x20002ab4                CONTROL_SMPHRHandle
+                0x20002ab8                COMPASS_TIMERHandle
+                0x20002abc                UART_SMPHRHandle
+                0x20002ac0                CONTROL_TASKHandle
+                0x20002ac4                COMPASS_TASKHandle
+                0x20002ac8                IMU_TIMERHandle
+                0x20002acc                AHRS_TIMERHandle
+                0x20002ad0                IMU_SMPHRHandle
+                0x20002ad4                ALTURA_SMPHRHandle
+                0x20002ad8                I2C_2_SMPHRHandle
+                0x20002adc                COORDINADOR_TASHandle
+                0x20002ae0                CONTROL_TIMERHandle
+                0x20002ae4                COORDINADOR_SMPHRHandle
+                0x20002ae8                COMPASS_SMPHRHandle
+                0x20002aec                IMU_TASKHandle
+                0x20002af0                COORDINADOR_TIMERHandle
+                0x20002af4                UART_MUTEXHandle
+                0x20002af8                AHRS_SMPHRHandle
+                0x20002afc                AHRS_TASKHandle
+                0x20002b00                I2C_2_MUTEXHandle
+ COMMON         0x20002b04       0xb4 Src/i2c.o
+                0x20002b04                hi2c2
+                0x20002b48                hdma_i2c2_rx
+                0x20002b80                hdma_i2c2_tx
+ COMMON         0x20002bb8       0x10 Src/iwdg.o
+                0x20002bb8                hiwdg
  COMMON         0x20002bc8       0x78 Src/tim.o
                 0x20002bc8                htim4
                 0x20002c04                htim3
@@ -10397,7 +10398,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x20003534                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20003534      0x604 load address 0x0800ab18
+                0x20003534      0x604 load address 0x0800ab28
                 0x20003538                . = ALIGN (0x8)
  *fill*         0x20003534        0x4 
                 [!provide]                PROVIDE (end, .)
