@@ -31,7 +31,7 @@ void IMU_TASK_FCN(void const * argument){
 	while(1){
 		xSemaphoreTake(IMU_SMPHRHandle, portMAX_DELAY);
 
-		MandarDatosI2C(&hi2c2, IMU9250.Direccion_IMU , (uint8_t*)BufferSalida, DatosLeidos, 1, 14);
+		MandarDatosI2C(hi2c2, uint16_t IMU9250.Direccion_IMU, BufferSalida, DatosLeidos, 1, 14);
 
 		//Ordenar datos si se precisa
 		LecturasIMU.x_acel = ((uint16_t)DatosLeidos[0])<<8 | DatosLeidos[1];
