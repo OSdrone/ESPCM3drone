@@ -28,15 +28,31 @@ void IMU_TASK_FCN(void const * argument){
 	const uint8_t BufferSalida[] = {IMU_MPU6050_ACCEL_XOUT_H};
 	uint8_t DatosLeidos[14];
 
+	int16_t LecturaOrientada_matriz[3];
+	arm_matrix_instance_q15 LecturaOrientada = {3, 1, NULL};
+	int16_t Lectura_matriz[3];
+	arm_matrix_instance_q15 Lectura = {3, 1, Lectura_matriz};
+
 	while(1){
 		xSemaphoreTake(IMU_SMPHRHandle, portMAX_DELAY);
 
 		MandarDatosI2C(&hi2c2, IMU9250.Direccion_IMU , (uint8_t*)BufferSalida, DatosLeidos, 1, 14);
 
 		//Ordenar datos si se precisa
+		Lectura_matriz[0] = (int16_t)((uint16_t)DatosLeidos[0])<<8 | DatosLeidos[1];
+		Lectura_matriz[1] = (int16_t)((uint16_t)DatosLeidos[2])<<8 | DatosLeidos[3];
+		Lectura_matriz[2] = (int16_t)((uint16_t)DatosLeidos[4])<<8 | DatosLeidos[5];
+
+		arm_mat_mult_q15(&CalibracionIMU9DOF.Correccion_Alineamiento_IMU,
+				&Lectura, &LecturaOrientada, NULL);
+
+/*
+		//Ordenar datos si se precisa
 		LecturasIMU.x_acel = ((uint16_t)DatosLeidos[0])<<8 | DatosLeidos[1];
 		LecturasIMU.y_acel = ((uint16_t)DatosLeidos[2])<<8 | DatosLeidos[3];
 		LecturasIMU.z_acel = ((uint16_t)DatosLeidos[4])<<8 | DatosLeidos[5];
+
+		//Orientada
 
 		LecturasIMU.temp = ((uint16_t)DatosLeidos[6])<<8 | DatosLeidos[7];
 
@@ -54,7 +70,7 @@ void IMU_TASK_FCN(void const * argument){
 		arm_biquad_cascade_df1_q15(&FiltroVelocidad[0], &LecturasIMU.x_vel, &LecturasIMU.x_vel, 1);
 		arm_biquad_cascade_df1_q15(&FiltroVelocidad[1], &LecturasIMU.y_vel, &LecturasIMU.y_vel, 1);
 		arm_biquad_cascade_df1_q15(&FiltroVelocidad[2], &LecturasIMU.z_vel, &LecturasIMU.z_vel, 1);
-
+*/
 		EscribirLecturasIMU(&LecturasIMU);
 	}
 }

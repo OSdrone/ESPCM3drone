@@ -1,4 +1,4 @@
-12:21:36 **** Incremental Build of configuration Debug for project CM3drone ****
+17:37:14 **** Incremental Build of configuration Debug for project CM3drone ****
 make all 
 'Building file: ../Src/FuncionesRTOS/TASK_IMU.c'
 'Invoking: MCU GCC Compiler'
@@ -11,6 +11,17 @@ C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Dri
 C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include/arm_math.h:716:9: warning: implicit declaration of function '__SSAT' [-Wimplicit-function-declaration]
      r = __SSAT(((((q31_t)x << 24) >> 24) + (((q31_t)y << 24) >> 24)), 8) & (int32_t)0x000000FF;
          ^
+../Src/FuncionesRTOS/TASK_IMU.c: In function 'IMU_TASK_FCN':
+../Src/FuncionesRTOS/TASK_IMU.c:31:10: warning: unused variable 'LecturaOrientada_matriz' [-Wunused-variable]
+  int16_t LecturaOrientada_matriz[3];
+          ^
+../Src/FuncionesRTOS/TASK_IMU.c: At top level:
+../Src/FuncionesRTOS/TASK_IMU.c:12:37: warning: 'FiltroVelocidad' defined but not used [-Wunused-variable]
+ static arm_biquad_casd_df1_inst_q15 FiltroVelocidad[3] = {
+                                     ^
+../Src/FuncionesRTOS/TASK_IMU.c:20:37: warning: 'FiltroAceleracion' defined but not used [-Wunused-variable]
+ static arm_biquad_casd_df1_inst_q15 FiltroAceleracion[3] = {
+                                     ^
 'Finished building: ../Src/FuncionesRTOS/TASK_IMU.c'
 ' '
 'Building target: CM3drone.elf'
@@ -23,5 +34,5 @@ make --no-print-directory post-build
 arm-none-eabi-objcopy -O binary "CM3drone.elf" "CM3drone.bin"
 arm-none-eabi-size "CM3drone.elf"
    text	   data	    bss	    dec	    hex	filename
-  43228	    460	  14708	  58396	   e41c	CM3drone.elf
+  42692	    324	  14596	  57612	   e10c	CM3drone.elf
 ' '

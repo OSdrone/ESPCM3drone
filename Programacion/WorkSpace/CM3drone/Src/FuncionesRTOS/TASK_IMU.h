@@ -16,6 +16,7 @@
 #include "ServidoresVariables.h"
 
 extern osSemaphoreId IMU_SMPHRHandle;
+//extern tpCalibracionIMU9DOF CalibracionIMU9DOF;
 
 extern tpIMU9250 IMU9250;
 extern tpCalibracionIMU9DOF CalibracionIMU9DOF;

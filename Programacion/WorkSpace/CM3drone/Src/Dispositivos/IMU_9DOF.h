@@ -111,13 +111,13 @@ typedef struct{
 }tpLecturas9DOFIMU;
 
 typedef struct { //tpCalibracion_IMU
-	int16_t Rango_Acel_x[2]; // Min Max
+//	int16_t Rango_Acel_x[2]; // Min Max
 	int16_t Media_Acel_x;
 	float32_t Des_est_Acel_x;
-	int16_t Rango_Acel_y[2];
+//	int16_t Rango_Acel_y[2];
 	int16_t Media_Acel_y;
 	float32_t Des_est_Acel_y;
-	int16_t Rango_Acel_z[2];
+//	int16_t Rango_Acel_z[2];
 	int16_t Media_Acel_z;
 	float32_t Des_est_Acel_z;
 
@@ -148,6 +148,7 @@ typedef struct { //tpCalibracion_IMU
 	arm_matrix_instance_q15 Correccion_Alineamiento_IMU;
 	q15_t Correccion_COMPASS_matriz[9];
 	arm_matrix_instance_q15 Correccion_COMPASS_IMU;
+
 } tpCalibracionIMU9DOF;
 
 //int16_t LeerSensibilidadGiroscopo();
