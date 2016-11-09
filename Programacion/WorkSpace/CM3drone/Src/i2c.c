@@ -195,16 +195,4 @@ void HAL_I2C_MasterTxCpltCallback(I2C_HandleTypeDef *hi2c){
 	xSemaphoreGiveFromISR(hi2c->Syncro, &xHigherPriorityTaskWoken);
 }
 
-void MandarDatosI2C(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pDataTX, uint8_t *pDataRX,
-		uint16_t SizeTX, uint16_t SizeRX){
-
-	xSemaphoreTake(hi2c->MutexI2C, portMAX_DELAY);
-	HAL_I2C_Master_Transmit_DMA(hi2c, DevAddress, pDataTX, SizeTX);
-	xSemaphoreTake(hi2c->Syncro, portMAX_DELAY);
-	HAL_I2C_Master_Receive_DMA(hi2c, DevAddress, pDataRX, SizeRX);
-	xSemaphoreTake(hi2c->Syncro, portMAX_DELAY);
-	xSemaphoreGive(hi2c->MutexI2C);
-
-}
-
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
