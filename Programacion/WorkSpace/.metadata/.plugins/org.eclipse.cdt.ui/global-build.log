@@ -1,5 +1,18 @@
-10:41:37 **** Incremental Build of configuration Debug for project CM3drone ****
+11:09:52 **** Incremental Build of configuration Debug for project CM3drone ****
 make all 
+'Building file: ../Src/FuncionesRTOS/TASK_COMPASS.c'
+'Invoking: MCU GCC Compiler'
+C:\Users\DTUser\Documents\GitHub\ESPCM3drone\Programacion\WorkSpace\CM3drone\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -std=c99 -D__weak="__attribute__((weak))" -D__packed="__attribute__((__packed__))" -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3 -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/ST/STM32_USB_Device_Library/Class/DFU/Inc" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Src" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Src/DSP" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Inc"  -Os -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/FuncionesRTOS/TASK_COMPASS.d" -MT"Src/FuncionesRTOS/TASK_COMPASS.o" -o "Src/FuncionesRTOS/TASK_COMPASS.o" "../Src/FuncionesRTOS/TASK_COMPASS.c"
+In file included from C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Src/Dispositivos/IMU_9DOF.h:10:0,
+                 from ../Src/FuncionesRTOS/TASK_COMPASS.h:13,
+                 from ../Src/FuncionesRTOS/TASK_COMPASS.c:8:
+C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include/arm_math.h: In function '__QADD8':
+C:/Users/DTUser/Documents/GitHub/ESPCM3drone/Programacion/WorkSpace/CM3drone/Drivers/CMSIS/Include/arm_math.h:716:9: warning: implicit declaration of function '__SSAT' [-Wimplicit-function-declaration]
+     r = __SSAT(((((q31_t)x << 24) >> 24) + (((q31_t)y << 24) >> 24)), 8) & (int32_t)0x000000FF;
+         ^
+'Finished building: ../Src/FuncionesRTOS/TASK_COMPASS.c'
+' '
 'Building file: ../Src/FuncionesRTOS/TASK_IMU.c'
 'Invoking: MCU GCC Compiler'
 C:\Users\DTUser\Documents\GitHub\ESPCM3drone\Programacion\WorkSpace\CM3drone\Debug
@@ -23,5 +36,5 @@ make --no-print-directory post-build
 arm-none-eabi-objcopy -O binary "CM3drone.elf" "CM3drone.bin"
 arm-none-eabi-size "CM3drone.elf"
    text	   data	    bss	    dec	    hex	filename
-  43292	    600	  14552	  58444	   e44c	CM3drone.elf
+  43644	    600	  14568	  58812	   e5bc	CM3drone.elf
 ' '

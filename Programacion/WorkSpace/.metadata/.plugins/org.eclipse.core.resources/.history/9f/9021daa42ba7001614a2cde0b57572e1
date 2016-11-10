@@ -14,7 +14,7 @@ void COMPASS_TASK_FCN(void const * argument){
 	uint8_t DatosLeidos[6];
 
 //	int16_t LecturaOrientada_matriz[3];
-	arm_matrix_instance_q15 LecturaOrientada = {3, 1, &LecturasBrujula.x_mag};
+//	arm_matrix_instance_q15 LecturaOrientada = {3, 1, LecturaOrientada_matriz};
 	int16_t Lectura_matriz[3];
 	arm_matrix_instance_q15 Lectura = {3, 1, Lectura_matriz};
 
@@ -26,13 +26,9 @@ void COMPASS_TASK_FCN(void const * argument){
 		Lectura_matriz[0] = (int16_t)((uint16_t)DatosLeidos[0])<<8 | DatosLeidos[1];
 		Lectura_matriz[1] = (int16_t)((uint16_t)DatosLeidos[2])<<8 | DatosLeidos[3];
 		Lectura_matriz[2] = (int16_t)((uint16_t)DatosLeidos[4])<<8 | DatosLeidos[5];
-
-		//Cola para otras tareas
-		xQueueOverwrite(MagLecturasCola_Handle, Lectura_matriz);
-
 		//Alinear
 		arm_mat_mult_q15(&CalibracionIMU9DOF.Correccion_Alineamiento_IMU,
-				&Lectura, &LecturaOrientada, NULL);
+				&Lectura, &LecturasBrujula.x_mag, NULL);
 
 		//TODO Filtrar
 

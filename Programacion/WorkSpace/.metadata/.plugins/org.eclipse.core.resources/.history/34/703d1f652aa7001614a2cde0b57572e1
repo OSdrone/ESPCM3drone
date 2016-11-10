@@ -57,10 +57,7 @@ tpModoIdentificacion ModoIdentificacion;
 //SENSORES
 tpIMU9250 IMU9250 = {
 		.Direccion_IMU = DIR_0_IMU_MPU9250,
-		.Direccion_MAG = Dir_MAG_MPU9250,
-		.Sensibilidad_Acel = 4,
-		.Sensibilidad_Giroscopo = 2000,
-		.Sensibilidad_Brujula = 19, //TODO ajustar
+		.Direccion_MAG = Dir_MAG_MPU9250
 };
 
 tpCalibracionIMU9DOF CalibracionIMU9DOF = {

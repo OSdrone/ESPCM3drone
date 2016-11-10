@@ -20,8 +20,6 @@ extern osSemaphoreId COMPASS_SMPHRHandle;
 extern tpIMU9250 IMU9250;
 extern tpCalibracionIMU9DOF CalibracionIMU9DOF;
 
-extern QueueHandle_t MagLecturasCola_Handle;;
-
 void COMPASS_TASK_FCN(void const * argument);
 void COMPASS_TIMER_FCN(void const * argument);
 

@@ -65,10 +65,6 @@ osSemaphoreId AHRS_SMPHRHandle;
 osSemaphoreId I2C_2_SMPHRHandle;
 osSemaphoreId UART_SMPHRHandle;
 
-QueueHandle_t AcelLecturasCola_Handle;
-QueueHandle_t VelLecturasCola_Handle;
-QueueHandle_t MagLecturasCola_Handle;
-
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
@@ -219,10 +215,6 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
-
-  AcelLecturasCola_Handle = xQueueCreate(1, 3*sizeof(int16_t));
-  VelLecturasCola_Handle = xQueueCreate(1, 3*sizeof(int16_t));
-  MagLecturasCola_Handle = xQueueCreate(1, 3*sizeof(int16_t));
 }
 
 /* StartDefaultTask function */

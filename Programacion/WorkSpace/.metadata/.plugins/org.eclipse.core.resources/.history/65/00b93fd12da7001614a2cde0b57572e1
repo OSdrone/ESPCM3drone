@@ -28,7 +28,7 @@ void COMPASS_TASK_FCN(void const * argument){
 		Lectura_matriz[2] = (int16_t)((uint16_t)DatosLeidos[4])<<8 | DatosLeidos[5];
 
 		//Cola para otras tareas
-		xQueueOverwrite(MagLecturasCola_Handle, Lectura_matriz);
+		xQueueOverwrite(VelLecturasCola_Handle, Lectura_matriz);
 
 		//Alinear
 		arm_mat_mult_q15(&CalibracionIMU9DOF.Correccion_Alineamiento_IMU,

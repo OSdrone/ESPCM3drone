@@ -1,0 +1,19 @@
+/*
+ * TASK_COMPASS.c
+ *
+ *  Created on: 1 de nov. de 2016
+ *      Author: Ruben
+ */
+
+#include "TASK_COMPASS.h"
+
+void COMPASS_TASK_FCN(void const * argument){
+
+	while(1){
+		xSemaphoreTake(COMPASS_SMPHRHandle, portMAX_DELAY);
+	}
+}
+
+void COMPASS_TIMER_FCN(void const * argument){
+	xSemaphoreGive(COMPASS_SMPHRHandle);
+}

@@ -76,12 +76,18 @@ ModoCalibracion     0x1               Src/main.o
 CONTROL_SMPHRHandle
                     0x4               Src/freertos.o
 ModoIdentificacion  0x1               Src/main.o
+AcelLecturasCola_Handle
+                    0x4               Src/freertos.o
+VelLecturasCola_Handle
+                    0x4               Src/freertos.o
 hiwdg               0x10              Src/iwdg.o
 hcrc                0x8               Src/crc.o
 hi2c2               0x44              Src/i2c.o
 COMPASS_TIMERHandle
                     0x4               Src/freertos.o
 UART_SMPHRHandle    0x4               Src/freertos.o
+MagLecturasCola_Handle
+                    0x4               Src/freertos.o
 xQueueRegistry      0x40              Middlewares/Third_Party/FreeRTOS/Source/queue.o
 pFlash              0x20              Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
 CONTROL_TASKHandle  0x4               Src/freertos.o
@@ -5538,8 +5544,6 @@ Discarded input sections
                 0x00000000       0x40 Src/ServidoresVariables.o
  .text.EscribirVariablesEstado_Q16
                 0x00000000       0x40 Src/ServidoresVariables.o
- .text.EscribirLecturasBrujulas
-                0x00000000       0x34 Src/ServidoresVariables.o
  .text.LeerVariableAHRS_Orientacion_q15
                 0x00000000       0x44 Src/ServidoresVariables.o
  .text.LeerOrientacionMagnetica
@@ -8573,10 +8577,162 @@ Discarded input sections
  .bss           0x00000000        0x0 Src/FuncionesRTOS/TASK_ALTURA.o
  .debug_macro   0x00000000      0x886 Src/FuncionesRTOS/TASK_ALTURA.o
  .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
+ .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_COMPASS.o
  .text          0x00000000        0x0 Src/FuncionesRTOS/TASK_COMPASS.o
  .data          0x00000000        0x0 Src/FuncionesRTOS/TASK_COMPASS.o
  .bss           0x00000000        0x0 Src/FuncionesRTOS/TASK_COMPASS.o
  .debug_macro   0x00000000      0x886 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x16d Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x22 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x44 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xfd Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x22 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x1df Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x11e Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xe0 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x15d Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xd9 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x10 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x1f Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x3ed Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x16 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x26 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xc0 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x9a Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x91 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xb0 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x7f Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xcf Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x12 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x3a Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x58 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x35 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x9c Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x52 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x16 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x43 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x187 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x34c Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x10 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x35 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xde Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xe4 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x5e Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0xa7 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x2e Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x22 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0xb8e Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000     0xf2f7 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x43 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000     0x3383 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x10 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x10 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x22 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x3a Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x10 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x40 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x65 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x16 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x166 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x50 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x778 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x28b Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x141 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x197 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x1ae Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x2d Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x3c Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x57 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x46a Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x1b5 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x22 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x8c Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x242 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x21f Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x99 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x143 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x83e Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x11 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x256 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x50 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000      0x26c Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00000000       0x7c Src/FuncionesRTOS/TASK_COMPASS.o
  .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_CONTROL.o
  .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_CONTROL.o
  .group         0x00000000        0x8 Src/FuncionesRTOS/TASK_CONTROL.o
@@ -8696,12 +8852,14 @@ Discarded input sections
  .debug_macro   0x00000000       0xe4 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000       0x5e Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000       0xa7 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_macro   0x00000000      0x1c3 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000       0x2e Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000       0x22 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000      0xb8e Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000     0xf2f7 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000       0x43 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000     0x3383 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_macro   0x00000000       0x1c Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000       0x10 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000       0x10 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_macro   0x00000000       0x22 Src/FuncionesRTOS/TASK_CONTROL.o
@@ -9112,7 +9270,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x08000000                g_pfnVectors
                 0x0800010c                . = ALIGN (0x4)
 
-.text           0x08000110     0x9afc
+.text           0x08000110     0x9c5c
                 0x08000110                . = ALIGN (0x4)
  *(.text)
  .text          0x08000110       0xa4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
@@ -9807,478 +9965,480 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
  .text.EscribirLecturasIMU
                 0x080073d0       0x44 Src/ServidoresVariables.o
                 0x080073d0                EscribirLecturasIMU
+ .text.EscribirLecturasBrujulas
+                0x08007414       0x34 Src/ServidoresVariables.o
+                0x08007414                EscribirLecturasBrujulas
  .text.EscribirVariableAHRS_Orientacion_q15
-                0x08007414       0x44 Src/ServidoresVariables.o
-                0x08007414                EscribirVariableAHRS_Orientacion_q15
+                0x08007448       0x44 Src/ServidoresVariables.o
+                0x08007448                EscribirVariableAHRS_Orientacion_q15
  .text.LeerRollPitchYaw
-                0x08007458       0x28 Src/ServidoresVariables.o
-                0x08007458                LeerRollPitchYaw
+                0x0800748c       0x28 Src/ServidoresVariables.o
+                0x0800748c                LeerRollPitchYaw
  .text.EscribirOrientacionMagnetica
-                0x08007480       0x28 Src/ServidoresVariables.o
-                0x08007480                EscribirOrientacionMagnetica
+                0x080074b4       0x28 Src/ServidoresVariables.o
+                0x080074b4                EscribirOrientacionMagnetica
  .text.LeerReferencia
-                0x080074a8       0x38 Src/ServidoresVariables.o
-                0x080074a8                LeerReferencia
+                0x080074dc       0x38 Src/ServidoresVariables.o
+                0x080074dc                LeerReferencia
  .text.MX_ADC1_Init
-                0x080074e0       0x4c Src/adc.o
-                0x080074e0                MX_ADC1_Init
+                0x08007514       0x4c Src/adc.o
+                0x08007514                MX_ADC1_Init
  .text.HAL_ADC_MspInit
-                0x0800752c       0x40 Src/adc.o
-                0x0800752c                HAL_ADC_MspInit
+                0x08007560       0x40 Src/adc.o
+                0x08007560                HAL_ADC_MspInit
  .text.MX_CRC_Init
-                0x0800756c       0x20 Src/crc.o
-                0x0800756c                MX_CRC_Init
+                0x080075a0       0x20 Src/crc.o
+                0x080075a0                MX_CRC_Init
  .text.HAL_CRC_MspInit
-                0x0800758c       0x28 Src/crc.o
-                0x0800758c                HAL_CRC_MspInit
+                0x080075c0       0x28 Src/crc.o
+                0x080075c0                HAL_CRC_MspInit
  .text.MX_DMA_Init
-                0x080075b4       0x60 Src/dma.o
-                0x080075b4                MX_DMA_Init
+                0x080075e8       0x60 Src/dma.o
+                0x080075e8                MX_DMA_Init
  .text.StartDefaultTask
-                0x08007614        0xe Src/freertos.o
-                0x08007614                StartDefaultTask
- *fill*         0x08007622        0x2 
+                0x08007648        0xe Src/freertos.o
+                0x08007648                StartDefaultTask
+ *fill*         0x08007656        0x2 
  .text.MX_FREERTOS_Init
-                0x08007624      0x24c Src/freertos.o
-                0x08007624                MX_FREERTOS_Init
+                0x08007658      0x280 Src/freertos.o
+                0x08007658                MX_FREERTOS_Init
  .text.MX_GPIO_Init
-                0x08007870       0xcc Src/gpio.o
-                0x08007870                MX_GPIO_Init
+                0x080078d8       0xcc Src/gpio.o
+                0x080078d8                MX_GPIO_Init
  .text.MX_I2C2_Init
-                0x0800793c       0x58 Src/i2c.o
-                0x0800793c                MX_I2C2_Init
+                0x080079a4       0x58 Src/i2c.o
+                0x080079a4                MX_I2C2_Init
  .text.HAL_I2C_MspInit
-                0x08007994       0xc4 Src/i2c.o
-                0x08007994                HAL_I2C_MspInit
+                0x080079fc       0xc4 Src/i2c.o
+                0x080079fc                HAL_I2C_MspInit
  .text.HAL_I2C_MasterRxCpltCallback
-                0x08007a58        0xc Src/i2c.o
-                0x08007a58                HAL_I2C_MasterRxCpltCallback
+                0x08007ac0        0xc Src/i2c.o
+                0x08007ac0                HAL_I2C_MasterRxCpltCallback
  .text.HAL_I2C_MasterTxCpltCallback
-                0x08007a64        0xc Src/i2c.o
-                0x08007a64                HAL_I2C_MasterTxCpltCallback
+                0x08007acc        0xc Src/i2c.o
+                0x08007acc                HAL_I2C_MasterTxCpltCallback
  .text.MandarDatosI2C
-                0x08007a70       0x66 Src/i2c.o
-                0x08007a70                MandarDatosI2C
- *fill*         0x08007ad6        0x2 
+                0x08007ad8       0x66 Src/i2c.o
+                0x08007ad8                MandarDatosI2C
+ *fill*         0x08007b3e        0x2 
  .text.MX_IWDG_Init
-                0x08007ad8       0x28 Src/iwdg.o
-                0x08007ad8                MX_IWDG_Init
+                0x08007b40       0x28 Src/iwdg.o
+                0x08007b40                MX_IWDG_Init
  .text.SystemClock_Config
-                0x08007b00       0x88 Src/main.o
-                0x08007b00                SystemClock_Config
+                0x08007b68       0x88 Src/main.o
+                0x08007b68                SystemClock_Config
  .text.startup.main
-                0x08007b88       0x38 Src/main.o
-                0x08007b88                main
+                0x08007bf0       0x38 Src/main.o
+                0x08007bf0                main
  .text.Error_Handler
-                0x08007bc0        0x2 Src/main.o
-                0x08007bc0                Error_Handler
- *fill*         0x08007bc2        0x2 
+                0x08007c28        0x2 Src/main.o
+                0x08007c28                Error_Handler
+ *fill*         0x08007c2a        0x2 
  .text.Sensibilidad_Giroscopo
-                0x08007bc4        0xc Src/main.o
-                0x08007bc4                Sensibilidad_Giroscopo
+                0x08007c2c        0xc Src/main.o
+                0x08007c2c                Sensibilidad_Giroscopo
  .text.assert_failed
-                0x08007bd0        0x2 Src/main.o
-                0x08007bd0                assert_failed
- *fill*         0x08007bd2        0x2 
+                0x08007c38        0x2 Src/main.o
+                0x08007c38                assert_failed
+ *fill*         0x08007c3a        0x2 
  .text.HAL_MspInit
-                0x08007bd4       0x8c Src/stm32f1xx_hal_msp.o
-                0x08007bd4                HAL_MspInit
+                0x08007c3c       0x8c Src/stm32f1xx_hal_msp.o
+                0x08007c3c                HAL_MspInit
  .text.NMI_Handler
-                0x08007c60        0x2 Src/stm32f1xx_it.o
-                0x08007c60                NMI_Handler
+                0x08007cc8        0x2 Src/stm32f1xx_it.o
+                0x08007cc8                NMI_Handler
  .text.HardFault_Handler
-                0x08007c62        0x2 Src/stm32f1xx_it.o
-                0x08007c62                HardFault_Handler
+                0x08007cca        0x2 Src/stm32f1xx_it.o
+                0x08007cca                HardFault_Handler
  .text.MemManage_Handler
-                0x08007c64        0x2 Src/stm32f1xx_it.o
-                0x08007c64                MemManage_Handler
+                0x08007ccc        0x2 Src/stm32f1xx_it.o
+                0x08007ccc                MemManage_Handler
  .text.BusFault_Handler
-                0x08007c66        0x2 Src/stm32f1xx_it.o
-                0x08007c66                BusFault_Handler
+                0x08007cce        0x2 Src/stm32f1xx_it.o
+                0x08007cce                BusFault_Handler
  .text.UsageFault_Handler
-                0x08007c68        0x2 Src/stm32f1xx_it.o
-                0x08007c68                UsageFault_Handler
+                0x08007cd0        0x2 Src/stm32f1xx_it.o
+                0x08007cd0                UsageFault_Handler
  .text.DebugMon_Handler
-                0x08007c6a        0x2 Src/stm32f1xx_it.o
-                0x08007c6a                DebugMon_Handler
+                0x08007cd2        0x2 Src/stm32f1xx_it.o
+                0x08007cd2                DebugMon_Handler
  .text.SysTick_Handler
-                0x08007c6c        0xe Src/stm32f1xx_it.o
-                0x08007c6c                SysTick_Handler
- *fill*         0x08007c7a        0x2 
+                0x08007cd4        0xe Src/stm32f1xx_it.o
+                0x08007cd4                SysTick_Handler
+ *fill*         0x08007ce2        0x2 
  .text.DMA1_Channel4_IRQHandler
-                0x08007c7c        0xc Src/stm32f1xx_it.o
-                0x08007c7c                DMA1_Channel4_IRQHandler
+                0x08007ce4        0xc Src/stm32f1xx_it.o
+                0x08007ce4                DMA1_Channel4_IRQHandler
  .text.DMA1_Channel5_IRQHandler
-                0x08007c88        0xc Src/stm32f1xx_it.o
-                0x08007c88                DMA1_Channel5_IRQHandler
+                0x08007cf0        0xc Src/stm32f1xx_it.o
+                0x08007cf0                DMA1_Channel5_IRQHandler
  .text.DMA1_Channel6_IRQHandler
-                0x08007c94        0xc Src/stm32f1xx_it.o
-                0x08007c94                DMA1_Channel6_IRQHandler
+                0x08007cfc        0xc Src/stm32f1xx_it.o
+                0x08007cfc                DMA1_Channel6_IRQHandler
  .text.DMA1_Channel7_IRQHandler
-                0x08007ca0        0xc Src/stm32f1xx_it.o
-                0x08007ca0                DMA1_Channel7_IRQHandler
+                0x08007d08        0xc Src/stm32f1xx_it.o
+                0x08007d08                DMA1_Channel7_IRQHandler
  .text.USB_LP_CAN1_RX0_IRQHandler
-                0x08007cac        0xc Src/stm32f1xx_it.o
-                0x08007cac                USB_LP_CAN1_RX0_IRQHandler
+                0x08007d14        0xc Src/stm32f1xx_it.o
+                0x08007d14                USB_LP_CAN1_RX0_IRQHandler
  .text.I2C2_ER_IRQHandler
-                0x08007cb8        0xc Src/stm32f1xx_it.o
-                0x08007cb8                I2C2_ER_IRQHandler
+                0x08007d20        0xc Src/stm32f1xx_it.o
+                0x08007d20                I2C2_ER_IRQHandler
  .text.HAL_TIM_Base_MspInit
-                0x08007cc4       0x28 Src/tim.o
-                0x08007cc4                HAL_TIM_Base_MspInit
+                0x08007d2c       0x28 Src/tim.o
+                0x08007d2c                HAL_TIM_Base_MspInit
  .text.HAL_TIM_PWM_MspInit
-                0x08007cec       0x28 Src/tim.o
-                0x08007cec                HAL_TIM_PWM_MspInit
+                0x08007d54       0x28 Src/tim.o
+                0x08007d54                HAL_TIM_PWM_MspInit
  .text.HAL_TIM_MspPostInit
-                0x08007d14       0x54 Src/tim.o
-                0x08007d14                HAL_TIM_MspPostInit
+                0x08007d7c       0x54 Src/tim.o
+                0x08007d7c                HAL_TIM_MspPostInit
  .text.MX_TIM3_Init
-                0x08007d68       0xb0 Src/tim.o
-                0x08007d68                MX_TIM3_Init
+                0x08007dd0       0xb0 Src/tim.o
+                0x08007dd0                MX_TIM3_Init
  .text.MX_TIM4_Init
-                0x08007e18       0x90 Src/tim.o
-                0x08007e18                MX_TIM4_Init
+                0x08007e80       0x90 Src/tim.o
+                0x08007e80                MX_TIM4_Init
  .text.MX_USART2_UART_Init
-                0x08007ea8       0x38 Src/usart.o
-                0x08007ea8                MX_USART2_UART_Init
+                0x08007f10       0x38 Src/usart.o
+                0x08007f10                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x08007ee0       0xc0 Src/usart.o
-                0x08007ee0                HAL_UART_MspInit
+                0x08007f48       0xc0 Src/usart.o
+                0x08007f48                HAL_UART_MspInit
  .text.MX_USB_DEVICE_Init
-                0x08007fa0       0x38 Src/usb_device.o
-                0x08007fa0                MX_USB_DEVICE_Init
+                0x08008008       0x38 Src/usb_device.o
+                0x08008008                MX_USB_DEVICE_Init
  .text.HAL_PCD_MspInit
-                0x08007fd8       0x3c Src/usbd_conf.o
-                0x08007fd8                HAL_PCD_MspInit
+                0x08008040       0x3c Src/usbd_conf.o
+                0x08008040                HAL_PCD_MspInit
  .text.HAL_PCD_SetupStageCallback
-                0x08008014        0xc Src/usbd_conf.o
-                0x08008014                HAL_PCD_SetupStageCallback
+                0x0800807c        0xc Src/usbd_conf.o
+                0x0800807c                HAL_PCD_SetupStageCallback
  .text.HAL_PCD_DataOutStageCallback
-                0x08008020       0x10 Src/usbd_conf.o
-                0x08008020                HAL_PCD_DataOutStageCallback
+                0x08008088       0x10 Src/usbd_conf.o
+                0x08008088                HAL_PCD_DataOutStageCallback
  .text.HAL_PCD_DataInStageCallback
-                0x08008030        0xe Src/usbd_conf.o
-                0x08008030                HAL_PCD_DataInStageCallback
+                0x08008098        0xe Src/usbd_conf.o
+                0x08008098                HAL_PCD_DataInStageCallback
  .text.HAL_PCD_SOFCallback
-                0x0800803e        0x8 Src/usbd_conf.o
-                0x0800803e                HAL_PCD_SOFCallback
+                0x080080a6        0x8 Src/usbd_conf.o
+                0x080080a6                HAL_PCD_SOFCallback
  .text.HAL_PCD_ResetCallback
-                0x08008046       0x1a Src/usbd_conf.o
-                0x08008046                HAL_PCD_ResetCallback
+                0x080080ae       0x1a Src/usbd_conf.o
+                0x080080ae                HAL_PCD_ResetCallback
  .text.HAL_PCD_SuspendCallback
-                0x08008060       0x20 Src/usbd_conf.o
-                0x08008060                HAL_PCD_SuspendCallback
+                0x080080c8       0x20 Src/usbd_conf.o
+                0x080080c8                HAL_PCD_SuspendCallback
  .text.HAL_PCD_ResumeCallback
-                0x08008080        0x8 Src/usbd_conf.o
-                0x08008080                HAL_PCD_ResumeCallback
+                0x080080e8        0x8 Src/usbd_conf.o
+                0x080080e8                HAL_PCD_ResumeCallback
  .text.USBD_LL_Init
-                0x08008088       0x58 Src/usbd_conf.o
-                0x08008088                USBD_LL_Init
+                0x080080f0       0x58 Src/usbd_conf.o
+                0x080080f0                USBD_LL_Init
  .text.USBD_LL_Start
-                0x080080e0        0xe Src/usbd_conf.o
-                0x080080e0                USBD_LL_Start
+                0x08008148        0xe Src/usbd_conf.o
+                0x08008148                USBD_LL_Start
  .text.USBD_LL_Stop
-                0x080080ee        0xe Src/usbd_conf.o
-                0x080080ee                USBD_LL_Stop
+                0x08008156        0xe Src/usbd_conf.o
+                0x08008156                USBD_LL_Stop
  .text.USBD_LL_OpenEP
-                0x080080fc       0x14 Src/usbd_conf.o
-                0x080080fc                USBD_LL_OpenEP
+                0x08008164       0x14 Src/usbd_conf.o
+                0x08008164                USBD_LL_OpenEP
  .text.USBD_LL_StallEP
-                0x08008110        0xe Src/usbd_conf.o
-                0x08008110                USBD_LL_StallEP
+                0x08008178        0xe Src/usbd_conf.o
+                0x08008178                USBD_LL_StallEP
  .text.USBD_LL_ClearStallEP
-                0x0800811e        0xe Src/usbd_conf.o
-                0x0800811e                USBD_LL_ClearStallEP
+                0x08008186        0xe Src/usbd_conf.o
+                0x08008186                USBD_LL_ClearStallEP
  .text.USBD_LL_IsStallEP
-                0x0800812c       0x20 Src/usbd_conf.o
-                0x0800812c                USBD_LL_IsStallEP
+                0x08008194       0x20 Src/usbd_conf.o
+                0x08008194                USBD_LL_IsStallEP
  .text.USBD_LL_SetUSBAddress
-                0x0800814c        0xe Src/usbd_conf.o
-                0x0800814c                USBD_LL_SetUSBAddress
+                0x080081b4        0xe Src/usbd_conf.o
+                0x080081b4                USBD_LL_SetUSBAddress
  .text.USBD_LL_Transmit
-                0x0800815a        0xe Src/usbd_conf.o
-                0x0800815a                USBD_LL_Transmit
+                0x080081c2        0xe Src/usbd_conf.o
+                0x080081c2                USBD_LL_Transmit
  .text.USBD_LL_PrepareReceive
-                0x08008168        0xe Src/usbd_conf.o
-                0x08008168                USBD_LL_PrepareReceive
- *fill*         0x08008176        0x2 
+                0x080081d0        0xe Src/usbd_conf.o
+                0x080081d0                USBD_LL_PrepareReceive
+ *fill*         0x080081de        0x2 
  .text.USBD_static_malloc
-                0x08008178        0x8 Src/usbd_conf.o
-                0x08008178                USBD_static_malloc
+                0x080081e0        0x8 Src/usbd_conf.o
+                0x080081e0                USBD_static_malloc
  .text.USBD_static_free
-                0x08008180        0x2 Src/usbd_conf.o
-                0x08008180                USBD_static_free
+                0x080081e8        0x2 Src/usbd_conf.o
+                0x080081e8                USBD_static_free
  .text.HAL_PCDEx_SetConnectionState
-                0x08008182        0x2 Src/usbd_conf.o
-                0x08008182                HAL_PCDEx_SetConnectionState
+                0x080081ea        0x2 Src/usbd_conf.o
+                0x080081ea                HAL_PCDEx_SetConnectionState
  .text.USBD_FS_DeviceDescriptor
-                0x08008184        0xc Src/usbd_desc.o
-                0x08008184                USBD_FS_DeviceDescriptor
+                0x080081ec        0xc Src/usbd_desc.o
+                0x080081ec                USBD_FS_DeviceDescriptor
  .text.USBD_FS_LangIDStrDescriptor
-                0x08008190        0xc Src/usbd_desc.o
-                0x08008190                USBD_FS_LangIDStrDescriptor
+                0x080081f8        0xc Src/usbd_desc.o
+                0x080081f8                USBD_FS_LangIDStrDescriptor
  .text.USBD_FS_ManufacturerStrDescriptor
-                0x0800819c       0x1c Src/usbd_desc.o
-                0x0800819c                USBD_FS_ManufacturerStrDescriptor
+                0x08008204       0x1c Src/usbd_desc.o
+                0x08008204                USBD_FS_ManufacturerStrDescriptor
  .text.USBD_FS_ProductStrDescriptor
-                0x080081b8       0x1c Src/usbd_desc.o
-                0x080081b8                USBD_FS_ProductStrDescriptor
+                0x08008220       0x1c Src/usbd_desc.o
+                0x08008220                USBD_FS_ProductStrDescriptor
  .text.USBD_FS_SerialStrDescriptor
-                0x080081d4       0x1c Src/usbd_desc.o
-                0x080081d4                USBD_FS_SerialStrDescriptor
+                0x0800823c       0x1c Src/usbd_desc.o
+                0x0800823c                USBD_FS_SerialStrDescriptor
  .text.USBD_FS_ConfigStrDescriptor
-                0x080081f0       0x1c Src/usbd_desc.o
-                0x080081f0                USBD_FS_ConfigStrDescriptor
+                0x08008258       0x1c Src/usbd_desc.o
+                0x08008258                USBD_FS_ConfigStrDescriptor
  .text.USBD_FS_InterfaceStrDescriptor
-                0x0800820c       0x1c Src/usbd_desc.o
-                0x0800820c                USBD_FS_InterfaceStrDescriptor
+                0x08008274       0x1c Src/usbd_desc.o
+                0x08008274                USBD_FS_InterfaceStrDescriptor
  .text.MEM_If_DeInit_FS
-                0x08008228        0x4 Src/usbd_dfu_if.o
+                0x08008290        0x4 Src/usbd_dfu_if.o
  .text.MEM_If_Erase_FS
-                0x0800822c        0x4 Src/usbd_dfu_if.o
+                0x08008294        0x4 Src/usbd_dfu_if.o
  .text.MEM_If_Write_FS
-                0x08008230        0x4 Src/usbd_dfu_if.o
+                0x08008298        0x4 Src/usbd_dfu_if.o
  .text.MEM_If_Read_FS
-                0x08008234        0x4 Src/usbd_dfu_if.o
+                0x0800829c        0x4 Src/usbd_dfu_if.o
  .text.MEM_If_GetStatus_FS
-                0x08008238        0x4 Src/usbd_dfu_if.o
+                0x080082a0        0x4 Src/usbd_dfu_if.o
  .text.MEM_If_Init_FS
-                0x0800823c        0x4 Src/usbd_dfu_if.o
+                0x080082a4        0x4 Src/usbd_dfu_if.o
  .text.__QADD16
-                0x08008240       0x1c Src/DSP/arm_add_q15.o
+                0x080082a8       0x1c Src/DSP/arm_add_q15.o
  .text.arm_add_q15
-                0x0800825c       0x8e Src/DSP/arm_add_q15.o
-                0x0800825c                arm_add_q15
+                0x080082c4       0x8e Src/DSP/arm_add_q15.o
+                0x080082c4                arm_add_q15
  .text.__SMLALD
-                0x080082ea       0x1c Src/DSP/arm_biquad_cascade_df1_q15.o
+                0x08008352       0x1c Src/DSP/arm_biquad_cascade_df1_q15.o
  .text.arm_biquad_cascade_df1_q15
-                0x08008306      0x182 Src/DSP/arm_biquad_cascade_df1_q15.o
-                0x08008306                arm_biquad_cascade_df1_q15
+                0x0800836e      0x182 Src/DSP/arm_biquad_cascade_df1_q15.o
+                0x0800836e                arm_biquad_cascade_df1_q15
  .text.arm_copy_q15
-                0x08008488       0x48 Src/DSP/arm_copy_q15.o
-                0x08008488                arm_copy_q15
+                0x080084f0       0x48 Src/DSP/arm_copy_q15.o
+                0x080084f0                arm_copy_q15
  .text.arm_dot_prod_q15
-                0x080084d0       0xaa Src/DSP/arm_dot_prod_q15.o
-                0x080084d0                arm_dot_prod_q15
+                0x08008538       0xaa Src/DSP/arm_dot_prod_q15.o
+                0x08008538                arm_dot_prod_q15
  .text.arm_fill_q15
-                0x0800857a       0x38 Src/DSP/arm_fill_q15.o
-                0x0800857a                arm_fill_q15
+                0x080085e2       0x38 Src/DSP/arm_fill_q15.o
+                0x080085e2                arm_fill_q15
  .text.arm_mat_mult_q15
-                0x080085b2      0x1c6 Src/DSP/arm_mat_mult_q15.o
-                0x080085b2                arm_mat_mult_q15
+                0x0800861a      0x1c6 Src/DSP/arm_mat_mult_q15.o
+                0x0800861a                arm_mat_mult_q15
  .text.arm_scale_q15
-                0x08008778       0xb0 Src/DSP/arm_scale_q15.o
-                0x08008778                arm_scale_q15
+                0x080087e0       0xb0 Src/DSP/arm_scale_q15.o
+                0x080087e0                arm_scale_q15
  .text.arm_sin_cos_q31
-                0x08008828      0x208 Src/DSP/arm_sin_cos_q31.o
-                0x08008828                arm_sin_cos_q31
+                0x08008890      0x208 Src/DSP/arm_sin_cos_q31.o
+                0x08008890                arm_sin_cos_q31
  .text.AHRS_TASK_FCN
-                0x08008a30       0x9c Src/FuncionesRTOS/TASK_AHRS.o
-                0x08008a30                AHRS_TASK_FCN
+                0x08008a98       0x9c Src/FuncionesRTOS/TASK_AHRS.o
+                0x08008a98                AHRS_TASK_FCN
  .text.AHRS_TIMER_FCN
-                0x08008acc       0x14 Src/FuncionesRTOS/TASK_AHRS.o
-                0x08008acc                AHRS_TIMER_FCN
+                0x08008b34       0x14 Src/FuncionesRTOS/TASK_AHRS.o
+                0x08008b34                AHRS_TIMER_FCN
  .text.ALTURA_TASK_FCN
-                0x08008ae0        0x2 Src/FuncionesRTOS/TASK_ALTURA.o
-                0x08008ae0                ALTURA_TASK_FCN
+                0x08008b48        0x2 Src/FuncionesRTOS/TASK_ALTURA.o
+                0x08008b48                ALTURA_TASK_FCN
  .text.ALTURA_TIMER_FCN
-                0x08008ae2        0x2 Src/FuncionesRTOS/TASK_ALTURA.o
-                0x08008ae2                ALTURA_TIMER_FCN
+                0x08008b4a        0x2 Src/FuncionesRTOS/TASK_ALTURA.o
+                0x08008b4a                ALTURA_TIMER_FCN
  .text.COMPASS_TASK_FCN
-                0x08008ae4        0x2 Src/FuncionesRTOS/TASK_COMPASS.o
-                0x08008ae4                COMPASS_TASK_FCN
+                0x08008b4c       0xb0 Src/FuncionesRTOS/TASK_COMPASS.o
+                0x08008b4c                COMPASS_TASK_FCN
  .text.COMPASS_TIMER_FCN
-                0x08008ae6        0x2 Src/FuncionesRTOS/TASK_COMPASS.o
-                0x08008ae6                COMPASS_TIMER_FCN
+                0x08008bfc       0x14 Src/FuncionesRTOS/TASK_COMPASS.o
+                0x08008bfc                COMPASS_TIMER_FCN
  .text.CONTROL_TASK_FCN
-                0x08008ae8      0x1ac Src/FuncionesRTOS/TASK_CONTROL.o
-                0x08008ae8                CONTROL_TASK_FCN
+                0x08008c10      0x1ac Src/FuncionesRTOS/TASK_CONTROL.o
+                0x08008c10                CONTROL_TASK_FCN
  .text.CONTROL_TIMER_FCN
-                0x08008c94       0x14 Src/FuncionesRTOS/TASK_CONTROL.o
-                0x08008c94                CONTROL_TIMER_FCN
+                0x08008dbc       0x14 Src/FuncionesRTOS/TASK_CONTROL.o
+                0x08008dbc                CONTROL_TIMER_FCN
  .text.COORDINADOR_TASK_FCN
-                0x08008ca8        0x2 Src/FuncionesRTOS/TASK_COORDINADOR.o
-                0x08008ca8                COORDINADOR_TASK_FCN
+                0x08008dd0        0x2 Src/FuncionesRTOS/TASK_COORDINADOR.o
+                0x08008dd0                COORDINADOR_TASK_FCN
  .text.COORDINADOR_TIMER_FCN
-                0x08008caa        0x2 Src/FuncionesRTOS/TASK_COORDINADOR.o
-                0x08008caa                COORDINADOR_TIMER_FCN
+                0x08008dd2        0x2 Src/FuncionesRTOS/TASK_COORDINADOR.o
+                0x08008dd2                COORDINADOR_TIMER_FCN
  .text.IMU_TASK_FCN
-                0x08008cac      0x168 Src/FuncionesRTOS/TASK_IMU.o
-                0x08008cac                IMU_TASK_FCN
+                0x08008dd4      0x1a4 Src/FuncionesRTOS/TASK_IMU.o
+                0x08008dd4                IMU_TASK_FCN
  .text.IMU_TIMER_FCN
-                0x08008e14       0x14 Src/FuncionesRTOS/TASK_IMU.o
-                0x08008e14                IMU_TIMER_FCN
- .text.asin     0x08008e28       0xa8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_asin.o)
-                0x08008e28                asin
- .text.atan2    0x08008ed0        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_atan2.o)
-                0x08008ed0                atan2
- .text.sqrtf    0x08008ed4       0x98 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-wf_sqrt.o)
-                0x08008ed4                sqrtf
- *fill*         0x08008f6c        0x4 
+                0x08008f78       0x14 Src/FuncionesRTOS/TASK_IMU.o
+                0x08008f78                IMU_TIMER_FCN
+ .text.asin     0x08008f8c       0xa8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_asin.o)
+                0x08008f8c                asin
+ .text.atan2    0x08009034        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_atan2.o)
+                0x08009034                atan2
+ .text.sqrtf    0x08009038       0x98 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-wf_sqrt.o)
+                0x08009038                sqrtf
  .text.__ieee754_asin
-                0x08008f70      0x45c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_asin.o)
-                0x08008f70                __ieee754_asin
- *fill*         0x080093cc        0x4 
+                0x080090d0      0x45c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_asin.o)
+                0x080090d0                __ieee754_asin
+ *fill*         0x0800952c        0x4 
  .text.__ieee754_atan2
-                0x080093d0      0x194 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_atan2.o)
-                0x080093d0                __ieee754_atan2
+                0x08009530      0x194 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_atan2.o)
+                0x08009530                __ieee754_atan2
  .text.__ieee754_sqrt
-                0x08009564      0x188 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
-                0x08009564                __ieee754_sqrt
+                0x080096c4      0x188 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+                0x080096c4                __ieee754_sqrt
  .text.__ieee754_sqrtf
-                0x080096ec       0xa8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-ef_sqrt.o)
-                0x080096ec                __ieee754_sqrtf
- *fill*         0x08009794        0x4 
- .text.atan     0x08009798      0x33c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_atan.o)
-                0x08009798                atan
- .text.fabs     0x08009ad4        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
-                0x08009ad4                fabs
+                0x0800984c       0xa8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-ef_sqrt.o)
+                0x0800984c                __ieee754_sqrtf
+ *fill*         0x080098f4        0x4 
+ .text.atan     0x080098f8      0x33c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_atan.o)
+                0x080098f8                atan
+ .text.fabs     0x08009c34        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+                0x08009c34                fabs
  .text.__fpclassifyd
-                0x08009adc       0x54 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fpclassify.o)
-                0x08009adc                __fpclassifyd
- .text.matherr  0x08009b30        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
-                0x08009b30                matherr
- .text.nan      0x08009b34        0xc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
-                0x08009b34                nan
+                0x08009c3c       0x54 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fpclassify.o)
+                0x08009c3c                __fpclassifyd
+ .text.matherr  0x08009c90        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+                0x08009c90                matherr
+ .text.nan      0x08009c94        0xc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+                0x08009c94                nan
  .text.__fpclassifyf
-                0x08009b40       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-sf_fpclassify.o)
-                0x08009b40                __fpclassifyf
- .text.__errno  0x08009b74        0xc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-errno.o)
-                0x08009b74                __errno
+                0x08009ca0       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-sf_fpclassify.o)
+                0x08009ca0                __fpclassifyf
+ .text.__errno  0x08009cd4        0xc c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-errno.o)
+                0x08009cd4                __errno
  .text.__libc_init_array
-                0x08009b80       0x4c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
-                0x08009b80                __libc_init_array
- .text.memcpy   0x08009bcc       0x16 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memcpy-stub.o)
-                0x08009bcc                memcpy
- .text.memset   0x08009be2       0x10 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memset.o)
-                0x08009be2                memset
+                0x08009ce0       0x4c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
+                0x08009ce0                __libc_init_array
+ .text.memcpy   0x08009d2c       0x16 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memcpy-stub.o)
+                0x08009d2c                memcpy
+ .text.memset   0x08009d42       0x10 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memset.o)
+                0x08009d42                memset
  *(.glue_7)
- .glue_7        0x08009bf2        0x0 linker stubs
+ .glue_7        0x08009d52        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08009bf2        0x0 linker stubs
+ .glue_7t       0x08009d52        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x08009bf2        0x2 
- .eh_frame      0x08009bf4        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+ *fill*         0x08009d52        0x2 
+ .eh_frame      0x08009d54        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
  *(.init)
- .init          0x08009bf4        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crti.o
-                0x08009bf4                _init
- .init          0x08009bf8        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtn.o
+ .init          0x08009d54        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crti.o
+                0x08009d54                _init
+ .init          0x08009d58        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtn.o
  *(.fini)
- .fini          0x08009c00        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crti.o
-                0x08009c00                _fini
- .fini          0x08009c04        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtn.o
-                0x08009c0c                . = ALIGN (0x4)
-                0x08009c0c                _etext = .
+ .fini          0x08009d60        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crti.o
+                0x08009d60                _fini
+ .fini          0x08009d64        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtn.o
+                0x08009d6c                . = ALIGN (0x4)
+                0x08009d6c                _etext = .
 
-.vfp11_veneer   0x08009c0c        0x0
- .vfp11_veneer  0x08009c0c        0x0 linker stubs
+.vfp11_veneer   0x08009d6c        0x0
+ .vfp11_veneer  0x08009d6c        0x0 linker stubs
 
-.v4_bx          0x08009c0c        0x0
- .v4_bx         0x08009c0c        0x0 linker stubs
+.v4_bx          0x08009d6c        0x0
+ .v4_bx         0x08009d6c        0x0 linker stubs
 
-.iplt           0x08009c0c        0x0
- .iplt          0x08009c0c        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+.iplt           0x08009d6c        0x0
+ .iplt          0x08009d6c        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
 
-.rodata         0x08009c10      0xd14
-                0x08009c10                . = ALIGN (0x4)
+.rodata         0x08009d70      0xd14
+                0x08009d70                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08009c10       0x18 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
-                0x08009c10                AHBPrescTable
-                0x08009c20                APBPrescTable
- .rodata        0x08009c28       0x12 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- *fill*         0x08009c3a        0x2 
- .rodata        0x08009c3c       0x8c Src/freertos.o
- .rodata        0x08009cc8      0x804 Src/DSP/common_tables.o
-                0x08009cc8                sinTable_q31
+ .rodata        0x08009d70       0x18 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
+                0x08009d70                AHBPrescTable
+                0x08009d80                APBPrescTable
+ .rodata        0x08009d88       0x12 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ *fill*         0x08009d9a        0x2 
+ .rodata        0x08009d9c       0x8c Src/freertos.o
+ .rodata        0x08009e28      0x804 Src/DSP/common_tables.o
+                0x08009e28                sinTable_q31
  *(.rodata*)
  .rodata.str1.1
-                0x0800a4cc       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+                0x0800a62c       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
  .rodata.str1.1
-                0x0800a504       0x3b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+                0x0800a664       0x3b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
  .rodata.str1.1
-                0x0800a53f       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.o
+                0x0800a69f       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.o
  .rodata.str1.1
-                0x0800a577       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+                0x0800a6d7       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .rodata.str1.1
-                0x0800a5af       0x39 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+                0x0800a70f       0x39 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
  .rodata.str1.1
-                0x0800a5e8       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o
+                0x0800a748       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o
  .rodata.str1.1
-                0x0800a620       0x39 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.o
+                0x0800a780       0x39 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.o
  .rodata.str1.1
-                0x0800a659       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.o
+                0x0800a7b9       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pcd.o
  .rodata.str1.1
-                0x0800a691       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+                0x0800a7f1       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
  .rodata.str1.1
-                0x0800a6c9       0x3b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+                0x0800a829       0x3b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
  .rodata.str1.1
-                0x0800a704       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+                0x0800a864       0x38 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .rodata.str1.1
-                0x0800a73c       0x3b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+                0x0800a89c       0x3b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .rodata.str1.1
-                0x0800a777       0x39 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
+                0x0800a8d7       0x39 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
  .rodata.str1.1
-                0x0800a7b0       0x39 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o
+                0x0800a910       0x39 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o
                                   0x1 (size before relaxing)
  .rodata.str1.1
-                0x0800a7b0        0x5 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+                0x0800a910        0x5 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .rodata.str1.1
-                0x0800a7b5        0xd Middlewares/Third_Party/FreeRTOS/Source/timers.o
+                0x0800a915        0xd Middlewares/Third_Party/FreeRTOS/Source/timers.o
  .rodata.str1.1
-                0x0800a7c2       0x56 Src/freertos.o
+                0x0800a922       0x56 Src/freertos.o
  .rodata.str1.1
-                0x0800a818       0x58 Src/usbd_desc.o
+                0x0800a978       0x58 Src/usbd_desc.o
  .rodata.str1.1
-                0x0800a870       0x5d Src/usbd_dfu_if.o
- *fill*         0x0800a8cd        0x3 
+                0x0800a9d0       0x5d Src/usbd_dfu_if.o
+ *fill*         0x0800aa2d        0x3 
  .rodata.str1.4
-                0x0800a8d0        0x5 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_asin.o)
+                0x0800aa30        0x5 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_asin.o)
                                   0x9 (size before relaxing)
- *fill*         0x0800a8d5        0x3 
+ *fill*         0x0800aa35        0x3 
  .rodata.str1.4
-                0x0800a8d8        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-wf_sqrt.o)
+                0x0800aa38        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-wf_sqrt.o)
                                   0x6 (size before relaxing)
  .rodata.atanlo
-                0x0800a8e0       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_atan.o)
+                0x0800aa40       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_atan.o)
  .rodata.atanhi
-                0x0800a900       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_atan.o)
+                0x0800aa60       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_atan.o)
  .rodata.str1.1
-                0x0800a920        0x2 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-impure.o)
-                0x0800a924                . = ALIGN (0x4)
- *fill*         0x0800a922        0x2 
+                0x0800aa80        0x2 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-impure.o)
+                0x0800aa84                . = ALIGN (0x4)
+ *fill*         0x0800aa82        0x2 
 
-.rel.dyn        0x0800a924        0x0
- .rel.iplt      0x0800a924        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+.rel.dyn        0x0800aa84        0x0
+ .rel.iplt      0x0800aa84        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0800a924        0x0
-                0x0800a924                __exidx_start = .
+.ARM            0x0800aa84        0x0
+                0x0800aa84                __exidx_start = .
  *(.ARM.exidx*)
-                0x0800a924                __exidx_end = .
+                0x0800aa84                __exidx_end = .
 
-.preinit_array  0x0800a924        0x0
-                0x0800a924                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0800aa84        0x0
+                0x0800aa84                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x0800a924                PROVIDE (__preinit_array_end, .)
+                0x0800aa84                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x0800a924        0x4
-                0x0800a924                PROVIDE (__init_array_start, .)
+.init_array     0x0800aa84        0x4
+                0x0800aa84                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x0800a924        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
-                0x0800a928                PROVIDE (__init_array_end, .)
+ .init_array    0x0800aa84        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+                0x0800aa88                PROVIDE (__init_array_end, .)
 
-.fini_array     0x0800a928        0x4
+.fini_array     0x0800aa88        0x4
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800a928        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
+ .fini_array    0x0800aa88        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x0800a92c                _sidata = LOADADDR (.data)
+                0x0800aa8c                _sidata = LOADADDR (.data)
 
-.data           0x20000000      0x250 load address 0x0800a92c
+.data           0x20000000      0x250 load address 0x0800aa8c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -10313,21 +10473,21 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x20000250                . = ALIGN (0x4)
                 0x20000250                _edata = .
 
-.jcr            0x20000250        0x0 load address 0x0800ab7c
+.jcr            0x20000250        0x0 load address 0x0800acdc
  .jcr           0x20000250        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
 
 .tm_clone_table
-                0x20000250        0x0 load address 0x0800ab7c
+                0x20000250        0x0 load address 0x0800acdc
  .tm_clone_table
                 0x20000250        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
  .tm_clone_table
                 0x20000250        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtend.o
 
-.igot.plt       0x20000250        0x0 load address 0x0800ab7c
+.igot.plt       0x20000250        0x0 load address 0x0800acdc
  .igot.plt      0x20000250        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtbegin.o
                 0x20000250                . = ALIGN (0x4)
 
-.bss            0x20000250     0x32d8 load address 0x0800ab7c
+.bss            0x20000250     0x32e4 load address 0x0800acdc
                 0x20000250                _sbss = .
                 0x20000250                __bss_start__ = _sbss
  *(.bss)
@@ -10352,63 +10512,67 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x20002a64                hadc1
  COMMON         0x20002a94        0x8 Src/crc.o
                 0x20002a94                hcrc
- COMMON         0x20002a9c       0x5c Src/freertos.o
+ COMMON         0x20002a9c       0x68 Src/freertos.o
                 0x20002a9c                defaultTaskHandle
                 0x20002aa0                ALTURA_TASKHandle
                 0x20002aa4                ALTURA_TIMERHandle
                 0x20002aa8                CONTROL_SMPHRHandle
-                0x20002aac                COMPASS_TIMERHandle
-                0x20002ab0                UART_SMPHRHandle
-                0x20002ab4                CONTROL_TASKHandle
-                0x20002ab8                COMPASS_TASKHandle
-                0x20002abc                IMU_TIMERHandle
-                0x20002ac0                AHRS_TIMERHandle
-                0x20002ac4                IMU_SMPHRHandle
-                0x20002ac8                ALTURA_SMPHRHandle
-                0x20002acc                I2C_2_SMPHRHandle
-                0x20002ad0                COORDINADOR_TASHandle
-                0x20002ad4                CONTROL_TIMERHandle
-                0x20002ad8                COORDINADOR_SMPHRHandle
-                0x20002adc                COMPASS_SMPHRHandle
-                0x20002ae0                IMU_TASKHandle
-                0x20002ae4                COORDINADOR_TIMERHandle
-                0x20002ae8                UART_MUTEXHandle
-                0x20002aec                AHRS_SMPHRHandle
-                0x20002af0                AHRS_TASKHandle
-                0x20002af4                I2C_2_MUTEXHandle
- COMMON         0x20002af8       0xb4 Src/i2c.o
-                0x20002af8                hi2c2
-                0x20002b3c                hdma_i2c2_rx
-                0x20002b74                hdma_i2c2_tx
- COMMON         0x20002bac       0x10 Src/iwdg.o
-                0x20002bac                hiwdg
- COMMON         0x20002bbc       0x78 Src/tim.o
-                0x20002bbc                htim4
-                0x20002bf8                htim3
- COMMON         0x20002c34       0xb0 Src/usart.o
-                0x20002c34                hdma_usart2_rx
-                0x20002c6c                hdma_usart2_tx
-                0x20002ca4                huart2
- COMMON         0x20002ce4      0x224 Src/usb_device.o
-                0x20002ce4                hUsbDeviceFS
- COMMON         0x20002f08      0x420 Src/usbd_conf.o
-                0x20002f08                hpcd_USB_FS
- COMMON         0x20003328      0x200 Src/usbd_desc.o
-                0x20003328                USBD_StrDesc
-                0x20003528                . = ALIGN (0x4)
-                0x20003528                _ebss = .
-                0x20003528                __bss_end__ = _ebss
+                0x20002aac                AcelLecturasCola_Handle
+                0x20002ab0                VelLecturasCola_Handle
+                0x20002ab4                COMPASS_TIMERHandle
+                0x20002ab8                UART_SMPHRHandle
+                0x20002abc                MagLecturasCola_Handle
+                0x20002ac0                CONTROL_TASKHandle
+                0x20002ac4                COMPASS_TASKHandle
+                0x20002ac8                IMU_TIMERHandle
+                0x20002acc                AHRS_TIMERHandle
+                0x20002ad0                IMU_SMPHRHandle
+                0x20002ad4                ALTURA_SMPHRHandle
+                0x20002ad8                I2C_2_SMPHRHandle
+                0x20002adc                COORDINADOR_TASHandle
+                0x20002ae0                CONTROL_TIMERHandle
+                0x20002ae4                COORDINADOR_SMPHRHandle
+                0x20002ae8                COMPASS_SMPHRHandle
+                0x20002aec                IMU_TASKHandle
+                0x20002af0                COORDINADOR_TIMERHandle
+                0x20002af4                UART_MUTEXHandle
+                0x20002af8                AHRS_SMPHRHandle
+                0x20002afc                AHRS_TASKHandle
+                0x20002b00                I2C_2_MUTEXHandle
+ COMMON         0x20002b04       0xb4 Src/i2c.o
+                0x20002b04                hi2c2
+                0x20002b48                hdma_i2c2_rx
+                0x20002b80                hdma_i2c2_tx
+ COMMON         0x20002bb8       0x10 Src/iwdg.o
+                0x20002bb8                hiwdg
+ COMMON         0x20002bc8       0x78 Src/tim.o
+                0x20002bc8                htim4
+                0x20002c04                htim3
+ COMMON         0x20002c40       0xb0 Src/usart.o
+                0x20002c40                hdma_usart2_rx
+                0x20002c78                hdma_usart2_tx
+                0x20002cb0                huart2
+ COMMON         0x20002cf0      0x224 Src/usb_device.o
+                0x20002cf0                hUsbDeviceFS
+ COMMON         0x20002f14      0x420 Src/usbd_conf.o
+                0x20002f14                hpcd_USB_FS
+ COMMON         0x20003334      0x200 Src/usbd_desc.o
+                0x20003334                USBD_StrDesc
+                0x20003534                . = ALIGN (0x4)
+                0x20003534                _ebss = .
+                0x20003534                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20003528      0x600 load address 0x0800ab7c
-                0x20003528                . = ALIGN (0x8)
+                0x20003534      0x604 load address 0x0800acdc
+                0x20003538                . = ALIGN (0x8)
+ *fill*         0x20003534        0x4 
                 [!provide]                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
-                0x20003728                . = (. + _Min_Heap_Size)
- *fill*         0x20003528      0x200 
-                0x20003b28                . = (. + _Min_Stack_Size)
- *fill*         0x20003728      0x400 
-                0x20003b28                . = ALIGN (0x8)
+                0x20003738                . = (. + _Min_Heap_Size)
+ *fill*         0x20003538      0x200 
+                0x20003b38                . = (. + _Min_Stack_Size)
+ *fill*         0x20003738      0x400 
+                0x20003b38                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -10608,7 +10772,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.
                 0x0000111b       0x1d c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/armv7-m/crtn.o
 OUTPUT(CM3drone.elf elf32-littlearm)
 
-.debug_line     0x00000000    0x2a096
+.debug_line     0x00000000    0x2ad16
  .debug_line    0x00000000       0xac Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_line    0x000000ac      0xb4c Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_line    0x00000bf8      0xc55 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -10643,36 +10807,36 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_line    0x00019d40      0xb3a Src/adc.o
  .debug_line    0x0001a87a      0xb10 Src/crc.o
  .debug_line    0x0001b38a      0xaf8 Src/dma.o
- .debug_line    0x0001be82      0x68b Src/freertos.o
- .debug_line    0x0001c50d      0xb21 Src/gpio.o
- .debug_line    0x0001d02e      0xbed Src/i2c.o
- .debug_line    0x0001dc1b      0xaee Src/iwdg.o
- .debug_line    0x0001e709      0xc63 Src/main.o
- .debug_line    0x0001f36c      0xafa Src/stm32f1xx_hal_msp.o
- .debug_line    0x0001fe66      0xbb3 Src/stm32f1xx_it.o
- .debug_line    0x00020a19      0xbaa Src/tim.o
- .debug_line    0x000215c3      0xb7d Src/usart.o
- .debug_line    0x00022140      0xca6 Src/usb_device.o
- .debug_line    0x00022de6      0xeaa Src/usbd_conf.o
- .debug_line    0x00023c90      0xc5c Src/usbd_desc.o
- .debug_line    0x000248ec      0xcca Src/usbd_dfu_if.o
- .debug_line    0x000255b6      0x434 Src/DSP/arm_add_q15.o
- .debug_line    0x000259ea      0x4df Src/DSP/arm_biquad_cascade_df1_q15.o
- .debug_line    0x00025ec9      0x408 Src/DSP/arm_copy_q15.o
- .debug_line    0x000262d1      0x42e Src/DSP/arm_dot_prod_q15.o
- .debug_line    0x000266ff      0x407 Src/DSP/arm_fill_q15.o
- .debug_line    0x00026b06      0x4a0 Src/DSP/arm_mat_mult_q15.o
- .debug_line    0x00026fa6      0x42e Src/DSP/arm_scale_q15.o
- .debug_line    0x000273d4      0x474 Src/DSP/arm_sin_cos_q31.o
- .debug_line    0x00027848      0x3eb Src/DSP/common_tables.o
- .debug_line    0x00027c33      0x86b Src/FuncionesRTOS/TASK_AHRS.o
- .debug_line    0x0002849e       0x63 Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_line    0x00028501       0x65 Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_line    0x00028566      0xdf8 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_line    0x0002935e       0x57 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_line    0x000293b5      0xce1 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_line    0x0001be82      0x698 Src/freertos.o
+ .debug_line    0x0001c51a      0xb21 Src/gpio.o
+ .debug_line    0x0001d03b      0xbed Src/i2c.o
+ .debug_line    0x0001dc28      0xaee Src/iwdg.o
+ .debug_line    0x0001e716      0xc63 Src/main.o
+ .debug_line    0x0001f379      0xafa Src/stm32f1xx_hal_msp.o
+ .debug_line    0x0001fe73      0xbb3 Src/stm32f1xx_it.o
+ .debug_line    0x00020a26      0xbaa Src/tim.o
+ .debug_line    0x000215d0      0xb7d Src/usart.o
+ .debug_line    0x0002214d      0xca6 Src/usb_device.o
+ .debug_line    0x00022df3      0xeaa Src/usbd_conf.o
+ .debug_line    0x00023c9d      0xc5c Src/usbd_desc.o
+ .debug_line    0x000248f9      0xcca Src/usbd_dfu_if.o
+ .debug_line    0x000255c3      0x434 Src/DSP/arm_add_q15.o
+ .debug_line    0x000259f7      0x4df Src/DSP/arm_biquad_cascade_df1_q15.o
+ .debug_line    0x00025ed6      0x408 Src/DSP/arm_copy_q15.o
+ .debug_line    0x000262de      0x42e Src/DSP/arm_dot_prod_q15.o
+ .debug_line    0x0002670c      0x407 Src/DSP/arm_fill_q15.o
+ .debug_line    0x00026b13      0x4a0 Src/DSP/arm_mat_mult_q15.o
+ .debug_line    0x00026fb3      0x42e Src/DSP/arm_scale_q15.o
+ .debug_line    0x000273e1      0x474 Src/DSP/arm_sin_cos_q31.o
+ .debug_line    0x00027855      0x3eb Src/DSP/common_tables.o
+ .debug_line    0x00027c40      0x86b Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_line    0x000284ab       0x63 Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_line    0x0002850e      0xc9b Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_line    0x000291a9      0xdf8 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_line    0x00029fa1       0x57 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_line    0x00029ff8      0xd1e Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_info     0x00000000    0x2733d
+.debug_info     0x00000000    0x27e88
  .debug_info    0x00000000       0xc8 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_info    0x000000c8      0x3ca Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_info    0x00000492      0x683 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -10707,36 +10871,36 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_info    0x0001c565      0x77c Src/adc.o
  .debug_info    0x0001cce1      0x360 Src/crc.o
  .debug_info    0x0001d041      0x39e Src/dma.o
- .debug_info    0x0001d3df      0x852 Src/freertos.o
- .debug_info    0x0001dc31      0x381 Src/gpio.o
- .debug_info    0x0001dfb2      0xdf7 Src/i2c.o
- .debug_info    0x0001eda9      0x274 Src/iwdg.o
- .debug_info    0x0001f01d      0xadd Src/main.o
- .debug_info    0x0001fafa      0x42f Src/stm32f1xx_hal_msp.o
- .debug_info    0x0001ff29      0xa85 Src/stm32f1xx_it.o
- .debug_info    0x000209ae      0xbdd Src/tim.o
- .debug_info    0x0002158b      0x7c0 Src/usart.o
- .debug_info    0x00021d4b      0x685 Src/usb_device.o
- .debug_info    0x000223d0     0x1627 Src/usbd_conf.o
- .debug_info    0x000239f7      0x4e8 Src/usbd_desc.o
- .debug_info    0x00023edf      0x31a Src/usbd_dfu_if.o
- .debug_info    0x000241f9      0x255 Src/DSP/arm_add_q15.o
- .debug_info    0x0002444e      0x4c2 Src/DSP/arm_biquad_cascade_df1_q15.o
- .debug_info    0x00024910      0x135 Src/DSP/arm_copy_q15.o
- .debug_info    0x00024a45      0x252 Src/DSP/arm_dot_prod_q15.o
- .debug_info    0x00024c97      0x14c Src/DSP/arm_fill_q15.o
- .debug_info    0x00024de3      0x3f9 Src/DSP/arm_mat_mult_q15.o
- .debug_info    0x000251dc      0x2b9 Src/DSP/arm_scale_q15.o
- .debug_info    0x00025495      0x24f Src/DSP/arm_sin_cos_q31.o
- .debug_info    0x000256e4       0xd4 Src/DSP/common_tables.o
- .debug_info    0x000257b8      0x5f4 Src/FuncionesRTOS/TASK_AHRS.o
- .debug_info    0x00025dac       0x60 Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_info    0x00025e0c       0x60 Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_info    0x00025e6c      0x791 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_info    0x000265fd       0x60 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_info    0x0002665d      0xce0 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_info    0x0001d3df      0x901 Src/freertos.o
+ .debug_info    0x0001dce0      0x381 Src/gpio.o
+ .debug_info    0x0001e061      0xdf7 Src/i2c.o
+ .debug_info    0x0001ee58      0x274 Src/iwdg.o
+ .debug_info    0x0001f0cc      0xadd Src/main.o
+ .debug_info    0x0001fba9      0x42f Src/stm32f1xx_hal_msp.o
+ .debug_info    0x0001ffd8      0xa85 Src/stm32f1xx_it.o
+ .debug_info    0x00020a5d      0xbdd Src/tim.o
+ .debug_info    0x0002163a      0x7c0 Src/usart.o
+ .debug_info    0x00021dfa      0x685 Src/usb_device.o
+ .debug_info    0x0002247f     0x1627 Src/usbd_conf.o
+ .debug_info    0x00023aa6      0x4e8 Src/usbd_desc.o
+ .debug_info    0x00023f8e      0x31a Src/usbd_dfu_if.o
+ .debug_info    0x000242a8      0x255 Src/DSP/arm_add_q15.o
+ .debug_info    0x000244fd      0x4c2 Src/DSP/arm_biquad_cascade_df1_q15.o
+ .debug_info    0x000249bf      0x135 Src/DSP/arm_copy_q15.o
+ .debug_info    0x00024af4      0x252 Src/DSP/arm_dot_prod_q15.o
+ .debug_info    0x00024d46      0x14c Src/DSP/arm_fill_q15.o
+ .debug_info    0x00024e92      0x3f9 Src/DSP/arm_mat_mult_q15.o
+ .debug_info    0x0002528b      0x2b9 Src/DSP/arm_scale_q15.o
+ .debug_info    0x00025544      0x24f Src/DSP/arm_sin_cos_q31.o
+ .debug_info    0x00025793       0xd4 Src/DSP/common_tables.o
+ .debug_info    0x00025867      0x5f4 Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_info    0x00025e5b       0x60 Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_info    0x00025ebb      0xaa7 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_info    0x00026962      0x791 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_info    0x000270f3       0x60 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_info    0x00027153      0xd35 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_abbrev   0x00000000     0x6d08
+.debug_abbrev   0x00000000     0x6e78
  .debug_abbrev  0x00000000       0x12 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_abbrev  0x00000012      0x125 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_abbrev  0x00000137      0x231 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -10795,12 +10959,12 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_abbrev  0x00006627       0x6d Src/DSP/common_tables.o
  .debug_abbrev  0x00006694      0x1a1 Src/FuncionesRTOS/TASK_AHRS.o
  .debug_abbrev  0x00006835       0x5e Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_abbrev  0x00006893       0x5e Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_abbrev  0x000068f1      0x1eb Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_abbrev  0x00006adc       0x5e Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_abbrev  0x00006b3a      0x1ce Src/FuncionesRTOS/TASK_IMU.o
+ .debug_abbrev  0x00006893      0x1ce Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_abbrev  0x00006a61      0x1eb Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_abbrev  0x00006c4c       0x5e Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_abbrev  0x00006caa      0x1ce Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_aranges  0x00000000     0x1a60
+.debug_aranges  0x00000000     0x1a68
  .debug_aranges
                 0x00000000       0x28 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_aranges
@@ -10918,15 +11082,15 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_aranges
                 0x000019b0       0x20 Src/FuncionesRTOS/TASK_ALTURA.o
  .debug_aranges
-                0x000019d0       0x20 Src/FuncionesRTOS/TASK_COMPASS.o
+                0x000019d0       0x28 Src/FuncionesRTOS/TASK_COMPASS.o
  .debug_aranges
-                0x000019f0       0x28 Src/FuncionesRTOS/TASK_CONTROL.o
+                0x000019f8       0x28 Src/FuncionesRTOS/TASK_CONTROL.o
  .debug_aranges
-                0x00001a18       0x20 Src/FuncionesRTOS/TASK_COORDINADOR.o
+                0x00001a20       0x20 Src/FuncionesRTOS/TASK_COORDINADOR.o
  .debug_aranges
-                0x00001a38       0x28 Src/FuncionesRTOS/TASK_IMU.o
+                0x00001a40       0x28 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_ranges   0x00000000     0x1f90
+.debug_ranges   0x00000000     0x1f98
  .debug_ranges  0x00000000       0x20 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/gcc/startup_stm32f103xb.o
  .debug_ranges  0x00000020       0x18 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_ranges  0x00000038       0x98 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -10984,12 +11148,12 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_ranges  0x00001ec8       0x40 Src/DSP/arm_sin_cos_q31.o
  .debug_ranges  0x00001f08       0x28 Src/FuncionesRTOS/TASK_AHRS.o
  .debug_ranges  0x00001f30       0x10 Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_ranges  0x00001f40       0x10 Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_ranges  0x00001f50       0x18 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_ranges  0x00001f68       0x10 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_ranges  0x00001f78       0x18 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_ranges  0x00001f40       0x18 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_ranges  0x00001f58       0x18 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_ranges  0x00001f70       0x10 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_ranges  0x00001f80       0x18 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_loc      0x00000000    0x14743
+.debug_loc      0x00000000    0x14785
  .debug_loc     0x00000000       0xb5 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_loc     0x000000b5       0x73 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_loc     0x00000128      0xa2a Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
@@ -11037,10 +11201,11 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_loc     0x00013e5f      0x2a7 Src/DSP/arm_scale_q15.o
  .debug_loc     0x00014106      0x3e6 Src/DSP/arm_sin_cos_q31.o
  .debug_loc     0x000144ec       0x9a Src/FuncionesRTOS/TASK_AHRS.o
- .debug_loc     0x00014586      0x17b Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_loc     0x00014701       0x42 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_loc     0x00014586       0x42 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_loc     0x000145c8      0x17b Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_loc     0x00014743       0x42 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_macro    0x00000000    0x2475d
+.debug_macro    0x00000000    0x24bd8
  .debug_macro   0x00000000      0x3cf Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_macro   0x000003cf      0x886 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_macro   0x00000c55       0x2e Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
@@ -11190,14 +11355,14 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_macro   0x0002395c      0x28a Src/FuncionesRTOS/TASK_AHRS.o
  .debug_macro   0x00023be6       0x3a Src/FuncionesRTOS/TASK_AHRS.o
  .debug_macro   0x00023c20       0x1b Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_macro   0x00023c3b       0x1b Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_macro   0x00023c56      0x481 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_macro   0x000240d7      0x1c3 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_macro   0x0002429a       0x1c Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_macro   0x000242b6       0x11 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_macro   0x000242c7      0x496 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_macro   0x00023c3b      0x496 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x000240d1      0x1c3 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x00024294       0x1c Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_macro   0x000242b0      0x481 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_macro   0x00024731       0x11 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_macro   0x00024742      0x496 Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_str      0x00000000    0xa3dc8
+.debug_str      0x00000000    0xa3e1f
  .debug_str     0x00000000    0x980d7 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
                               0x98469 (size before relaxing)
  .debug_str     0x000980d7      0x590 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
@@ -11264,62 +11429,62 @@ OUTPUT(CM3drone.elf elf32-littlearm)
                               0x984e0 (size before relaxing)
  .debug_str     0x000a202a       0x22 Src/dma.o
                               0x9865d (size before relaxing)
- .debug_str     0x000a204c      0x46a Src/freertos.o
-                               0x9572 (size before relaxing)
- .debug_str     0x000a24b6       0x1b Src/gpio.o
+ .debug_str     0x000a204c      0x4b0 Src/freertos.o
+                               0x95de (size before relaxing)
+ .debug_str     0x000a24fc       0x1b Src/gpio.o
                               0x983fb (size before relaxing)
- .debug_str     0x000a24d1      0x12f Src/i2c.o
+ .debug_str     0x000a2517      0x12f Src/i2c.o
                               0x98d36 (size before relaxing)
- .debug_str     0x000a2600       0x25 Src/iwdg.o
+ .debug_str     0x000a2646       0x25 Src/iwdg.o
                               0x9847a (size before relaxing)
- .debug_str     0x000a2625      0x5c5 Src/main.o
+ .debug_str     0x000a266b      0x5c5 Src/main.o
                               0x9a0b2 (size before relaxing)
- .debug_str     0x000a2bea       0x27 Src/stm32f1xx_hal_msp.o
+ .debug_str     0x000a2c30       0x27 Src/stm32f1xx_hal_msp.o
                               0x9869a (size before relaxing)
- .debug_str     0x000a2c11      0x132 Src/stm32f1xx_it.o
+ .debug_str     0x000a2c57      0x132 Src/stm32f1xx_it.o
                               0x98b5f (size before relaxing)
- .debug_str     0x000a2d43       0xb4 Src/tim.o
+ .debug_str     0x000a2d89       0xb4 Src/tim.o
                               0x989bd (size before relaxing)
- .debug_str     0x000a2df7       0x45 Src/usart.o
+ .debug_str     0x000a2e3d       0x45 Src/usart.o
                               0x98809 (size before relaxing)
- .debug_str     0x000a2e3c       0x5b Src/usb_device.o
+ .debug_str     0x000a2e82       0x5b Src/usb_device.o
                               0x9968c (size before relaxing)
- .debug_str     0x000a2e97      0x16b Src/usbd_conf.o
+ .debug_str     0x000a2edd      0x16b Src/usbd_conf.o
                               0x9a13a (size before relaxing)
- .debug_str     0x000a3002      0x21d Src/usbd_desc.o
+ .debug_str     0x000a3048      0x21d Src/usbd_desc.o
                               0x9906c (size before relaxing)
- .debug_str     0x000a321f       0xd7 Src/usbd_dfu_if.o
+ .debug_str     0x000a3265       0xd7 Src/usbd_dfu_if.o
                               0x9935f (size before relaxing)
- .debug_str     0x000a32f6       0x65 Src/DSP/arm_add_q15.o
+ .debug_str     0x000a333c       0x65 Src/DSP/arm_add_q15.o
                                0x6c60 (size before relaxing)
- .debug_str     0x000a335b       0xec Src/DSP/arm_biquad_cascade_df1_q15.o
+ .debug_str     0x000a33a1       0xec Src/DSP/arm_biquad_cascade_df1_q15.o
                                0x6d28 (size before relaxing)
- .debug_str     0x000a3447       0x1a Src/DSP/arm_copy_q15.o
+ .debug_str     0x000a348d       0x1a Src/DSP/arm_copy_q15.o
                                0x6c2b (size before relaxing)
- .debug_str     0x000a3461       0x1e Src/DSP/arm_dot_prod_q15.o
+ .debug_str     0x000a34a7       0x1e Src/DSP/arm_dot_prod_q15.o
                                0x6c77 (size before relaxing)
- .debug_str     0x000a347f       0x33 Src/DSP/arm_fill_q15.o
+ .debug_str     0x000a34c5       0x33 Src/DSP/arm_fill_q15.o
                                0x6c3e (size before relaxing)
- .debug_str     0x000a34b2      0x11b Src/DSP/arm_mat_mult_q15.o
+ .debug_str     0x000a34f8      0x11b Src/DSP/arm_mat_mult_q15.o
                                0x6dbe (size before relaxing)
- .debug_str     0x000a35cd       0x47 Src/DSP/arm_scale_q15.o
+ .debug_str     0x000a3613       0x47 Src/DSP/arm_scale_q15.o
                                0x6c86 (size before relaxing)
- .debug_str     0x000a3614      0x49c Src/DSP/arm_sin_cos_q31.o
+ .debug_str     0x000a365a      0x49c Src/DSP/arm_sin_cos_q31.o
                                0x70b4 (size before relaxing)
- .debug_str     0x000a3ab0       0x1b Src/DSP/common_tables.o
+ .debug_str     0x000a3af6       0x1b Src/DSP/common_tables.o
                                0x6beb (size before relaxing)
- .debug_str     0x000a3acb       0x82 Src/FuncionesRTOS/TASK_AHRS.o
+ .debug_str     0x000a3b11       0x82 Src/FuncionesRTOS/TASK_AHRS.o
                                0xcc4b (size before relaxing)
- .debug_str     0x000a3b4d       0x52 Src/FuncionesRTOS/TASK_ALTURA.o
+ .debug_str     0x000a3b93       0x52 Src/FuncionesRTOS/TASK_ALTURA.o
                                0x2561 (size before relaxing)
- .debug_str     0x000a3b9f       0x55 Src/FuncionesRTOS/TASK_COMPASS.o
-                               0x2564 (size before relaxing)
- .debug_str     0x000a3bf4       0x76 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_str     0x000a3be5       0xa7 Src/FuncionesRTOS/TASK_COMPASS.o
+                              0x99d21 (size before relaxing)
+ .debug_str     0x000a3c8c       0x76 Src/FuncionesRTOS/TASK_CONTROL.o
                               0x9981d (size before relaxing)
- .debug_str     0x000a3c6a       0x3e Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_str     0x000a3d02       0x3e Src/FuncionesRTOS/TASK_COORDINADOR.o
                                0x254d (size before relaxing)
- .debug_str     0x000a3ca8      0x120 Src/FuncionesRTOS/TASK_IMU.o
-                              0x99e19 (size before relaxing)
+ .debug_str     0x000a3d40       0xdf Src/FuncionesRTOS/TASK_IMU.o
+                              0x99e48 (size before relaxing)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
@@ -11385,7 +11550,7 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .comment       0x0000006e       0x6f Src/FuncionesRTOS/TASK_COORDINADOR.o
  .comment       0x0000006e       0x6f Src/FuncionesRTOS/TASK_IMU.o
 
-.debug_frame    0x00000000     0x4d14
+.debug_frame    0x00000000     0x4d24
  .debug_frame   0x00000000       0x30 Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.o
  .debug_frame   0x00000030      0x164 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
  .debug_frame   0x00000194      0x29c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
@@ -11442,24 +11607,24 @@ OUTPUT(CM3drone.elf elf32-littlearm)
  .debug_frame   0x00004840       0x3c Src/DSP/arm_sin_cos_q31.o
  .debug_frame   0x0000487c       0x74 Src/FuncionesRTOS/TASK_AHRS.o
  .debug_frame   0x000048f0       0x30 Src/FuncionesRTOS/TASK_ALTURA.o
- .debug_frame   0x00004920       0x30 Src/FuncionesRTOS/TASK_COMPASS.o
- .debug_frame   0x00004950       0x44 Src/FuncionesRTOS/TASK_CONTROL.o
- .debug_frame   0x00004994       0x30 Src/FuncionesRTOS/TASK_COORDINADOR.o
- .debug_frame   0x000049c4       0x40 Src/FuncionesRTOS/TASK_IMU.o
- .debug_frame   0x00004a04       0x40 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_asin.o)
- .debug_frame   0x00004a44       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_atan2.o)
- .debug_frame   0x00004a64       0x3c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-wf_sqrt.o)
- .debug_frame   0x00004aa0       0x50 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_asin.o)
- .debug_frame   0x00004af0       0x48 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_atan2.o)
- .debug_frame   0x00004b38       0x30 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
- .debug_frame   0x00004b68       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-ef_sqrt.o)
- .debug_frame   0x00004b94       0x38 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_atan.o)
- .debug_frame   0x00004bcc       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
- .debug_frame   0x00004bec       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fpclassify.o)
- .debug_frame   0x00004c20       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
- .debug_frame   0x00004c40       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
- .debug_frame   0x00004c60       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-sf_fpclassify.o)
- .debug_frame   0x00004c80       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-errno.o)
- .debug_frame   0x00004ca0       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
- .debug_frame   0x00004ccc       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00004cf4       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00004920       0x40 Src/FuncionesRTOS/TASK_COMPASS.o
+ .debug_frame   0x00004960       0x44 Src/FuncionesRTOS/TASK_CONTROL.o
+ .debug_frame   0x000049a4       0x30 Src/FuncionesRTOS/TASK_COORDINADOR.o
+ .debug_frame   0x000049d4       0x40 Src/FuncionesRTOS/TASK_IMU.o
+ .debug_frame   0x00004a14       0x40 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_asin.o)
+ .debug_frame   0x00004a54       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-w_atan2.o)
+ .debug_frame   0x00004a74       0x3c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-wf_sqrt.o)
+ .debug_frame   0x00004ab0       0x50 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_asin.o)
+ .debug_frame   0x00004b00       0x48 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_atan2.o)
+ .debug_frame   0x00004b48       0x30 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x00004b78       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-ef_sqrt.o)
+ .debug_frame   0x00004ba4       0x38 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_atan.o)
+ .debug_frame   0x00004bdc       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fabs.o)
+ .debug_frame   0x00004bfc       0x34 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_fpclassify.o)
+ .debug_frame   0x00004c30       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x00004c50       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-s_nan.o)
+ .debug_frame   0x00004c70       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libm.a(lib_a-sf_fpclassify.o)
+ .debug_frame   0x00004c90       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-errno.o)
+ .debug_frame   0x00004cb0       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00004cdc       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00004d04       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.7.0.201602121829/tools/compiler/bin/../lib/gcc/arm-none-eabi/5.2.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a(lib_a-memset.o)

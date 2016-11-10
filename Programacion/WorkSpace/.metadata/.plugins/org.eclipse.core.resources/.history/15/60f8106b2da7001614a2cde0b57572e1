@@ -43,10 +43,6 @@ void IMU_TASK_FCN(void const * argument){
 		Lectura_matriz[0] = (int16_t)((uint16_t)DatosLeidos[0])<<8 | DatosLeidos[1];
 		Lectura_matriz[1] = (int16_t)((uint16_t)DatosLeidos[2])<<8 | DatosLeidos[3];
 		Lectura_matriz[2] = (int16_t)((uint16_t)DatosLeidos[4])<<8 | DatosLeidos[5];
-
-		//Cola para otras tareas
-		xQueueOverwrite(AcelLecturasCola_Handle, Lectura_matriz);
-
 		//Alinear
 		arm_mat_mult_q15(&CalibracionIMU9DOF.Correccion_Alineamiento_IMU,
 				&Lectura, &LecturaOrientada, NULL);
@@ -58,17 +54,11 @@ void IMU_TASK_FCN(void const * argument){
 		//..VELOCIDAD..//
 		//Ordenar datos si se precisa
 		Lectura_matriz[0] = (int16_t)(((uint16_t)DatosLeidos[8])<<8 | DatosLeidos[9]);
-		Lectura_matriz[1] = (int16_t)((uint16_t)DatosLeidos[10])<<8 | DatosLeidos[11];
-		Lectura_matriz[2] = (int16_t)((uint16_t)DatosLeidos[12])<<8 | DatosLeidos[13];
-
-		//Cola para otras tareas
-		xQueueOverwrite(VelLecturasCola_Handle, Lectura_matriz);
-
-		//Quitamos el offset
 		Lectura_matriz[0] -= CalibracionIMU9DOF.Media_Vel_x;
+		Lectura_matriz[1] = (int16_t)((uint16_t)DatosLeidos[10])<<8 | DatosLeidos[11];
 		Lectura_matriz[1] -= CalibracionIMU9DOF.Media_Vel_y;
+		Lectura_matriz[2] = (int16_t)((uint16_t)DatosLeidos[12])<<8 | DatosLeidos[13];
 		Lectura_matriz[2] -= CalibracionIMU9DOF.Media_Vel_z;
-
 		//Alinear
 		arm_mat_mult_q15(&CalibracionIMU9DOF.Correccion_Alineamiento_IMU,
 				&Lectura, &LecturaOrientada, NULL);
