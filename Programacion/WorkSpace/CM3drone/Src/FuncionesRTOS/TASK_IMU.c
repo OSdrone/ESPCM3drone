@@ -29,7 +29,7 @@ void IMU_TASK_FCN(void const * argument){
 	uint8_t DatosLeidos[14];
 
 	int16_t LecturaOrientada_matriz[3];
-	arm_matrix_instance_q15 LecturaOrientada = {3, 1, NULL};
+	arm_matrix_instance_q15 LecturaOrientada = {3, 1, LecturaOrientada_matriz};
 	int16_t Lectura_matriz[3];
 	arm_matrix_instance_q15 Lectura = {3, 1, Lectura_matriz};
 
@@ -38,39 +38,38 @@ void IMU_TASK_FCN(void const * argument){
 
 		MandarDatosI2C(&hi2c2, IMU9250.Direccion_IMU , (uint8_t*)BufferSalida, DatosLeidos, 1, 14);
 
+		//..ACELERACION..//
 		//Ordenar datos si se precisa
 		Lectura_matriz[0] = (int16_t)((uint16_t)DatosLeidos[0])<<8 | DatosLeidos[1];
 		Lectura_matriz[1] = (int16_t)((uint16_t)DatosLeidos[2])<<8 | DatosLeidos[3];
 		Lectura_matriz[2] = (int16_t)((uint16_t)DatosLeidos[4])<<8 | DatosLeidos[5];
-
+		//Alinear
 		arm_mat_mult_q15(&CalibracionIMU9DOF.Correccion_Alineamiento_IMU,
 				&Lectura, &LecturaOrientada, NULL);
+		//Filtrar
+		arm_biquad_cascade_df1_q15(&FiltroAceleracion[0], &Lectura_matriz[0], &LecturasIMU.x_acel, 1);
+		arm_biquad_cascade_df1_q15(&FiltroAceleracion[1], &Lectura_matriz[1], &LecturasIMU.y_acel, 1);
+		arm_biquad_cascade_df1_q15(&FiltroAceleracion[2], &Lectura_matriz[2], &LecturasIMU.z_acel, 1);
 
-/*
+		//..VELOCIDAD..//
 		//Ordenar datos si se precisa
-		LecturasIMU.x_acel = ((uint16_t)DatosLeidos[0])<<8 | DatosLeidos[1];
-		LecturasIMU.y_acel = ((uint16_t)DatosLeidos[2])<<8 | DatosLeidos[3];
-		LecturasIMU.z_acel = ((uint16_t)DatosLeidos[4])<<8 | DatosLeidos[5];
+		Lectura_matriz[0] = (int16_t)(((uint16_t)DatosLeidos[8])<<8 | DatosLeidos[9]);
+		Lectura_matriz[0] -= CalibracionIMU9DOF.Media_Vel_x;
+		Lectura_matriz[1] = (int16_t)((uint16_t)DatosLeidos[10])<<8 | DatosLeidos[11];
+		Lectura_matriz[1] -= CalibracionIMU9DOF.Media_Vel_y;
+		Lectura_matriz[2] = (int16_t)((uint16_t)DatosLeidos[12])<<8 | DatosLeidos[13];
+		Lectura_matriz[2] -= CalibracionIMU9DOF.Media_Vel_z;
+		//Alinear
+		arm_mat_mult_q15(&CalibracionIMU9DOF.Correccion_Alineamiento_IMU,
+				&Lectura, &LecturaOrientada, NULL);
+		//Filtrar
+		arm_biquad_cascade_df1_q15(&FiltroVelocidad[0], &Lectura_matriz[0], &LecturasIMU.x_vel, 1);
+		arm_biquad_cascade_df1_q15(&FiltroVelocidad[1], &Lectura_matriz[1], &LecturasIMU.y_vel, 1);
+		arm_biquad_cascade_df1_q15(&FiltroVelocidad[2], &Lectura_matriz[2], &LecturasIMU.z_vel, 1);
 
-		//Orientada
-
+		//TEMPERATURA //TODO algortimo de medida de la temp
 		LecturasIMU.temp = ((uint16_t)DatosLeidos[6])<<8 | DatosLeidos[7];
 
-		LecturasIMU.x_vel = (int16_t)(((uint16_t)DatosLeidos[8])<<8 | DatosLeidos[9]);
-		LecturasIMU.x_vel -= CalibracionIMU9DOF.Media_Vel_x;
-		LecturasIMU.y_vel = ((uint16_t)DatosLeidos[10])<<8 | DatosLeidos[11];
-		LecturasIMU.y_vel -= CalibracionIMU9DOF.Media_Vel_y;
-		LecturasIMU.z_vel = ((uint16_t)DatosLeidos[12])<<8 | DatosLeidos[13];
-		LecturasIMU.z_vel -= CalibracionIMU9DOF.Media_Vel_z;
-
-		arm_biquad_cascade_df1_q15(&FiltroAceleracion[0], &LecturasIMU.x_acel, &LecturasIMU.x_acel, 1);
-		arm_biquad_cascade_df1_q15(&FiltroAceleracion[1], &LecturasIMU.y_acel, &LecturasIMU.y_acel, 1);
-		arm_biquad_cascade_df1_q15(&FiltroAceleracion[2], &LecturasIMU.z_acel, &LecturasIMU.z_acel, 1);
-
-		arm_biquad_cascade_df1_q15(&FiltroVelocidad[0], &LecturasIMU.x_vel, &LecturasIMU.x_vel, 1);
-		arm_biquad_cascade_df1_q15(&FiltroVelocidad[1], &LecturasIMU.y_vel, &LecturasIMU.y_vel, 1);
-		arm_biquad_cascade_df1_q15(&FiltroVelocidad[2], &LecturasIMU.z_vel, &LecturasIMU.z_vel, 1);
-*/
 		EscribirLecturasIMU(&LecturasIMU);
 	}
 }

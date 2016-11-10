@@ -61,8 +61,10 @@ tpIMU9250 IMU9250 = {
 };
 
 tpCalibracionIMU9DOF CalibracionIMU9DOF = {
-		.Correccion_Alineamiento_IMU_matriz = {0, 0, 0, 0, 0, 0, 0, 0, 0},
-		.Correccion_COMPASS_matriz = {0, 0, 0, 0, 0, 0, 0, 0, 0}
+		.Correccion_Alineamiento_IMU_matriz = {32767, 0, 0, 0, 32767, 0, 0, 0, 32767},
+		.Correccion_Alineamiento_IMU = {3, 1, CalibracionIMU9DOF.Correccion_Alineamiento_IMU_matriz},
+		.Correccion_COMPASS_matriz = {32767, 0, 0, 0, 32767, 0, 0, 0, 32767},
+		.Correccion_COMPASS = {3, 1, CalibracionIMU9DOF.Correccion_COMPASS_matriz},
 };
 
 

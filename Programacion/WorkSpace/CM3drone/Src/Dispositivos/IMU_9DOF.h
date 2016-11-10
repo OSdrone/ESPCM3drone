@@ -147,7 +147,7 @@ typedef struct { //tpCalibracion_IMU
 	q15_t Correccion_Alineamiento_IMU_matriz[9];
 	arm_matrix_instance_q15 Correccion_Alineamiento_IMU;
 	q15_t Correccion_COMPASS_matriz[9];
-	arm_matrix_instance_q15 Correccion_COMPASS_IMU;
+	arm_matrix_instance_q15 Correccion_COMPASS;
 
 } tpCalibracionIMU9DOF;
 
