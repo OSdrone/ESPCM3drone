@@ -1,4 +1,4 @@
-10:17:16 **** Incremental Build of configuration Debug for project CM3drone ****
+10:41:37 **** Incremental Build of configuration Debug for project CM3drone ****
 make all 
 'Building file: ../Src/FuncionesRTOS/TASK_IMU.c'
 'Invoking: MCU GCC Compiler'
@@ -26,5 +26,5 @@ arm-none-eabi-size "CM3drone.elf"
   43292	    600	  14552	  58444	   e44c	CM3drone.elf
 ' '
 
-10:17:20 Build Finished (took 3s.746ms)
+10:41:52 Build Finished (took 14s.973ms)
 
