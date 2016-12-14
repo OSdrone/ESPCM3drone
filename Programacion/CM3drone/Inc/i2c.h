@@ -40,6 +40,9 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h"
+#include "FreeRTOS.h"
+#include "cmsis_os.h"
+#include "semphr.h"
 
 /* USER CODE BEGIN Includes */
 
@@ -64,11 +67,12 @@ void MX_I2C2_Init(void);
 #endif
 #endif /*__ i2c_H */
 
-/**
-  * @}
-  */
+ HAL_StatusTypeDef HAL_I2C_Master_Transmit_DMA_MUTEX(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size);
+ HAL_StatusTypeDef HAL_I2C_Master_Receive_DMA_MUTEX(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size);
 
-/**
+ void MandarDatosI2C(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pDataTX, uint8_t *pDataRX,
+ 		uint16_t SizeTX, uint16_t SizeRX);
+ /**
   * @}
   */
 

@@ -1,0 +1,1893 @@
+Dependencies for Project 'CM3drone', Target 'CM3drone': (DO NOT MODIFY !)
+F (startup_stm32f103xb.s)(0x584F004B)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I..\Inc-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0--pd "__UVISION_VERSION SETA 514" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o .\cm3drone\startup_stm32f103xb.o --depend .\cm3drone\startup_stm32f103xb.d)
+F (..\FuncionesRTOS\TASK_IMU.h)(0x584F11D1)()
+F (..\FuncionesRTOS\TASK_IMU.c)(0x58519820)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\FuncionesRTOS -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\task_imu.o --omf_browse .\cm3drone\task_imu.crf --depend .\cm3drone\task_imu.d)
+I (..\FuncionesRTOS\TASK_IMU.h)(0x584F11D1)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (..\Dispositivos\IMU_9DOF.h)(0x58519CD6)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5476556E)
+I (..\Src\Constantes.h)(0x583ADD95)
+I (../Inc/i2c.h)(0x584F104A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+I (..\Src\ServidoresVariables.h)(0x58519D57)
+I (..\Src\AHRS.h)(0x584F11F7)
+I (..\Src\OSmath.h)(0x584F11F6)
+F (..\FuncionesRTOS\TASK_COORDINADOR.h)(0x583ADD95)()
+F (..\FuncionesRTOS\TASK_COORDINADOR.c)(0x583ADD95)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\FuncionesRTOS -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\task_coordinador.o --omf_browse .\cm3drone\task_coordinador.crf --depend .\cm3drone\task_coordinador.d)
+F (..\FuncionesRTOS\TASK_CONTROL.h)(0x584F0AAD)()
+F (..\FuncionesRTOS\TASK_CONTROL.c)(0x583ADD95)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\FuncionesRTOS -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\task_control.o --omf_browse .\cm3drone\task_control.crf --depend .\cm3drone\task_control.d)
+I (..\FuncionesRTOS\TASK_CONTROL.h)(0x584F0AAD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5476556E)
+I (..\Src\ServidoresVariables.h)(0x58519D57)
+I (..\Src\Constantes.h)(0x583ADD95)
+I (..\Src\AHRS.h)(0x584F11F7)
+I (..\Src\OSmath.h)(0x584F11F6)
+I (..\Dispositivos\IMU_9DOF.h)(0x58519CD6)
+I (../Inc/tim.h)(0x584F003A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (..\FuncionesRTOS\TASK_COMPASS.h)(0x584F0AF1)()
+F (..\FuncionesRTOS\TASK_COMPASS.c)(0x583ADD95)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\FuncionesRTOS -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\task_compass.o --omf_browse .\cm3drone\task_compass.crf --depend .\cm3drone\task_compass.d)
+I (..\FuncionesRTOS\TASK_COMPASS.h)(0x584F0AF1)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (..\Dispositivos\IMU_9DOF.h)(0x58519CD6)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5476556E)
+I (..\Src\Constantes.h)(0x583ADD95)
+I (../Inc/i2c.h)(0x584F104A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+I (..\Src\ServidoresVariables.h)(0x58519D57)
+I (..\Src\AHRS.h)(0x584F11F7)
+I (..\Src\OSmath.h)(0x584F11F6)
+F (..\FuncionesRTOS\TASK_ALTURA.h)(0x583ADD95)()
+F (..\FuncionesRTOS\TASK_ALTURA.c)(0x583ADD95)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\FuncionesRTOS -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\task_altura.o --omf_browse .\cm3drone\task_altura.crf --depend .\cm3drone\task_altura.d)
+I (..\FuncionesRTOS\TASK_ALTURA.h)(0x583ADD95)
+F (..\FuncionesRTOS\TASK_AHRS.h)(0x584F0E52)()
+F (..\FuncionesRTOS\TASK_AHRS.c)(0x583ADD95)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\FuncionesRTOS -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\task_ahrs.o --omf_browse .\cm3drone\task_ahrs.crf --depend .\cm3drone\task_ahrs.d)
+I (..\FuncionesRTOS\TASK_AHRS.h)(0x584F0E52)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (..\Src\AHRS.h)(0x584F11F7)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5476556E)
+I (..\Src\OSmath.h)(0x584F11F6)
+I (..\Src\Constantes.h)(0x583ADD95)
+I (..\Src\ServidoresVariables.h)(0x58519D57)
+I (..\Dispositivos\IMU_9DOF.h)(0x58519CD6)
+F (..\Dispositivos\IMU_9DOF.h)(0x58519CD6)()
+F (C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Lib\ARM\arm_cortexM3l_math.lib)(0x562893D0)()
+F (../Src/usart.c)(0x584F003A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\usart.o --omf_browse .\cm3drone\usart.crf --depend .\cm3drone\usart.d)
+I (../Inc/usart.h)(0x584F003A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+I (../Inc/gpio.h)(0x584F0033)
+I (../Inc/dma.h)(0x584F0037)
+F (../Src/main.c)(0x58519CDC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\main.o --omf_browse .\cm3drone\main.crf --depend .\cm3drone\main.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+I (../Inc/adc.h)(0x584F0036)
+I (../Inc/crc.h)(0x584F0036)
+I (../Inc/dma.h)(0x584F0037)
+I (../Inc/i2c.h)(0x584F104A)
+I (../Inc/iwdg.h)(0x584F0039)
+I (../Inc/tim.h)(0x584F003A)
+I (../Inc/usart.h)(0x584F003A)
+I (../Inc/gpio.h)(0x584F0033)
+I (../Src/OSvariables.h)(0x583ADD95)
+I (..\Dispositivos\IMU_9DOF.h)(0x58519CD6)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5476556E)
+I (..\Src\Constantes.h)(0x583ADD95)
+F (../Src/dma.c)(0x584F0036)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\dma.o --omf_browse .\cm3drone\dma.crf --depend .\cm3drone\dma.d)
+I (../Inc/dma.h)(0x584F0037)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Src/iwdg.c)(0x584F0039)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\iwdg.o --omf_browse .\cm3drone\iwdg.crf --depend .\cm3drone\iwdg.d)
+I (../Inc/iwdg.h)(0x584F0039)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Src/adc.c)(0x584F0036)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\adc.o --omf_browse .\cm3drone\adc.crf --depend .\cm3drone\adc.d)
+I (../Inc/adc.h)(0x584F0036)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+I (../Inc/gpio.h)(0x584F0033)
+F (../Src/tim.c)(0x584F003A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\tim.o --omf_browse .\cm3drone\tim.crf --depend .\cm3drone\tim.d)
+I (../Inc/tim.h)(0x584F003A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Src/stm32f1xx_it.c)(0x584F003B)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_it.o --omf_browse .\cm3drone\stm32f1xx_it.crf --depend .\cm3drone\stm32f1xx_it.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_it.h)(0x584F003B)
+F (../Src/crc.c)(0x584F0036)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\crc.o --omf_browse .\cm3drone\crc.crf --depend .\cm3drone\crc.d)
+I (../Inc/crc.h)(0x584F0036)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Src/stm32f1xx_hal_msp.c)(0x584F003B)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_msp.o --omf_browse .\cm3drone\stm32f1xx_hal_msp.crf --depend .\cm3drone\stm32f1xx_hal_msp.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Src/gpio.c)(0x584F0033)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\gpio.o --omf_browse .\cm3drone\gpio.crf --depend .\cm3drone\gpio.d)
+I (../Inc/gpio.h)(0x584F0033)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Src/i2c.c)(0x584F117B)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\i2c.o --omf_browse .\cm3drone\i2c.crf --depend .\cm3drone\i2c.d)
+I (../Inc/i2c.h)(0x584F104A)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+I (../Inc/gpio.h)(0x584F0033)
+I (../Inc/dma.h)(0x584F0037)
+F (../Src/freertos.c)(0x58519DDA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\freertos.o --omf_browse .\cm3drone\freertos.crf --depend .\cm3drone\freertos.d)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+F (..\Src\AHRS.c)(0x583ADD95)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\ahrs.o --omf_browse .\cm3drone\ahrs.crf --depend .\cm3drone\ahrs.d)
+I (..\Src\AHRS.h)(0x584F11F7)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5476556E)
+I (..\Src\OSmath.h)(0x584F11F6)
+I (..\Src\Constantes.h)(0x583ADD95)
+F (..\Src\AHRS.h)(0x584F11F7)()
+F (..\Src\Constantes.h)(0x583ADD95)()
+F (..\Src\OSmath.h)(0x584F11F6)()
+F (..\Src\ServidoresVariables.c)(0x58519D53)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\Src -I..\Dispositivos -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\servidoresvariables.o --omf_browse .\cm3drone\servidoresvariables.crf --depend .\cm3drone\servidoresvariables.d)
+I (..\Src\ServidoresVariables.h)(0x58519D57)
+I (../Drivers/CMSIS/Include/arm_math.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5476556E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (..\Src\Constantes.h)(0x583ADD95)
+I (..\Src\AHRS.h)(0x584F11F7)
+I (..\Src\OSmath.h)(0x584F11F6)
+I (..\Dispositivos\IMU_9DOF.h)(0x58519CD6)
+F (..\Src\ServidoresVariables.h)(0x58519D57)()
+F (..\Src\OSvariables.h)(0x583ADD95)()
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_i2c.o --omf_browse .\cm3drone\stm32f1xx_hal_i2c.crf --depend .\cm3drone\stm32f1xx_hal_i2c.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_gpio_ex.o --omf_browse .\cm3drone\stm32f1xx_hal_gpio_ex.crf --depend .\cm3drone\stm32f1xx_hal_gpio_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c)(0x5769ABB2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal.o --omf_browse .\cm3drone\stm32f1xx_hal.crf --depend .\cm3drone\stm32f1xx_hal.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_iwdg.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_iwdg.o --omf_browse .\cm3drone\stm32f1xx_hal_iwdg.crf --depend .\cm3drone\stm32f1xx_hal_iwdg.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_crc.c)(0x5769ABB2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_crc.o --omf_browse .\cm3drone\stm32f1xx_hal_crc.crf --depend .\cm3drone\stm32f1xx_hal_crc.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_gpio.o --omf_browse .\cm3drone\stm32f1xx_hal_gpio.crf --depend .\cm3drone\stm32f1xx_hal_gpio.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c)(0x5769ABB2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_adc_ex.o --omf_browse .\cm3drone\stm32f1xx_hal_adc_ex.crf --depend .\cm3drone\stm32f1xx_hal_adc_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_tim_ex.o --omf_browse .\cm3drone\stm32f1xx_hal_tim_ex.crf --depend .\cm3drone\stm32f1xx_hal_tim_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_uart.o --omf_browse .\cm3drone\stm32f1xx_hal_uart.crf --depend .\cm3drone\stm32f1xx_hal_uart.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_tim.o --omf_browse .\cm3drone\stm32f1xx_hal_tim.crf --depend .\cm3drone\stm32f1xx_hal_tim.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_pwr.o --omf_browse .\cm3drone\stm32f1xx_hal_pwr.crf --depend .\cm3drone\stm32f1xx_hal_pwr.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_dma.o --omf_browse .\cm3drone\stm32f1xx_hal_dma.crf --depend .\cm3drone\stm32f1xx_hal_dma.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c)(0x5769ABB2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_cortex.o --omf_browse .\cm3drone\stm32f1xx_hal_cortex.crf --depend .\cm3drone\stm32f1xx_hal_cortex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c)(0x5769ABB2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_adc.o --omf_browse .\cm3drone\stm32f1xx_hal_adc.crf --depend .\cm3drone\stm32f1xx_hal_adc.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_flash_ex.o --omf_browse .\cm3drone\stm32f1xx_hal_flash_ex.crf --depend .\cm3drone\stm32f1xx_hal_flash_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_rcc_ex.o --omf_browse .\cm3drone\stm32f1xx_hal_rcc_ex.crf --depend .\cm3drone\stm32f1xx_hal_rcc_ex.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_rcc.o --omf_browse .\cm3drone\stm32f1xx_hal_rcc.crf --depend .\cm3drone\stm32f1xx_hal_rcc.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c)(0x5769ABB3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\stm32f1xx_hal_flash.o --omf_browse .\cm3drone\stm32f1xx_hal_flash.crf --depend .\cm3drone\stm32f1xx_hal_flash.d)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)
+F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x5769ABBC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\croutine.o --omf_browse .\cm3drone\croutine.crf --depend .\cm3drone\croutine.d)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h)(0x5769ABBC)
+F (../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c)(0x5769ABBD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\heap_4.o --omf_browse .\cm3drone\heap_4.crf --depend .\cm3drone\heap_4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c)(0x5769ABBD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\port.o --omf_browse .\cm3drone\port.crf --depend .\cm3drone\port.d)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+F (../Middlewares/Third_Party/FreeRTOS/Source/list.c)(0x5769ABBC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\list.o --omf_browse .\cm3drone\list.crf --depend .\cm3drone\list.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+F (../Middlewares/Third_Party/FreeRTOS/Source/tasks.c)(0x5769ABBD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\tasks.o --omf_browse .\cm3drone\tasks.crf --depend .\cm3drone\tasks.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/StackMacros.h)(0x5769ABBC)
+F (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c)(0x5769ABBC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\cmsis_os.o --omf_browse .\cm3drone\cmsis_os.crf --depend .\cm3drone\cmsis_os.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+F (../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c)(0x5769ABBC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\event_groups.o --omf_browse .\cm3drone\event_groups.crf --depend .\cm3drone\event_groups.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+F (../Middlewares/Third_Party/FreeRTOS/Source/timers.c)(0x5769ABBD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\timers.o --omf_browse .\cm3drone\timers.crf --depend .\cm3drone\timers.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+F (../Middlewares/Third_Party/FreeRTOS/Source/queue.c)(0x5769ABBD)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\queue.o --omf_browse .\cm3drone\queue.crf --depend .\cm3drone\queue.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54765570)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Inc/main.h)(0x584F003C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+F (../Drivers/CMSIS/Device/ST/STM32F1xx/Source/Templates/system_stm32f1xx.c)(0x5769AB8F)(-c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I../Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Drivers/CMSIS/Include -I../Src/FuncionesRTOS -I../Dispositivos --C99-I "C:\Users\Ruben\Dropbox\Proyectos\Drones\Control Wifi\ESP8266\ESPCM3drone\Programacion\CM3drone\MDK-ARM\RTE"-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0-D__UVISION_VERSION="514" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB -DARM_MATH_CM3-o .\cm3drone\system_stm32f1xx.o --omf_browse .\cm3drone\system_stm32f1xx.crf --depend .\cm3drone\system_stm32f1xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h)(0x5769AB8F)
+I (../Drivers/CMSIS/Include/core_cm3.h)(0x5769ABB1)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54765570)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x5769ABB1)
+I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5769AB8F)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5769ABB2)
+I (../Inc/stm32f1xx_hal_conf.h)(0x584F003B)
+I (../Inc/main.h)(0x584F003C)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5769ABB2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54765570)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_crc.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h)(0x584F1102)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5769ABBC)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54765570)
+I (../Inc/FreeRTOSConfig.h)(0x584F0038)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h)(0x5769ABBD)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x5769ABBC)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5769ABBC)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_iwdg.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5769ABB2)
+I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h)(0x5769ABB2)

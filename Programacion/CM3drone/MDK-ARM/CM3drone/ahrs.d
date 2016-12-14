@@ -1,0 +1,12 @@
+.\cm3drone\ahrs.o: ..\Src\AHRS.c
+.\cm3drone\ahrs.o: ..\Src\AHRS.h
+.\cm3drone\ahrs.o: ../Drivers/CMSIS/Include/arm_math.h
+.\cm3drone\ahrs.o: ../Drivers/CMSIS/Include/core_cm3.h
+.\cm3drone\ahrs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\cm3drone\ahrs.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+.\cm3drone\ahrs.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+.\cm3drone\ahrs.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+.\cm3drone\ahrs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\cm3drone\ahrs.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\cm3drone\ahrs.o: ..\Src\OSmath.h
+.\cm3drone\ahrs.o: ..\Src\Constantes.h

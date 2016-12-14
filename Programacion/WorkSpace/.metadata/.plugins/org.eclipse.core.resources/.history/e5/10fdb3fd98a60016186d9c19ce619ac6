@@ -1,2 +1,0 @@
-Src/FuncionesRTOS/TASK_COORDINADOR.o: \
- ../Src/FuncionesRTOS/TASK_COORDINADOR.c

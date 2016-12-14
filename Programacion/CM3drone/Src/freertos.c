@@ -65,6 +65,10 @@ osSemaphoreId AHRS_SMPHRHandle;
 osSemaphoreId I2C_2_SMPHRHandle;
 osSemaphoreId UART_SMPHRHandle;
 
+QueueHandle_t AcelLecturasCola_Handle;
+QueueHandle_t VelLecturasCola_Handle;
+QueueHandle_t MagLecturasCola_Handle;
+
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
@@ -76,13 +80,13 @@ extern void IMU_TASK_FCN(void const * argument);
 extern void AHRS_TASK_FCN(void const * argument);
 extern void COORDINADOR_TASK_FCN(void const * argument);
 extern void COMPASS_TASK_FCN(void const * argument);
-extern void ALTURA_TTASK_FCN(void const * argument);
-void CONTROL_TIMER_FCN(void const * argument);
-void IMU_TIMER_FCN(void const * argument);
-void COORDINADOR_TIMER_FCN(void const * argument);
-void AHRS_TIMER_FCN(void const * argument);
-void COMPASS_TIMER_FCN(void const * argument);
-void ALTURA_TIMER_FCN(void const * argument);
+extern void ALTURA_TASK_FCN(void const * argument);
+extern void CONTROL_TIMER_FCN(void const * argument);
+extern void IMU_TIMER_FCN(void const * argument);
+extern void COORDINADOR_TIMER_FCN(void const * argument);
+extern void AHRS_TIMER_FCN(void const * argument);
+extern void COMPASS_TIMER_FCN(void const * argument);
+extern void ALTURA_TIMER_FCN(void const * argument);
 
 extern void MX_USB_DEVICE_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
@@ -197,15 +201,15 @@ void MX_FREERTOS_Init(void) {
   AHRS_TASKHandle = osThreadCreate(osThread(AHRS_TASK), NULL);
 
   /* definition and creation of COORDINADOR_TAS */
-  osThreadDef(COORDINADOR_TAS, COORDINADOR_TASK_FCN, osPriorityNormal, 0, 128);
-  COORDINADOR_TASHandle = osThreadCreate(osThread(COORDINADOR_TAS), NULL);
+  osThreadDef(COORDINADOR_TASK, COORDINADOR_TASK_FCN, osPriorityNormal, 0, 128);
+  COORDINADOR_TASHandle = osThreadCreate(osThread(COORDINADOR_TASK), NULL);
 
   /* definition and creation of COMPASS_TASK */
   osThreadDef(COMPASS_TASK, COMPASS_TASK_FCN, osPriorityBelowNormal, 0, 128);
   COMPASS_TASKHandle = osThreadCreate(osThread(COMPASS_TASK), NULL);
 
   /* definition and creation of ALTURA_TASK */
-  osThreadDef(ALTURA_TASK, ALTURA_TTASK_FCN, osPriorityNormal, 0, 128);
+  osThreadDef(ALTURA_TASK, ALTURA_TASK_FCN, osPriorityNormal, 0, 128);
   ALTURA_TASKHandle = osThreadCreate(osThread(ALTURA_TASK), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -215,13 +219,17 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
+
+  AcelLecturasCola_Handle = xQueueCreate(1, 3*sizeof(int16_t));
+  VelLecturasCola_Handle = xQueueCreate(1, 3*sizeof(int16_t));
+  MagLecturasCola_Handle = xQueueCreate(1, 3*sizeof(int16_t));
 }
 
 /* StartDefaultTask function */
 void StartDefaultTask(void const * argument)
 {
   /* init code for USB_DEVICE */
-  MX_USB_DEVICE_Init();
+//  MX_USB_DEVICE_Init();
 
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
@@ -231,57 +239,5 @@ void StartDefaultTask(void const * argument)
   }
   /* USER CODE END StartDefaultTask */
 }
-
-/* CONTROL_TIMER_FCN function */
-void CONTROL_TIMER_FCN(void const * argument)
-{
-  /* USER CODE BEGIN CONTROL_TIMER_FCN */
-  
-  /* USER CODE END CONTROL_TIMER_FCN */
-}
-
-/* IMU_TIMER_FCN function */
-void IMU_TIMER_FCN(void const * argument)
-{
-  /* USER CODE BEGIN IMU_TIMER_FCN */
-  
-  /* USER CODE END IMU_TIMER_FCN */
-}
-
-/* COORDINADOR_TIMER_FCN function */
-void COORDINADOR_TIMER_FCN(void const * argument)
-{
-  /* USER CODE BEGIN COORDINADOR_TIMER_FCN */
-  
-  /* USER CODE END COORDINADOR_TIMER_FCN */
-}
-
-/* AHRS_TIMER_FCN function */
-void AHRS_TIMER_FCN(void const * argument)
-{
-  /* USER CODE BEGIN AHRS_TIMER_FCN */
-  
-  /* USER CODE END AHRS_TIMER_FCN */
-}
-
-/* COMPASS_TIMER_FCN function */
-void COMPASS_TIMER_FCN(void const * argument)
-{
-  /* USER CODE BEGIN COMPASS_TIMER_FCN */
-  
-  /* USER CODE END COMPASS_TIMER_FCN */
-}
-
-/* ALTURA_TIMER_FCN function */
-void ALTURA_TIMER_FCN(void const * argument)
-{
-  /* USER CODE BEGIN ALTURA_TIMER_FCN */
-  
-  /* USER CODE END ALTURA_TIMER_FCN */
-}
-
-/* USER CODE BEGIN Application */
-     
-/* USER CODE END Application */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

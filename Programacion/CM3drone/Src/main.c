@@ -40,42 +40,44 @@
 #include "iwdg.h"
 #include "tim.h"
 #include "usart.h"
-#include "usb_device.h"
+//#include "usb_device.h"
 #include "gpio.h"
+#include "OSvariables.h"
+#include "IMU_9DOF.h"
 
-/* USER CODE BEGIN Includes */
+/* Global variables ---------------------------------------------------------*/
 
-/* USER CODE END Includes */
+//CONTROL
+tpEstado Estado = ESTADO_PARADA;
+tpModoCalibracion ModoCalibracion;
+tpModoTelemetria ModoTelemetria = TELEMETRIA_COMPLETA;
+tpModoControl ModoControl = CONTROL_3EJES;
+tpModoIdentificacion ModoIdentificacion;
 
-/* Private variables ---------------------------------------------------------*/
+//SENSORES
+tpIMU9250 IMU9250 = {
+	.Direccion_IMU = Dir_1_IMU_MPU9250,
+	.Direccion_MAG = Dir_MAG_MPU9250,
+	.Sensibilidad_Acel = 4,
+	.Sensibilidad_Giroscopo = 2000,
+	.Sensibilidad_Brujula = 19, //TODO ajustar
+};
 
-/* USER CODE BEGIN PV */
-/* Private variables ---------------------------------------------------------*/
+tpCalibracionIMU9DOF CalibracionIMU9DOF = {
+		.Correccion_Alineamiento_IMU_matriz = {32767, 0, 0, 0, 32767, 0, 0, 0, 32767},
+		.Correccion_Alineamiento_IMU = {3, 1, CalibracionIMU9DOF.Correccion_Alineamiento_IMU_matriz},
+		.Correccion_COMPASS_matriz = {32767, 0, 0, 0, 32767, 0, 0, 0, 32767},
+		.Correccion_COMPASS = {3, 1, CalibracionIMU9DOF.Correccion_COMPASS_matriz},
+};
 
-/* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void Error_Handler(void);
 void MX_FREERTOS_Init(void);
 
-/* USER CODE BEGIN PFP */
-/* Private function prototypes -----------------------------------------------*/
-
-/* USER CODE END PFP */
-
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
 int main(void)
 {
-
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration----------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
@@ -94,28 +96,19 @@ int main(void)
   MX_USART2_UART_Init();
   MX_CRC_Init();
 
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
+  /* USER CODE BEGIN */
 
   /* Call init function for freertos objects (in freertos.c) */
   MX_FREERTOS_Init();
 
+  //TODO cargar configuracion de la flash
+
   /* Start scheduler */
   osKernelStart();
   
-  /* We should never get here as control is now taken by the scheduler */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-  /* USER CODE END WHILE */
-
-  /* USER CODE BEGIN 3 */
-
+  while (1){
   }
-  /* USER CODE END 3 */
 
 }
 
@@ -184,6 +177,10 @@ void Error_Handler(void)
   {
   }
   /* USER CODE END Error_Handler */ 
+}
+
+extern uint16_t Sensibilidad_Giroscopo(){
+	return (IMU9250.Sensibilidad_Giroscopo);
 }
 
 #ifdef USE_FULL_ASSERT

@@ -63,7 +63,9 @@ void MX_I2C2_Init(void)
   {
     Error_Handler();
   }
-
+  hi2c2.MutexI2C = xSemaphoreCreateMutex();
+  hi2c2.Syncro = xSemaphoreCreateMutex();
+  xSemaphoreGive(hi2c2.MutexI2C);
 }
 
 void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
@@ -159,16 +161,51 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* i2cHandle)
   /* USER CODE END I2C2_MspDeInit 1 */
 } 
 
-/* USER CODE BEGIN 1 */
+HAL_StatusTypeDef HAL_I2C_Master_Transmit_DMA_MUTEX(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size){
+	HAL_StatusTypeDef HAL_StatusTypeDef_var;
 
-/* USER CODE END 1 */
+	xSemaphoreTake(hi2c->MutexI2C, portMAX_DELAY);
+	HAL_StatusTypeDef_var = HAL_I2C_Master_Transmit_DMA(hi2c, DevAddress, pData, Size);
+	//Esperamos a la interrupcion
+	xSemaphoreTake(hi2c->Syncro, portMAX_DELAY);
+	xSemaphoreGive(hi2c->MutexI2C);
 
-/**
-  * @}
-  */
+	return HAL_StatusTypeDef_var;
+}
 
-/**
-  * @}
-  */
+HAL_StatusTypeDef  HAL_I2C_Master_Receive_DMA_MUTEX(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pData, uint16_t Size){
+	HAL_StatusTypeDef HAL_StatusTypeDef_var;
+
+	xSemaphoreTake(hi2c->MutexI2C, portMAX_DELAY);
+	HAL_StatusTypeDef_var = HAL_I2C_Master_Receive_DMA(hi2c, DevAddress, pData, Size);
+	//Esperamos a la interrupcion
+	xSemaphoreTake(hi2c->Syncro, portMAX_DELAY);
+	xSemaphoreGive(hi2c->MutexI2C);
+
+	return HAL_StatusTypeDef_var;
+}
+
+void HAL_I2C_MasterRxCpltCallback(I2C_HandleTypeDef *hi2c){
+	static BaseType_t xHigherPriorityTaskWoken = pdTRUE;
+	
+	xSemaphoreGiveFromISR(hi2c->Syncro, &xHigherPriorityTaskWoken);
+}
+
+void HAL_I2C_MasterTxCpltCallback(I2C_HandleTypeDef *hi2c){
+	static BaseType_t xHigherPriorityTaskWoken = pdTRUE;
+	xSemaphoreGiveFromISR(hi2c->Syncro, &xHigherPriorityTaskWoken);
+}
+
+void MandarDatosI2C(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint8_t *pDataTX, uint8_t *pDataRX,
+		uint16_t SizeTX, uint16_t SizeRX){
+
+	xSemaphoreTake(hi2c->MutexI2C, portMAX_DELAY);
+	HAL_I2C_Master_Transmit_DMA(hi2c, DevAddress, pDataTX, SizeTX);
+	xSemaphoreTake(hi2c->Syncro, portMAX_DELAY);
+	HAL_I2C_Master_Receive_DMA(hi2c, DevAddress, pDataRX, SizeRX);
+	xSemaphoreTake(hi2c->Syncro, portMAX_DELAY);
+	xSemaphoreGive(hi2c->MutexI2C);
+
+}
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

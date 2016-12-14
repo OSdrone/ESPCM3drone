@@ -39,6 +39,10 @@
 #ifndef __STM32F1xx_HAL_I2C_H
 #define __STM32F1xx_HAL_I2C_H
 
+#include "FreeRTOS.h"
+#include "cmsis_os.h"
+#include "semphr.h"
+
 #ifdef __cplusplus
  extern "C" {
 #endif
@@ -161,6 +165,8 @@ typedef struct
 
   __IO uint32_t              ErrorCode;  /*!< I2C Error code                 */
 
+  osMutexId 				 MutexI2C;
+  osSemaphoreId				 Syncro;
 }I2C_HandleTypeDef;
 /**
   * @}
